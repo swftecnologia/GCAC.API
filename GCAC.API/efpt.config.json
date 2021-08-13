@@ -1,0 +1,122 @@
+﻿{
+   "ContextClassName": "GCACContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "DoNotCombineNamespace": false,
+   "IdReplace": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": "Data",
+   "OutputPath": "",
+   "ProjectRootNamespace": "GCAC.API",
+   "SelectedHandlebarsLanguage": 0,
+   "SelectedToBeGenerated": 1,
+   "Tables": [
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[AuditLogDetails]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[dbo].[AuditLogs]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[Abrangencia]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[Categoria]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[Classificacao]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[Clausula]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[ClausulaGrupo]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[ClausulaSubGrupo]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[Documento]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[DocumentoCategoria]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[DocumentoRepresentante]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[InstrumentoColetivo].[DocumentoRepresentanteLegal]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Localidade].[Estado]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Localidade].[Municipio]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Localidade].[Pais]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Pessoa].[Cadastro]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Pessoa].[CadastroContato]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Pessoa].[CadastroMunicipio]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Pessoa].[Contato]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Pessoa].[Funcao]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Pessoa].[GrauEntidade]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Pessoa].[Grupo]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Pessoa].[RepresentanteLegal]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Pessoa].[Tipo]"
+      },
+      {
+         "HasPrimaryKey": true,
+         "Name": "[Usuario].[Conta]"
+      }
+   ],
+   "UseDatabaseNames": false,
+   "UseFluentApiOnly": false,
+   "UseHandleBars": false,
+   "UseInflector": false,
+   "UseLegacyPluralizer": false,
+   "UseSpatial": false
+}

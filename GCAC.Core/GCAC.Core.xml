@@ -1,0 +1,2972 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GCAC.Core</name>
+    </assembly>
+    <members>
+        <member name="T:GCAC.Core.DTOs.InstrumentoColetivo.AbrangenciaDTO">
+            <summary>
+            DTO para representar uma abrangência
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.InstrumentoColetivo.AbrangenciaDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.AbrangenciaDTO.Id">
+            <summary>
+            Identificador único da abrangência (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.AbrangenciaDTO.Descricao">
+            <summary>
+            Descrição da abrangência
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.InstrumentoColetivo.CategoriaDTO">
+            <summary>
+            DTO para representar uma categoria
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.InstrumentoColetivo.CategoriaDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.CategoriaDTO.Id">
+            <summary>
+            Identificador único da categoria (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.CategoriaDTO.Descricao">
+            <summary>
+            Descrição da categoria
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.InstrumentoColetivo.ClassificacaoDTO">
+            <summary>
+            DTO para representar uma classificação
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.InstrumentoColetivo.ClassificacaoDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClassificacaoDTO.Id">
+            <summary>
+            Identificador único da classificação (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClassificacaoDTO.Descricao">
+            <summary>
+            Descrição da classificação
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO">
+            <summary>
+            DTO para representar uma cláusula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO.Id">
+            <summary>
+            Identificador único da cláusula (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO.VigenciaInicial">
+            <summary>
+            Vigência inicial da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO.VigenciaFinal">
+            <summary>
+            Vigência final da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO.VigenciaDiferenciada">
+            <summary>
+            Vigência diferenciada da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO.Titulo">
+            <summary>
+            Título da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO.Descricao">
+            <summary>
+            Descrição da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO.ClausulaSubGrupoId">
+            <summary>
+            Identificador único do sub-grupo da cláusula ao qual a cláusula pertence
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaGrupoDTO">
+            <summary>
+            DTO para representar um grupo da cláusula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaGrupoDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaGrupoDTO.Id">
+            <summary>
+            Identificador único do grupo da cláusula (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaGrupoDTO.Ordem">
+            <summary>
+            Ordem do grupo da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaGrupoDTO.Descricao">
+            <summary>
+            Descrição do grupo da cláusula
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaSubGrupoDTO">
+            <summary>
+            DTO para representar um sub-grupo da cláusula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaSubGrupoDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaSubGrupoDTO.Id">
+            <summary>
+            Identificador único do sub-grupo da cláusula (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaSubGrupoDTO.Ordem">
+            <summary>
+            Ordem do sub-grupo da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaSubGrupoDTO.Descricao">
+            <summary>
+            Descricao do sub-grupo da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.ClausulaSubGrupoDTO.ClausulaGrupoId">
+            <summary>
+            Identificador único do grupo ao qual o sub-grupo da cláusula pertence
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO">
+            <summary>
+            DTO para representar uma entidade sindical
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Id">
+            <summary>
+            Identificador único da entidade sindical (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.CNPJ">
+            <summary>
+            CNPJ da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.RazaoSocial">
+            <summary>
+            Razão Social da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Sigla">
+            <summary>
+            Sigla da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Denominacao">
+            <summary>
+            Denominação da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Grau">
+            <summary>
+            Grau da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Abrangencia">
+            <summary>
+            Abrangência da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Grupo">
+            <summary>
+            Grupo da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Categoria">
+            <summary>
+            Categoria da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Logradouro">
+            <summary>
+            Logradouro da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Complemento">
+            <summary>
+            Complemento da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Numero">
+            <summary>
+            Número da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Bairro">
+            <summary>
+            Bairro da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.CEP">
+            <summary>
+            CEP da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.EstadoId">
+            <summary>
+            Identificador único do estado ao qual a entidade sindical pertence
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.MunicipioId">
+            <summary>
+            Identificador único do município ao qual a entidade sindical pertence
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Email">
+            <summary>
+            E-mail da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Telefone1">
+            <summary>
+            Telefone 1 da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Telefone2">
+            <summary>
+            Telefone 2 da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.NomePresidente">
+            <summary>
+            Nome do presidente da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO.Regiao">
+            <summary>
+            Região da entidade sindical
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.Localidade.EstadoDTO">
+            <summary>
+            DTO para representar um novo estado
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.Localidade.EstadoDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.EstadoDTO.Id">
+            <summary>
+            Identificador único do estado (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.EstadoDTO.Sigla">
+            <summary>
+            Sigla do estado
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.EstadoDTO.Nome">
+            <summary>
+            Nome do estado
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.EstadoDTO.PaisId">
+            <summary>
+            Identificador único do país ao qual o estado pertence
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.Localidade.MunicipioDTO">
+            <summary>
+            DTO para representar um novo município
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.Localidade.MunicipioDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.MunicipioDTO.Id">
+            <summary>
+            Identificador único do município (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.MunicipioDTO.Nome">
+            <summary>
+            Nome do município
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.MunicipioDTO.EstadoId">
+            <summary>
+            Identificador único do estado ao qual o município pertence
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.Localidade.PaisDTO">
+            <summary>
+            DTO para representar um novo país
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.Localidade.PaisDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.PaisDTO.Id">
+            <summary>
+            Identificador único do país (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.PaisDTO.Sigla">
+            <summary>
+            Sigla do país
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.PaisDTO.Nome">
+            <summary>
+            Nome do país
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.DTOs.Localidade.RegiaoDTO">
+            <summary>
+            DTO para representar uma região
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.DTOs.Localidade.RegiaoDTO.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.RegiaoDTO.Id">
+            <summary>
+            Identificador único da região (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.DTOs.Localidade.RegiaoDTO.Descricao">
+            <summary>
+            Descrição da região
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia">
+            <summary>
+            Entidade para representar uma abrangência
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia.Id">
+            <summary>
+            Identificador único da abrangência (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia.Descricao">
+            <summary>
+            Descrição da abrangência
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.InstrumentoColetivo.Categoria">
+            <summary>
+            Entidade para representar uma categoria
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.InstrumentoColetivo.Categoria.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Categoria.Id">
+            <summary>
+            Identificador único da categoria (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Categoria.Descricao">
+            <summary>
+            Descrição da categoria
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.InstrumentoColetivo.Classificacao">
+            <summary>
+            Entidade para representar uma classificação
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.InstrumentoColetivo.Classificacao.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Classificacao.Id">
+            <summary>
+            Identificador único da classificação (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Classificacao.Descricao">
+            <summary>
+            Descrição da classificação
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.InstrumentoColetivo.Clausula">
+            <summary>
+            Entidade para representar uma cláusula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.InstrumentoColetivo.Clausula.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Clausula.Id">
+            <summary>
+            Identificador único da cláusula (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Clausula.VigenciaInicial">
+            <summary>
+            Vigência inicial da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Clausula.VigenciaFinal">
+            <summary>
+            Vigência final da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Clausula.VigenciaDiferenciada">
+            <summary>
+            Vigência diferenciada da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Clausula.Titulo">
+            <summary>
+            Título da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Clausula.Descricao">
+            <summary>
+            Descrição da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.Clausula.ClausulaSubGrupoId">
+            <summary>
+            Identificador único do sub-grupo da cláusula ao qual a cláusula pertence
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo">
+            <summary>
+            Entidade para representar um grupo da cláusula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo.Id">
+            <summary>
+            Identificador único do grupo da cláusula (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo.Ordem">
+            <summary>
+            Ordem do grupo da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo.Descricao">
+            <summary>
+            Descrição do grupo da cláusula
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo">
+            <summary>
+            Entidade para representar um sub-grupo da cláusula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo.Id">
+            <summary>
+            Identificador único do sub-grupo da cláusula (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo.Ordem">
+            <summary>
+            Ordem do sub-grupo da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo.Descricao">
+            <summary>
+            Descricao do sub-grupo da cláusula
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo.ClausulaGrupoId">
+            <summary>
+            Identificador único do grupo ao qual o sub-grupo da cláusula pertence
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical">
+            <summary>
+            Entidade para representar uma entidade sindical
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Id">
+            <summary>
+            Identificador único da entidade sindical (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.CNPJ">
+            <summary>
+            CNPJ da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.RazaoSocial">
+            <summary>
+            Razão Social da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Sigla">
+            <summary>
+            Sigla da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Denominacao">
+            <summary>
+            Denominação da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Grau">
+            <summary>
+            Grau da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Abrangencia">
+            <summary>
+            Abrangência da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Grupo">
+            <summary>
+            Grupo da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Categoria">
+            <summary>
+            Categoria da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Logradouro">
+            <summary>
+            Logradouro da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Complemento">
+            <summary>
+            Complemento da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Numero">
+            <summary>
+            Número da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Bairro">
+            <summary>
+            Bairro da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.CEP">
+            <summary>
+            CEP da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.EstadoId">
+            <summary>
+            Identificador único do estado ao qual a entidade sindical pertence
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.MunicipioId">
+            <summary>
+            Identificador único do município ao qual a entidade sindical pertence
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Email">
+            <summary>
+            E-mail da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Telefone1">
+            <summary>
+            Telefone 1 da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Telefone2">
+            <summary>
+            Telefone 2 da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.NomePresidente">
+            <summary>
+            Nome do presidente da entidade sindical
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical.Regiao">
+            <summary>
+            Região da entidade sindical
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.Localidade.Estado">
+            <summary>
+            Entidade para representar um estado
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.Localidade.Estado.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Estado.Id">
+            <summary>
+            Identificador único do estado (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Estado.Sigla">
+            <summary>
+            Sigla do estado
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Estado.Nome">
+            <summary>
+            Nome do estado
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Estado.PaisId">
+            <summary>
+            Identificador único do país ao qual o estado pertence
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.Localidade.Municipio">
+            <summary>
+            Entidade para representar um município
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.Localidade.Municipio.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Municipio.Id">
+            <summary>
+            Identificador único do município (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Municipio.Nome">
+            <summary>
+            Nome do município
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Municipio.EstadoId">
+            <summary>
+            Identificador único do estado ao qual o município pertence
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.Localidade.Pais">
+            <summary>
+            Entidade para representar um país
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.Localidade.Pais.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Pais.Id">
+            <summary>
+            Identificador único do país (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Pais.Sigla">
+            <summary>
+            Sigla do país
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Pais.Nome">
+            <summary>
+            Nome do país
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.Localidade.Regiao">
+            <summary>
+            Entidade para representar uma região
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.Localidade.Regiao.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Regiao.Id">
+            <summary>
+            Identificador único da região (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Localidade.Regiao.Descricao">
+            <summary>
+            Descrição da região
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.Log.Auditoria">
+            <summary>
+            Entidade para representar log de operações realizadas no banco de dados
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.Log.Auditoria.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Log.Auditoria.Id">
+            <summary>
+            Identificação da auditoria (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Log.Auditoria.Dados">
+            <summary>
+            Dados da auditoria
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Log.Auditoria.Usuario">
+            <summary>
+            Usuário solicitante
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Log.Auditoria.DataOperacao">
+            <summary>
+            Data da solicitação
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Entidades.Log.Erro">
+            <summary>
+            Entidade para representar log de operações com erros no banco de dados
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Entidades.Log.Erro.#ctor">
+            <summary>
+            Construtor
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Log.Erro.Id">
+            <summary>
+            Identificação do erro (PK)
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Log.Erro.Dados">
+            <summary>
+            Dados do erro
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Log.Erro.Usuario">
+            <summary>
+            Usuário solicitante
+            </summary>
+        </member>
+        <member name="P:GCAC.Core.Entidades.Log.Erro.DataOperacao">
+            <summary>
+            Data da solicitação
+            </summary>
+        </member>
+        <member name="T:GCAC.Core.Extensions.InstrumentoColetivo.AbrangenciaExtension">
+            <summary>
+            Métodos extensivos da entidade Abrangencia
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.AbrangenciaExtension.AsEntitie(GCAC.Core.DTOs.InstrumentoColetivo.AbrangenciaDTO)">
+            <summary>
+            Converte o DTO AbrangenciaDTO na entidade Abrangencia
+            </summary>
+            <param name="item">Abrangência a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.AbrangenciaExtension.AsDTO(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Converte a entidade Abrangencia no DTO AbrangenciaDTO
+            </summary>
+            <param name="item">Abrangência a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.InstrumentoColetivo.CategoriaExtension">
+            <summary>
+            Métodos extensivos da entidade Categoria
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.CategoriaExtension.AsEntitie(GCAC.Core.DTOs.InstrumentoColetivo.CategoriaDTO)">
+            <summary>
+            Converte o DTO CategoriaDTO na entidade Categoria
+            </summary>
+            <param name="item">Categoria a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.CategoriaExtension.AsDTO(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Converte a entidade Categoria no DTO CategoriaDTO
+            </summary>
+            <param name="item">Categoria a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.InstrumentoColetivo.ClassificacaoExtension">
+            <summary>
+            Métodos extensivos da entidade Classificacao
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.ClassificacaoExtension.AsEntitie(GCAC.Core.DTOs.InstrumentoColetivo.ClassificacaoDTO)">
+            <summary>
+            Converte o DTO ClassificacaoDTO na entidade Classificacao
+            </summary>
+            <param name="item">Classificação a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.ClassificacaoExtension.AsDTO(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Converte a entidade Classificacao no DTO ClassificacaoDTO
+            </summary>
+            <param name="item">Classificação a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.InstrumentoColetivo.ClausulaExtension">
+            <summary>
+            Métodos extensivos da entidade Clausula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.ClausulaExtension.AsEntitie(GCAC.Core.DTOs.InstrumentoColetivo.ClausulaDTO)">
+            <summary>
+            Converte o DTO ClausulaDTO na entidade Clausula
+            </summary>
+            <param name="item">Cláusula a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.ClausulaExtension.AsDTO(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Converte a entidade Clausula no DTO ClausulaDTO
+            </summary>
+            <param name="item">Cláusula a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.InstrumentoColetivo.ClausulaGrupoExtension">
+            <summary>
+            Métodos extensivos da entidade ClausulaGrupo
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.ClausulaGrupoExtension.AsEntitie(GCAC.Core.DTOs.InstrumentoColetivo.ClausulaGrupoDTO)">
+            <summary>
+            Converte o DTO ClausulaGrupoDTO na entidade ClausulaGrupo
+            </summary>
+            <param name="item">Grupo da cláusula a ser convertido</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.ClausulaGrupoExtension.AsDTO(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Converte a entidade ClausulaGrupo no DTO ClausulaGrupoDTO
+            </summary>
+            <param name="item">Grupo da cláusula a ser convertido</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.InstrumentoColetivo.ClausulaSubGrupoExtension">
+            <summary>
+            Métodos extensivos da entidade ClausulaSubGrupo
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.ClausulaSubGrupoExtension.AsEntitie(GCAC.Core.DTOs.InstrumentoColetivo.ClausulaSubGrupoDTO)">
+            <summary>
+            Converte o DTO ClausulaSubGrupoDTO na entidade ClausulaSubGrupo
+            </summary>
+            <param name="item">Sub-Grupo do grupo da cláusula a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.ClausulaSubGrupoExtension.AsDTO(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Converte a entidade ClausulaSubGrupo no DTO ClausulaSubGrupoDTO
+            </summary>
+            <param name="item">Sub-Grupo do grupo da cláusula a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.InstrumentoColetivo.EntidadeSindicalExtension">
+            <summary>
+            Métodos extensivos da entidade EntidadeSindical
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.EntidadeSindicalExtension.AsEntitie(GCAC.Core.DTOs.InstrumentoColetivo.EntidadeSindicalDTO)">
+            <summary>
+            Converte o DTO EntidadeSindicalDTO na entidade EntidadeSindical
+            </summary>
+            <param name="item">Entidade sindical a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.InstrumentoColetivo.EntidadeSindicalExtension.AsDTO(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Converte a entidade EntidadeSindical no DTO EntidadeSindicalDTO
+            </summary>
+            <param name="item">Região a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.Localidade.EstadoExtension">
+            <summary>
+            Métodos extensivos da entidade Estado
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.Localidade.EstadoExtension.AsEntitie(GCAC.Core.DTOs.Localidade.EstadoDTO)">
+            <summary>
+            Converte o DTO EstadoDTO na entidade Estado
+            </summary>
+            <param name="item">Estado a ser convertido</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.Localidade.EstadoExtension.AsDTO(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Converte a entidade Estado no DTO EstadoDTO
+            </summary>
+            <param name="item">Estado a ser convertido</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.Localidade.MunicipioExtension">
+            <summary>
+            Métodos extensivos da entidade Municipio
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.Localidade.MunicipioExtension.AsEntitie(GCAC.Core.DTOs.Localidade.MunicipioDTO)">
+            <summary>
+            Converte o DTO MunicipioDTO na entidade Municipio
+            </summary>
+            <param name="item">Município a ser convertido</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.Localidade.MunicipioExtension.AsDTO(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Converte a entidade Municipio no DTO MunicipioDTO
+            </summary>
+            <param name="item">Município a ser convertido</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.Localidade.PaisExtension">
+            <summary>
+            Métodos extensivos da entidade Pais
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.Localidade.PaisExtension.AsEntitie(GCAC.Core.DTOs.Localidade.PaisDTO)">
+            <summary>
+            Converte o DTO PaisDTO na entidade Pais
+            </summary>
+            <param name="item">País a ser convertido</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.Localidade.PaisExtension.AsDTO(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Converte a entidade Pais no DTO PaisDTO
+            </summary>
+            <param name="item">País a ser convertido</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Extensions.Localidade.RegiaoExtension">
+            <summary>
+            Métodos extensivos da entidade Regiao
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Extensions.Localidade.RegiaoExtension.AsEntitie(GCAC.Core.DTOs.Localidade.RegiaoDTO)">
+            <summary>
+            Converte o DTO RegiaoDTO na entidade Regiao
+            </summary>
+            <param name="item">Região a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="M:GCAC.Core.Extensions.Localidade.RegiaoExtension.AsDTO(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Converte a entidade Regiao no DTO RegiaoDTO
+            </summary>
+            <param name="item">Região a ser convertida</param>
+            <returns></returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IAbrangenciaRepositorio">
+            <summary>
+            Interface de repositório para a entidade Abrangencia
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IAbrangenciaRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todos as abrangências
+            </summary>
+            <returns>Lista de abrangências</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IAbrangenciaRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma abrangência pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da abrangência</param>
+            <returns>Registro da abrangência solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IAbrangenciaRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Cria uma nova abrangência
+            </summary>
+            <param name="item">Nova abrangência a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IAbrangenciaRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Atualiza uma abrangência
+            </summary>
+            <param name="item">Abrangência a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IAbrangenciaRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Exclui uma abrangência
+            </summary>
+            <param name="item">Abrangência a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IAbrangenciaRepositorio.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a abrangência existe por descrição
+            </summary>
+            <param name="descricao">Descrição da abrangência</param>
+            <returns>Valor indicando se a abrangência existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IAbrangenciaRepositorio.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a abrangência existe por descrição para um identificador diferente da abrangência a ser alterada
+            </summary>
+            <param name="id">Identificador único da abrangência</param>
+            <param name="descricao">Descrição da abrangência</param>
+            <returns>Valor indicando se a abrangência existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.ICategoriaRepositorio">
+            <summary>
+            Interface de repositório para a entidade Categoria
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.ICategoriaRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todos as categorias
+            </summary>
+            <returns>Lista de categorias</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.ICategoriaRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma categoria pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da categoria</param>
+            <returns>Registro da categoria solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.ICategoriaRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Cria uma nova categoria
+            </summary>
+            <param name="item">Nova categoria a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.ICategoriaRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Atualiza uma categoria
+            </summary>
+            <param name="item">Categoria a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.ICategoriaRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Exclui uma categoria
+            </summary>
+            <param name="item">Categoria a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.ICategoriaRepositorio.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a categoria existe por descrição
+            </summary>
+            <param name="descricao">Descrição da categoria</param>
+            <returns>Valor indicando se a categoria existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.ICategoriaRepositorio.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a categoria existe por descrição para um identificador diferente da categoria a ser alterada
+            </summary>
+            <param name="id">Identificador único da categoria</param>
+            <param name="descricao">Descrição da categoria</param>
+            <returns>Valor indicando se a categoria existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClassificacaoRepositorio">
+            <summary>
+            Interface de repositório para a entidade Classificacao
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClassificacaoRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todos as classificações
+            </summary>
+            <returns>Lista de classificações</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClassificacaoRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma classificação pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da classificação</param>
+            <returns>Registro da classificação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClassificacaoRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Cria uma nova classificação
+            </summary>
+            <param name="item">Nova classificação a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClassificacaoRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Atualiza uma classificação
+            </summary>
+            <param name="item">Classificação a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClassificacaoRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Exclui uma classificação
+            </summary>
+            <param name="item">Classificação a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClassificacaoRepositorio.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a classificação existe por descrição
+            </summary>
+            <param name="descricao">Descrição da classificação</param>
+            <returns>Valor indicando se a classificação existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClassificacaoRepositorio.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a classificação existe por descrição para um identificador diferente da classificação a ser alterada
+            </summary>
+            <param name="id">Identificador único da classificação</param>
+            <param name="descricao">Descrição da classificação</param>
+            <returns>Valor indicando se a classificação existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio">
+            <summary>
+            Interface de repositório para a entidade ClausulaGrupo
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todos os grupos da claúsula
+            </summary>
+            <returns>Lista de grupos da claúsula</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um grupo da claúsula pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do grupo da claúsula</param>
+            <returns>Registro do grupo da claúsula solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Cria um novo grupo da claúsula
+            </summary>
+            <param name="item">Novo grupo da claúsula a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Atualiza um grupo da claúsula
+            </summary>
+            <param name="item">Grupo da claúsula a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Exclui um grupo da claúsula
+            </summary>
+            <param name="item">Grupo da claúsula a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se o grupo da claúsula existe por descrição
+            </summary>
+            <param name="descricao">Descrição do grupo da claúsula</param>
+            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se o grupo da claúsula existe por descrição para um identificador diferente do grupo da claúsula a ser alterado
+            </summary>
+            <param name="id">Identificador único do grupo da claúsula</param>
+            <param name="descricao">Descrição do grupo da claúsula</param>
+            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio">
+            <summary>
+            Interface de repositório para a entidade Clausula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todas as claúsulas
+            </summary>
+            <returns>Lista de claúsulas</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma claúsula pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da claúsula</param>
+            <returns>Registro da claúsula solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Cria uma nova claúsula
+            </summary>
+            <param name="item">Nova claúsula a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Atualiza uma claúsula
+            </summary>
+            <param name="item">Claúsula a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Exclui uma claúsula
+            </summary>
+            <param name="item">Claúsula a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.ExistePorTitulo(System.String)">
+            <summary>
+            Verifica se a claúsula existe por título
+            </summary>
+            <param name="titulo">Título da claúsula</param>
+            <returns>Valor indicando se a claúsula existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.ExistePorTitulo(System.String,System.Int64)">
+            <summary>
+            Verifica se a claúsula existe por título para um identificador diferente da claúsula a ser alterada
+            </summary>
+            <param name="id">Identificador único da claúsula</param>
+            <param name="titulo">Título da claúsula</param>
+            <returns>Valor indicando se a claúsula existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio">
+            <summary>
+            Interface de repositório para a entidade ClausulaSubGrupo
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todos os sub-grupos do grupo da claúsula
+            </summary>
+            <returns>Lista de sub-grupos do grupo da claúsula</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um sub-grupo do grupo da claúsula pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
+            <returns>Registro do sub-grupo do grupo da claúsula solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Cria um novo sub-grupo do grupo da claúsula
+            </summary>
+            <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Atualiza um sub-grupo do grupo da claúsula
+            </summary>
+            <param name="item">Sub-Grupo do grupo da claúsula a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Exclui um sub-grupo do grupo da claúsula
+            </summary>
+            <param name="item">Sub-Grupo do grupo da claúsula a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se o sub-grupo do grupo da claúsula existe por descrição
+            </summary>
+            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se o sub-grupo do grupo da claúsula existe por descrição para um identificador diferente do sub-grupo do grupo da claúsula a ser alterado
+            </summary>
+            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
+            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio">
+            <summary>
+            Interface de repositório para a entidade EntidadeSindical
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todas as entidades sindicais
+            </summary>
+            <returns>Lista de entidades sindicais</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma entidade sindical pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da entidade sindical</param>
+            <returns>Registro da entidade sindical solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Cria uma nova entidade sindical
+            </summary>
+            <param name="item">Nova entidade sindical a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Atualiza uma entidade sindical
+            </summary>
+            <param name="item">Entidade sindical a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Exclui uma entidade sindical
+            </summary>
+            <param name="item">Entidade sindical a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio.ExistePorCNPJ(System.String)">
+            <summary>
+            Verifica se a entidade sindical existe por título
+            </summary>
+            <param name="cnpj">CNPJ da entidade sindical</param>
+            <returns>Valor indicando se a entidade sindical existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio.ExistePorCNPJ(System.String,System.Int64)">
+            <summary>
+            Verifica se a entidade sindical existe por título para um identificador diferente da entidade sindical a ser alterada
+            </summary>
+            <param name="id">Identificador único da entidade sindical</param>
+            <param name="cnpj">CNPJ da entidade sindical</param>
+            <returns>Valor indicando se a entidade sindical existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio">
+            <summary>
+            Interface de repositório para a entidade Estado
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todos os estados
+            </summary>
+            <returns>Lista de estados</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um estado pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do estado</param>
+            <returns>Registro do estado solicitado</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio.SelecionarPorPais(System.Int64)">
+            <summary>
+            Seleciona todos os estados pertencentes a um país
+            </summary>
+            <param name="id">Identificador único do país</param>
+            <returns>Lista de estados pertencentes a um país</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio.Inserir(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Cria um novo estado
+            </summary>
+            <param name="item">Novo estado a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio.Atualizar(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Atualiza um estado
+            </summary>
+            <param name="item">Estado a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio.Excluir(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Exclui um estado
+            </summary>
+            <param name="item">Estado a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio.ExistePorNome(System.String)">
+            <summary>
+            Verifica se o estado existe por nome
+            </summary>
+            <param name="nome">Nome do estado</param>
+            <returns>Valor indicando se o estado existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio.ExistePorNome(System.String,System.Int64)">
+            <summary>
+            Verifica se o estado existe por nome para um identificador diferente do estado a ser alterado
+            </summary>
+            <param name="id">Identificador único do estado</param>
+            <param name="nome">Nome do estado</param>
+            <returns>Valor indicando se o estado existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio">
+            <summary>
+            Interface de repositório para a entidade Municipio
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todos os municípios
+            </summary>
+            <returns>Lista de municípios</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um município pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do município</param>
+            <returns>Registro do município solicitado</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio.SelecionarPorEstado(System.Int64)">
+            <summary>
+            Seleciona todos os municípios pertencentes a um estado
+            </summary>
+            <param name="id">Identificador único do estado</param>
+            <returns>Lista de municípios pertencentes a um estado</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio.Inserir(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Cria um novo município
+            </summary>
+            <param name="item">Novo município a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio.Atualizar(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Atualiza um município
+            </summary>
+            <param name="item">Município a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio.Excluir(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Exclui um município
+            </summary>
+            <param name="item">Município a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio.ExistePorNome(System.String)">
+            <summary>
+            Verifica se o município existe por nome
+            </summary>
+            <param name="nome">Nome do município</param>
+            <returns>Valor indicando se o município existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio.ExistePorNome(System.String,System.Int64)">
+            <summary>
+            Verifica se o município existe por nome para um identificador diferente do município a ser alterado
+            </summary>
+            <param name="id">Identificador único do município</param>
+            <param name="nome">Nome do município</param>
+            <returns>Valor indicando se o município existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.Localidade.IPaisRepositorio">
+            <summary>
+            Interface de repositório para a entidade Pais
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IPaisRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todos os países
+            </summary>
+            <returns>Lista de países</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IPaisRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um país pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do país</param>
+            <returns>Registro do país solicitado</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IPaisRepositorio.Inserir(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Cria um novo país
+            </summary>
+            <param name="item">Novo país a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IPaisRepositorio.Atualizar(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Atualiza um país
+            </summary>
+            <param name="item">País a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IPaisRepositorio.Excluir(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Exclui um país
+            </summary>
+            <param name="item">País a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IPaisRepositorio.ExistePorNome(System.String)">
+            <summary>
+            Verifica se o país existe por nome
+            </summary>
+            <param name="nome">Nome do país</param>
+            <returns>Valor indicando se o país existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IPaisRepositorio.ExistePorNome(System.String,System.Int64)">
+            <summary>
+            Verifica se o país existe por nome para um identificador diferente do país a ser alterado
+            </summary>
+            <param name="id">Identificador único do país</param>
+            <param name="nome">Nome do país</param>
+            <returns>Valor indicando se o país existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Repositorios.Localidade.IRegiaoRepositorio">
+            <summary>
+            Interface de repositório para a entidade Regiao
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IRegiaoRepositorio.SelecionarTodos">
+            <summary>
+            Seleciona todos as regiões
+            </summary>
+            <returns>Lista de regiões</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IRegiaoRepositorio.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma região pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da região</param>
+            <returns>Registro da região solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IRegiaoRepositorio.Inserir(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Cria uma nova região
+            </summary>
+            <param name="item">Nova região a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IRegiaoRepositorio.Atualizar(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Atualiza uma região
+            </summary>
+            <param name="item">Região a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IRegiaoRepositorio.Excluir(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Exclui uma região
+            </summary>
+            <param name="item">Região a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IRegiaoRepositorio.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a região existe por descrição
+            </summary>
+            <param name="descricao">Descrição da região</param>
+            <returns>Valor indicando se a região existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Repositorios.Localidade.IRegiaoRepositorio.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a região existe por descrição para um identificador diferente da região a ser alterada
+            </summary>
+            <param name="id">Identificador único da região</param>
+            <param name="descricao">Descrição da região</param>
+            <returns>Valor indicando se a região existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IAbrangenciaServico">
+            <summary>
+            Interface de serviço para a entidade Abrangencia
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IAbrangenciaServico.SelecionarTodos">
+            <summary>
+            Seleciona todos as abrangências
+            </summary>
+            <returns>Lista de abrangências</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IAbrangenciaServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma abrangência pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da abrangência</param>
+            <returns>Registro da abrangência solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IAbrangenciaServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Cria uma nova abrangência
+            </summary>
+            <param name="item">Nova abrangência a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IAbrangenciaServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Atualiza uma abrangência
+            </summary>
+            <param name="item">Abrangência a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IAbrangenciaServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Exclui uma abrangência
+            </summary>
+            <param name="item">Abrangência a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IAbrangenciaServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a abrangência existe por descrição
+            </summary>
+            <param name="descricao">Descrição da abrangência</param>
+            <returns>Valor indicando se a abrangência existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IAbrangenciaServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a abrangência existe por descrição para um identificador diferente da abrangência a ser alterada
+            </summary>
+            <param name="id">Identificador único da abrangência</param>
+            <param name="descricao">Descrição da abrangência</param>
+            <returns>Valor indicando se a abrangência existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.ICategoriaServico">
+            <summary>
+            Interface de serviço para a entidade Categoria
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.ICategoriaServico.SelecionarTodos">
+            <summary>
+            Seleciona todos as categorias
+            </summary>
+            <returns>Lista de categorias</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.ICategoriaServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma categoria pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da categoria</param>
+            <returns>Registro da categoria solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.ICategoriaServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Cria uma nova categoria
+            </summary>
+            <param name="item">Nova categoria a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.ICategoriaServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Atualiza uma categoria
+            </summary>
+            <param name="item">Categoria a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.ICategoriaServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Exclui uma categoria
+            </summary>
+            <param name="item">Categoria a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.ICategoriaServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a categoria existe por descrição
+            </summary>
+            <param name="descricao">Descrição da categoria</param>
+            <returns>Valor indicando se a categoria existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.ICategoriaServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a categoria existe por descrição para um identificador diferente da categoria a ser alterada
+            </summary>
+            <param name="id">Identificador único da categoria</param>
+            <param name="descricao">Descrição da categoria</param>
+            <returns>Valor indicando se a categoria existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClassificacaoServico">
+            <summary>
+            Interface de serviço para a entidade Classificacao
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClassificacaoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos as classificações
+            </summary>
+            <returns>Lista de classificações</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClassificacaoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma classificação pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da classificação</param>
+            <returns>Registro da classificação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClassificacaoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Cria uma nova classificação
+            </summary>
+            <param name="item">Nova classificação a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClassificacaoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Atualiza uma classificação
+            </summary>
+            <param name="item">Classificação a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClassificacaoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Exclui uma classificação
+            </summary>
+            <param name="item">Classificação a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClassificacaoServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a classificação existe por descrição
+            </summary>
+            <param name="descricao">Descrição da classificação</param>
+            <returns>Valor indicando se a classificação existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClassificacaoServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a classificação existe por descrição para um identificador diferente da classificação a ser alterada
+            </summary>
+            <param name="id">Identificador único da classificação</param>
+            <param name="descricao">Descrição da classificação</param>
+            <returns>Valor indicando se a classificação existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico">
+            <summary>
+            Interface de serviço para a entidade ClausulaGrupo
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os grupos da claúsula
+            </summary>
+            <returns>Lista de grupos da claúsula</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um grupo da claúsula pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do grupo da claúsula</param>
+            <returns>Registro do grupo da claúsula solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Cria um novo grupo da claúsula
+            </summary>
+            <param name="item">Novo grupo da claúsula a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Atualiza um grupo da claúsula
+            </summary>
+            <param name="item">Grupo da claúsula a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Exclui um grupo da claúsula
+            </summary>
+            <param name="item">Grupo da claúsula a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se o grupo da claúsula existe por descrição
+            </summary>
+            <param name="descricao">Descrição do grupo da claúsula</param>
+            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se o grupo da claúsula existe por descrição para um identificador diferente do grupo da claúsula a ser alterado
+            </summary>
+            <param name="id">Identificador único do grupo da claúsula</param>
+            <param name="descricao">Descrição do grupo da claúsula</param>
+            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico">
+            <summary>
+            Interface de serviço para a entidade Clausula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.SelecionarTodos">
+            <summary>
+            Seleciona todas as claúsulas
+            </summary>
+            <returns>Lista de claúsulas</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma claúsula pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da claúsula</param>
+            <returns>Registro da claúsula solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Cria uma nova claúsula
+            </summary>
+            <param name="item">Nova claúsula a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Atualiza uma claúsula
+            </summary>
+            <param name="item">Claúsula a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Exclui uma claúsula
+            </summary>
+            <param name="item">Claúsula a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.ExistePorTitulo(System.String)">
+            <summary>
+            Verifica se a claúsula existe por título
+            </summary>
+            <param name="titulo">Título da claúsula</param>
+            <returns>Valor indicando se a claúsula existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.ExistePorTitulo(System.String,System.Int64)">
+            <summary>
+            Verifica se a claúsula existe por título para um identificador diferente da claúsula a ser alterada
+            </summary>
+            <param name="id">Identificador único da claúsula</param>
+            <param name="titulo">Título da claúsula</param>
+            <returns>Valor indicando se a claúsula existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico">
+            <summary>
+            Interface de serviço para a entidade ClausulaSubGrupo
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os sub-grupos do grupo da claúsula
+            </summary>
+            <returns>Lista de sub-grupos do grupo da claúsula</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um sub-grupo do grupo da claúsula pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
+            <returns>Registro do sub-grupo do grupo da claúsula solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Cria um novo sub-grupo do grupo da claúsula
+            </summary>
+            <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Atualiza um sub-grupo do grupo da claúsula
+            </summary>
+            <param name="item">Sub-Grupo do grupo da claúsula a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Exclui um sub-grupo do grupo da claúsula
+            </summary>
+            <param name="item">Sub-Grupo do grupo da claúsula a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se o sub-grupo do grupo da claúsula existe por descrição
+            </summary>
+            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se o sub-grupo do grupo da claúsula existe por descrição para um identificador diferente do sub-grupo do grupo da claúsula a ser alterado
+            </summary>
+            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
+            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IEntidadeSindicalServico">
+            <summary>
+            Interface de serviço para a entidade EntidadeSindical
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IEntidadeSindicalServico.SelecionarTodos">
+            <summary>
+            Seleciona todas as entidades sindicais
+            </summary>
+            <returns>Lista de entidades sindicais</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IEntidadeSindicalServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma entidade sindical pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da entidade sindical</param>
+            <returns>Registro da entidade sindical solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IEntidadeSindicalServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Cria uma nova entidade sindical
+            </summary>
+            <param name="item">Nova entidade sindical a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IEntidadeSindicalServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Atualiza uma entidade sindical
+            </summary>
+            <param name="item">Entidade sindical a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IEntidadeSindicalServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Exclui uma entidade sindical
+            </summary>
+            <param name="item">Entidade sindical a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IEntidadeSindicalServico.ExistePorCNPJ(System.String)">
+            <summary>
+            Verifica se a entidade sindical existe por título
+            </summary>
+            <param name="cnpj">CNPJ da entidade sindical</param>
+            <returns>Valor indicando se a entidade sindical existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IEntidadeSindicalServico.ExistePorCNPJ(System.String,System.Int64)">
+            <summary>
+            Verifica se a entidade sindical existe por título para um identificador diferente da entidade sindical a ser alterada
+            </summary>
+            <param name="id">Identificador único da entidade sindical</param>
+            <param name="cnpj">CNPJ da entidade sindical</param>
+            <returns>Valor indicando se a entidade sindical existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.Localidade.IEstadoServico">
+            <summary>
+            Interface de serviço para a entidade Estado
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IEstadoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os estados
+            </summary>
+            <returns>Lista de estados</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IEstadoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um estado pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do estado</param>
+            <returns>Registro do estado solicitado</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IEstadoServico.SelecionarPorPais(System.Int64)">
+            <summary>
+            Seleciona todos os estados pertencentes a um país
+            </summary>
+            <param name="id">Identificador único do país</param>
+            <returns>Lista de estados pertencentes a um país</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IEstadoServico.Inserir(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Cria um novo estado
+            </summary>
+            <param name="item">Novo estado a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IEstadoServico.Atualizar(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Atualiza um estado
+            </summary>
+            <param name="item">Estado a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IEstadoServico.Excluir(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Exclui um estado
+            </summary>
+            <param name="item">Estado a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IEstadoServico.ExistePorNome(System.String)">
+            <summary>
+            Verifica se o estado existe por nome
+            </summary>
+            <param name="nome">Nome do estado</param>
+            <returns>Valor indicando se o estado existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IEstadoServico.ExistePorNome(System.String,System.Int64)">
+            <summary>
+            Verifica se o estado existe por nome para um identificador diferente do estado a ser alterado
+            </summary>
+            <param name="id">Identificador único do estado</param>
+            <param name="nome">Nome do estado</param>
+            <returns>Valor indicando se o estado existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.Localidade.IMunicipioServico">
+            <summary>
+            Interface de serviço para a entidade Municipio
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IMunicipioServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os municípios
+            </summary>
+            <returns>Lista de municípios</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IMunicipioServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um município pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do município</param>
+            <returns>Registro do município solicitado</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IMunicipioServico.SelecionarPorEstado(System.Int64)">
+            <summary>
+            Seleciona todos os municípios pertencentes a um estado
+            </summary>
+            <param name="id">Identificador único do estado</param>
+            <returns>Lista de municípios pertencentes a um estado</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IMunicipioServico.Inserir(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Cria um novo município
+            </summary>
+            <param name="item">Novo município a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IMunicipioServico.Atualizar(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Atualiza um município
+            </summary>
+            <param name="item">Município a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IMunicipioServico.Excluir(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Exclui um município
+            </summary>
+            <param name="item">Município a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IMunicipioServico.ExistePorNome(System.String)">
+            <summary>
+            Verifica se o município existe por nome
+            </summary>
+            <param name="nome">Nome do município</param>
+            <returns>Valor indicando se o município existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IMunicipioServico.ExistePorNome(System.String,System.Int64)">
+            <summary>
+            Verifica se o município existe por nome para um identificador diferente do município a ser alterado
+            </summary>
+            <param name="id">Identificador único do município</param>
+            <param name="nome">Nome do município</param>
+            <returns>Valor indicando se o município existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.Localidade.IPaisServico">
+            <summary>
+            Interface de serviço para a entidade Pais
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IPaisServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os países
+            </summary>
+            <returns>Lista de países</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IPaisServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um país pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do país</param>
+            <returns>Registro do país solicitado</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IPaisServico.Inserir(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Cria um novo país
+            </summary>
+            <param name="item">Novo país a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IPaisServico.Atualizar(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Atualiza um país
+            </summary>
+            <param name="item">País a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IPaisServico.Excluir(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Exclui um país
+            </summary>
+            <param name="item">País a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IPaisServico.ExistePorNome(System.String)">
+            <summary>
+            Verifica se o país existe por nome
+            </summary>
+            <param name="nome">Nome do país</param>
+            <returns>Valor indicando se o país existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IPaisServico.ExistePorNome(System.String,System.Int64)">
+            <summary>
+            Verifica se o país existe por nome para um identificador diferente do país a ser alterado
+            </summary>
+            <param name="id">Identificador único do país</param>
+            <param name="nome">Nome do país</param>
+            <returns>Valor indicando se o país existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Interfaces.Servicos.Localidade.IRegiaoServico">
+            <summary>
+            Interface de serviço para a entidade Regiao
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IRegiaoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos as regiões
+            </summary>
+            <returns>Lista de regiões</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IRegiaoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma região pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da região</param>
+            <returns>Registro da região solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IRegiaoServico.Inserir(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Cria uma nova região
+            </summary>
+            <param name="item">Nova região a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IRegiaoServico.Atualizar(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Atualiza uma região
+            </summary>
+            <param name="item">Região a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IRegiaoServico.Excluir(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Exclui uma região
+            </summary>
+            <param name="item">Região a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IRegiaoServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a região existe por descrição
+            </summary>
+            <param name="descricao">Descrição da região</param>
+            <returns>Valor indicando se a região existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Interfaces.Servicos.Localidade.IRegiaoServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a região existe por descrição para um identificador diferente da região a ser alterada
+            </summary>
+            <param name="id">Identificador único da região</param>
+            <param name="descricao">Descrição da região</param>
+            <returns>Valor indicando se a região existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico">
+            <summary>
+            Serviços para a entidade Abrangencia
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico._abrangenciaRepositorio">
+            <summary>
+            Repositório da entidade Abrangencia
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico.#ctor(GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IAbrangenciaRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="abrangenciaRepositorio">Repositório da entidade Abrangencia</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico.SelecionarTodos">
+            <summary>
+            Seleciona todos as abrangências
+            </summary>
+            <returns>Lista de abrangências</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma abrangência pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da abrangência</param>
+            <returns>Registro da abrangência solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Cria uma nova abrangência
+            </summary>
+            <param name="item">Nova abrangência a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Atualiza uma abrangência
+            </summary>
+            <param name="item">Abrangência a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Abrangencia)">
+            <summary>
+            Exclui uma abrangência
+            </summary>
+            <param name="item">Abrangência a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a abrangência existe por descrição
+            </summary>
+            <param name="descricao">Descrição da abrangência</param>
+            <returns>Valor indicando se a abrangência existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.AbrangenciaServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a abrangência existe por descrição para um identificador diferente da abrangência a ser alterada
+            </summary>
+            <param name="id">Identificador único da abrangência</param>
+            <param name="descricao">Descrição da abrangência</param>
+            <returns>Valor indicando se a abrangência existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico">
+            <summary>
+            Serviços para a entidade Categoria
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico._categoriaRepositorio">
+            <summary>
+            Repositório da entidade Categoria
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico.#ctor(GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.ICategoriaRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="categoriaRepositorio">Repositório da entidade Categoria</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico.SelecionarTodos">
+            <summary>
+            Seleciona todos as categorias
+            </summary>
+            <returns>Lista de categorias</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma categoria pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da categoria</param>
+            <returns>Registro da categoria solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Cria uma nova categoria
+            </summary>
+            <param name="item">Nova categoria a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Atualiza uma categoria
+            </summary>
+            <param name="item">Categoria a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Categoria)">
+            <summary>
+            Exclui uma categoria
+            </summary>
+            <param name="item">Categoria a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a categoria existe por descrição
+            </summary>
+            <param name="descricao">Descrição da categoria</param>
+            <returns>Valor indicando se a categoria existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.CategoriaServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a categoria existe por descrição para um identificador diferente da categoria a ser alterada
+            </summary>
+            <param name="id">Identificador único da categoria</param>
+            <param name="descricao">Descrição da categoria</param>
+            <returns>Valor indicando se a categoria existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico">
+            <summary>
+            Serviços para a entidade Classificacao
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico._classificacaoRepositorio">
+            <summary>
+            Repositório da entidade Classificacao
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico.#ctor(GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClassificacaoRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="classificacaoRepositorio">Repositório da entidade Classificacao</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos as classificações
+            </summary>
+            <returns>Lista de classificações</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma classificação pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da classificação</param>
+            <returns>Registro da classificação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Cria uma nova classificação
+            </summary>
+            <param name="item">Nova classificação a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Atualiza uma classificação
+            </summary>
+            <param name="item">Classificação a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Classificacao)">
+            <summary>
+            Exclui uma classificação
+            </summary>
+            <param name="item">Classificação a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a classificação existe por descrição
+            </summary>
+            <param name="descricao">Descrição da classificação</param>
+            <returns>Valor indicando se a classificação existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClassificacaoServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a classificação existe por descrição para um identificador diferente da classificação a ser alterada
+            </summary>
+            <param name="id">Identificador único da classificação</param>
+            <param name="descricao">Descrição da classificação</param>
+            <returns>Valor indicando se a classificação existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico">
+            <summary>
+            Serviços para a entidade ClausulaGrupo
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico._clausulaGrupoRepositorio">
+            <summary>
+            Repositório da entidade ClausulaGrupo
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.#ctor(GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="clausulaGrupoRepositorio">Repositório da entidade ClausulaGrupo</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os grupos da claúsula
+            </summary>
+            <returns>Lista de grupos da claúsula</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um grupo da claúsula pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do grupo da claúsula</param>
+            <returns>Registro do grupo da claúsula solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Cria um novo grupo da claúsula
+            </summary>
+            <param name="item">Novo grupo da claúsula a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Atualiza um grupo da claúsula
+            </summary>
+            <param name="item">Grupo da claúsula a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
+            <summary>
+            Exclui um grupo da claúsula
+            </summary>
+            <param name="item">Grupo da claúsula a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se o grupo da claúsula existe por descrição
+            </summary>
+            <param name="descricao">Descrição do grupo da claúsula</param>
+            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se o grupo da claúsula existe por descrição para um identificador diferente do grupo da claúsula a ser alterado
+            </summary>
+            <param name="id">Identificador único do grupo da claúsula</param>
+            <param name="descricao">Descrição do grupo da claúsula</param>
+            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico">
+            <summary>
+            Serviços para a entidade Clausula
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico._clausulaRepositorio">
+            <summary>
+            Repositório da entidade Clausula
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.#ctor(GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="clausulaRepositorio">Repositório da entidade Clausula</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.SelecionarTodos">
+            <summary>
+            Seleciona todas as claúsulas
+            </summary>
+            <returns>Lista de claúsulas</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma claúsula pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da claúsula</param>
+            <returns>Registro da claúsula solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Cria uma nova claúsula
+            </summary>
+            <param name="item">Nova claúsula a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Atualiza uma claúsula
+            </summary>
+            <param name="item">Claúsula a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
+            <summary>
+            Exclui uma claúsula
+            </summary>
+            <param name="item">Claúsula a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.ExistePorTitulo(System.String)">
+            <summary>
+            Verifica se a claúsula existe por título
+            </summary>
+            <param name="titulo">Título da claúsula</param>
+            <returns>Valor indicando se a claúsula existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.ExistePorTitulo(System.String,System.Int64)">
+            <summary>
+            Verifica se a claúsula existe por título para um identificador diferente da claúsula a ser alterada
+            </summary>
+            <param name="id">Identificador único da claúsula</param>
+            <param name="titulo">Título da claúsula</param>
+            <returns>Valor indicando se a claúsula existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico">
+            <summary>
+            Serviços para a entidade ClausulaSubGrupo
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico._clausulaSubGrupoRepositorio">
+            <summary>
+            Repositório da entidade ClausulaSubGrupo
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.#ctor(GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="clausulaSubGrupoRepositorio">Repositório da entidade ClausulaSubGrupo</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os sub-grupos do grupo da claúsula
+            </summary>
+            <returns>Lista de sub-grupos do grupo da claúsula</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um sub-grupo do grupo da claúsula pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
+            <returns>Registro do sub-grupo do grupo da claúsula solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Cria um novo sub-grupo do grupo da claúsula
+            </summary>
+            <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Atualiza um sub-grupo do grupo da claúsula
+            </summary>
+            <param name="item">Sub-Grupo do grupo da claúsula a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
+            <summary>
+            Exclui um sub-grupo do grupo da claúsula
+            </summary>
+            <param name="item">Sub-Grupo do grupo da claúsula a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se o sub-grupo do grupo da claúsula existe por descrição
+            </summary>
+            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se o sub-grupo do grupo da claúsula existe por descrição para um identificador diferente do sub-grupo do grupo da claúsula a ser alterado
+            </summary>
+            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
+            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico">
+            <summary>
+            Serviços para a entidade EntidadeSindical
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico._entidadeSindicalRepositorio">
+            <summary>
+            Repositório da entidade EntidadeSindical
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico.#ctor(GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="entidadeSindicalRepositorio">Repositório da entidade EntidadeSindical</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico.SelecionarTodos">
+            <summary>
+            Seleciona todas as entidades sindicais
+            </summary>
+            <returns>Lista de entidades sindicais</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma entidade sindical pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da entidade sindical</param>
+            <returns>Registro da entidade sindical solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Cria uma nova entidade sindical
+            </summary>
+            <param name="item">Nova entidade sindical a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Atualiza uma entidade sindical
+            </summary>
+            <param name="item">Entidade sindical a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.EntidadeSindical)">
+            <summary>
+            Exclui uma entidade sindical
+            </summary>
+            <param name="item">Entidade sindical a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico.ExistePorCNPJ(System.String)">
+            <summary>
+            Verifica se a entidade sindical existe por título
+            </summary>
+            <param name="cnpj">CNPJ da entidade sindical</param>
+            <returns>Valor indicando se a entidade sindical existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico.ExistePorCNPJ(System.String,System.Int64)">
+            <summary>
+            Verifica se a entidade sindical existe por título para um identificador diferente da entidade sindical a ser alterada
+            </summary>
+            <param name="id">Identificador único da entidade sindical</param>
+            <param name="cnpj">CNPJ da entidade sindical</param>
+            <returns>Valor indicando se a entidade sindical existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.Localidade.EstadoServico">
+            <summary>
+            Serviços para a entidade Estado
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.Localidade.EstadoServico._estadoRepositorio">
+            <summary>
+            Repositório da entidade Estado
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.EstadoServico.#ctor(GCAC.Core.Interfaces.Repositorios.Localidade.IEstadoRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="estadoRepositorio">Repositório da entidade Estado</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.EstadoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os estados
+            </summary>
+            <returns>Lista de estado</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.EstadoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um estado pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do estado</param>
+            <returns>Registro do estado solicitado</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.EstadoServico.SelecionarPorPais(System.Int64)">
+            <summary>
+            Seleciona todos os estados pertencentes a um país
+            </summary>
+            <param name="id">Identificador único do país</param>
+            <returns>Lista de estados pertencentes a um país</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.EstadoServico.Inserir(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Cria um novo estado
+            </summary>
+            <param name="item">Novo estado a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.EstadoServico.Atualizar(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Atualiza um estado
+            </summary>
+            <param name="item">Estado a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.EstadoServico.Excluir(GCAC.Core.Entidades.Localidade.Estado)">
+            <summary>
+            Exclui um estado
+            </summary>
+            <param name="item">Estado a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.EstadoServico.ExistePorNome(System.String)">
+            <summary>
+            Verifica se o estado existe por nome
+            </summary>
+            <param name="nome">Nome do estado</param>
+            <returns>Valor indicando se o estado existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.EstadoServico.ExistePorNome(System.String,System.Int64)">
+            <summary>
+            Verifica se o estado existe por nome para um identificador diferente do estado a ser alterado
+            </summary>
+            <param name="id">Identificador único do estado</param>
+            <param name="nome">Nome do estado</param>
+            <returns>Valor indicando se o estado existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.Localidade.MunicipioServico">
+            <summary>
+            Serviços para a entidade Municipio
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.Localidade.MunicipioServico._municipioRepositorio">
+            <summary>
+            Repositório da entidade Municipio
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.MunicipioServico.#ctor(GCAC.Core.Interfaces.Repositorios.Localidade.IMunicipioRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="municipioRepositorio">Repositório da entidade Municipio</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.MunicipioServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os registros
+            </summary>
+            <returns>Lista de municípioes</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.MunicipioServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um município pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do município</param>
+            <returns>Registro do município solicitado</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.MunicipioServico.SelecionarPorEstado(System.Int64)">
+            <summary>
+            Seleciona todos os municípios pertencentes a um estado
+            </summary>
+            <param name="id">Identificador único do estado</param>
+            <returns>Lista de municípios pertencentes a um estado</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.MunicipioServico.Inserir(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Cria um novo município
+            </summary>
+            <param name="item">Novo município a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.MunicipioServico.Atualizar(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Atualiza um município
+            </summary>
+            <param name="item">Município a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.MunicipioServico.Excluir(GCAC.Core.Entidades.Localidade.Municipio)">
+            <summary>
+            Exclui um município
+            </summary>
+            <param name="item">Município a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.MunicipioServico.ExistePorNome(System.String)">
+            <summary>
+            Verifica se o município existe por nome
+            </summary>
+            <param name="nome">Nome do município</param>
+            <returns>Valor indicando se o município existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.MunicipioServico.ExistePorNome(System.String,System.Int64)">
+            <summary>
+            Verifica se o município existe por nome para um identificador diferente do município a ser alterado
+            </summary>
+            <param name="id">Identificador único do município</param>
+            <param name="nome">Nome do município</param>
+            <returns>Valor indicando se o município existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.Localidade.PaisServico">
+            <summary>
+            Serviços para a entidade Pais
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.Localidade.PaisServico._paisRepositorio">
+            <summary>
+            Repositório da entidade Pais
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.PaisServico.#ctor(GCAC.Core.Interfaces.Repositorios.Localidade.IPaisRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="paisRepositorio">Repositório da entidade Pais</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.PaisServico.SelecionarTodos">
+            <summary>
+            Seleciona todos os registros
+            </summary>
+            <returns>Lista de países</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.PaisServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona um país pelo seu identificador
+            </summary>
+            <param name="id">Identificador único do país</param>
+            <returns>Registro do país solicitado</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.PaisServico.Inserir(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Cria um novo país
+            </summary>
+            <param name="item">Novo país a ser criado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.PaisServico.Atualizar(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Atualiza um país
+            </summary>
+            <param name="item">País a ser atualizado</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.PaisServico.Excluir(GCAC.Core.Entidades.Localidade.Pais)">
+            <summary>
+            Exclui um país
+            </summary>
+            <param name="item">País a ser excluído</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.PaisServico.ExistePorNome(System.String)">
+            <summary>
+            Verifica se o país existe por nome
+            </summary>
+            <param name="nome">Nome do país</param>
+            <returns>Valor indicando se o país existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.PaisServico.ExistePorNome(System.String,System.Int64)">
+            <summary>
+            Verifica se o país existe por nome para um identificador diferente do país a ser alterado
+            </summary>
+            <param name="id">Identificador único do país</param>
+            <param name="nome">Nome do país</param>
+            <returns>Valor indicando se o país existe ou não</returns>
+        </member>
+        <member name="T:GCAC.Core.Servicos.Localidade.RegiaoServico">
+            <summary>
+            Serviços para a entidade Regiao
+            </summary>
+        </member>
+        <member name="F:GCAC.Core.Servicos.Localidade.RegiaoServico._regiaoRepositorio">
+            <summary>
+            Repositório da entidade Regiao
+            </summary>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.RegiaoServico.#ctor(GCAC.Core.Interfaces.Repositorios.Localidade.IRegiaoRepositorio)">
+            <summary>
+            Construtor
+            </summary>
+            <param name="regiaoRepositorio">Repositório da entidade Regiao</param>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.RegiaoServico.SelecionarTodos">
+            <summary>
+            Seleciona todos as regiões
+            </summary>
+            <returns>Lista de regiões</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.RegiaoServico.SelecionarPorId(System.Int64)">
+            <summary>
+            Seleciona uma região pelo seu identificador
+            </summary>
+            <param name="id">Identificador único da região</param>
+            <returns>Registro da região solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.RegiaoServico.Inserir(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Cria uma nova região
+            </summary>
+            <param name="item">Nova região a ser criada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.RegiaoServico.Atualizar(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Atualiza uma região
+            </summary>
+            <param name="item">Região a ser atualizada</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.RegiaoServico.Excluir(GCAC.Core.Entidades.Localidade.Regiao)">
+            <summary>
+            Exclui uma região
+            </summary>
+            <param name="item">Região a ser excluída</param>
+            <returns>Quantidade de registros afetados pela operação solicitada</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.RegiaoServico.ExistePorDescricao(System.String)">
+            <summary>
+            Verifica se a região existe por descrição
+            </summary>
+            <param name="descricao">Descrição da região</param>
+            <returns>Valor indicando se a região existe ou não</returns>
+        </member>
+        <member name="M:GCAC.Core.Servicos.Localidade.RegiaoServico.ExistePorDescricao(System.String,System.Int64)">
+            <summary>
+            Verifica se a região existe por descrição para um identificador diferente da região a ser alterada
+            </summary>
+            <param name="id">Identificador único da região</param>
+            <param name="descricao">Descrição da região</param>
+            <returns>Valor indicando se a região existe ou não</returns>
+        </member>
+    </members>
+</doc>
