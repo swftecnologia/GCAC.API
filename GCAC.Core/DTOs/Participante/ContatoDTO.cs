@@ -20,7 +20,7 @@
         /// <summary>
         /// Identificador único do tipo de contato do participante (PK)
         /// </summary>
-        public long TipoContatoId { get; init; }
+        public long? TipoContatoId { get; init; }
 
         /// <summary>
         /// Contato do participante
