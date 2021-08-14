@@ -3,6 +3,7 @@ using Audit.EntityFramework;
 using GCAC.Core.Entidades.Localidade;
 using GCAC.Core.Entidades.Log;
 using GCAC.Core.Entidades.InstrumentoColetivo;
+using GCAC.Core.Entidades.Participante;
 
 namespace GCAC.Infrastructure.Contextos
 {
@@ -151,6 +152,64 @@ namespace GCAC.Infrastructure.Contextos
 
             #endregion
 
+            #region Participante
+
+            modelBuilder.Entity<Contato>(entity =>
+            {
+                entity.ToTable("Contato", schema: "Participante");
+                entity.HasKey(e => new { e.ParticipanteId, e.TipoContatoId }).HasName("PK_Contato_ParticipanteId_TipoContatoId");
+            });
+
+            modelBuilder.Entity<Funcao>(entity =>
+            {
+                entity.ToTable("Funcao", schema: "Participante");
+                entity.HasKey(e => e.Id).HasName("PK_Funcao_Id");
+                entity.HasIndex(e => e.Descricao).IsUnique().HasDatabaseName("IX_Funcao_Descricao");
+            });
+
+            modelBuilder.Entity<GrauEntidade>(entity =>
+            {
+                entity.ToTable("GrauEntidade", schema: "Participante");
+                entity.HasKey(e => e.Id).HasName("PK_GrauEntidade_Id");
+                entity.HasIndex(e => e.Descricao).IsUnique().HasDatabaseName("IX_GrauEntidade_Descricao");
+            });
+
+            modelBuilder.Entity<Grupo>(entity =>
+            {
+                entity.ToTable("Grupo", schema: "Participante");
+                entity.HasKey(e => e.Id).HasName("PK_Grupo_Id");
+                entity.HasIndex(e => e.Descricao).IsUnique().HasDatabaseName("IX_Grupo_Descricao");
+            });
+
+            modelBuilder.Entity<Participante>(entity =>
+            {
+                entity.ToTable("Participante", schema: "Participante");
+                entity.HasKey(e => e.Id).HasName("PK_Participante_Id");
+            });
+
+            modelBuilder.Entity<RepresentanteLegal>(entity =>
+            {
+                entity.ToTable("RepresentanteLegal", schema: "Participante");
+                entity.HasKey(e => e.Id).HasName("PK_RepresentanteLegal_Id");
+                entity.HasIndex(e => e.Descricao).IsUnique().HasDatabaseName("IX_RepresentanteLegal_Descricao");
+            });
+
+            modelBuilder.Entity<TipoContato>(entity =>
+            {
+                entity.ToTable("TipoContato", schema: "Participante");
+                entity.HasKey(e => e.Id).HasName("PK_TipoContato_Id");
+                entity.HasIndex(e => e.Descricao).IsUnique().HasDatabaseName("IX_TipoContato_Descricao");
+            });
+
+            modelBuilder.Entity<TipoPessoa>(entity =>
+            {
+                entity.ToTable("TipoPessoa", schema: "Participante");
+                entity.HasKey(e => e.Id).HasName("PK_TipoPessoa_Id");
+                entity.HasIndex(e => e.Descricao).IsUnique().HasDatabaseName("IX_TipoPessoa_Descricao");
+            });
+
+            #endregion
+
             OnModelCreatingPartial(modelBuilder);
         }
 
@@ -230,6 +289,51 @@ namespace GCAC.Infrastructure.Contextos
         /// Entidade para log de operações com erros no banco de dados
         /// </summary>
         public virtual DbSet<Erro> Erro { get; set; }
+
+        #endregion
+
+        #region Participante
+
+        /// <summary>
+        /// Entidade para persistência de contatos do participante
+        /// </summary>
+        public virtual DbSet<Contato> Contato { get; set; }
+
+        /// <summary>
+        /// Entidade para persistência de funções do participante
+        /// </summary>
+        public virtual DbSet<Funcao> Funcao { get; set; }
+
+        /// <summary>
+        /// Entidade para persistência de graus da entidade do participante
+        /// </summary>
+        public virtual DbSet<GrauEntidade> GrauEntidade { get; set; }
+
+        /// <summary>
+        /// Entidade para persistência de grupos do participante
+        /// </summary>
+        public virtual DbSet<Grupo> Grupo { get; set; }
+
+        //Participante
+        /// <summary>
+        /// Entidade para persistência de participantes
+        /// </summary>
+        public virtual DbSet<Participante> Participante { get; set; }
+
+        /// <summary>
+        /// Entidade para persistência de representantes legais do participante
+        /// </summary>
+        public virtual DbSet<RepresentanteLegal> RepresentanteLegal { get; set; }
+
+        /// <summary>
+        /// Entidade para persistência de tipos de contato do participante
+        /// </summary>
+        public virtual DbSet<TipoContato> TipoContato { get; set; }
+
+        /// <summary>
+        /// Entidade para persistência de tipos de pessoa do participante
+        /// </summary>
+        public virtual DbSet<TipoPessoa> TipoPessoa { get; set; }
 
         #endregion
     }
