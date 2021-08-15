@@ -1,5 +1,4 @@
-﻿using GCAC.API.Areas.Pessoa.Entities;
-using GCAC.Core.Entidades.InstrumentoColetivo;
+﻿using GCAC.Core.Entidades.InstrumentoColetivo;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;

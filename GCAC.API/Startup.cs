@@ -24,6 +24,10 @@ using GCAC.Core.Interfaces.Servicos.InstrumentoColetivo;
 using GCAC.Core.Servicos.InstrumentoColetivo;
 using GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo;
 using GCAC.Infrastructure.Repositorios.InstrumentoColetivo;
+using GCAC.Core.Interfaces.Servicos.Participante;
+using GCAC.Core.Servicos.Participante;
+using GCAC.Core.Interfaces.Repositorios.Participante;
+using GCAC.Infrastructure.Repositorios.Participante;
 
 namespace GCAC.API
 {
@@ -138,6 +142,19 @@ namespace GCAC.API
 
             #endregion
 
+            #region Participante
+
+            services.AddScoped<IContatoServico, ContatoServico>();
+            services.AddScoped<IFuncaoServico, FuncaoServico>();
+            services.AddScoped<IGrauEntidadeServico, GrauEntidadeServico>();
+            services.AddScoped<IGrupoServico, GrupoServico>();
+            services.AddScoped<IParticipanteServico, ParticipanteServico>();
+            services.AddScoped<IRepresentanteLegalServico, RepresentanteLegalServico>();
+            services.AddScoped<ITipoContatoServico, TipoContatoServico>();
+            services.AddScoped<ITipoPessoaServico, TipoPessoaServico>();
+
+            #endregion
+
             #endregion
 
             //Repositórios
@@ -161,6 +178,19 @@ namespace GCAC.API
             services.AddScoped<IEstadoRepositorio, EstadoRepositorio>();
             services.AddScoped<IMunicipioRepositorio, MunicipioRepositorio>();
             services.AddScoped<IRegiaoRepositorio, RegiaoRepositorio>();
+
+            #endregion
+
+            #region Participante
+
+            services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
+            services.AddScoped<IFuncaoRepositorio, FuncaoRepositorio>();
+            services.AddScoped<IGrauEntidadeRepositorio, GrauEntidadeRepositorio>();
+            services.AddScoped<IGrupoRepositorio, GrupoRepositorio>();
+            services.AddScoped<IParticipanteRepositorio, ParticipanteRepositorio>();
+            services.AddScoped<IRepresentanteLegalRepositorio, RepresentanteLegalRepositorio>();
+            services.AddScoped<ITipoContatoRepositorio, TipoContatoRepositorio>();
+            services.AddScoped<ITipoPessoaRepositorio, TipoPessoaRepositorio>();
 
             #endregion
 

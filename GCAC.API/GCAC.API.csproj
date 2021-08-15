@@ -6,9 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\Cadastro\**" />
     <Compile Remove="js\**" />
+    <Content Remove="Areas\Cadastro\**" />
     <Content Remove="js\**" />
+    <EmbeddedResource Remove="Areas\Cadastro\**" />
     <EmbeddedResource Remove="js\**" />
+    <None Remove="Areas\Cadastro\**" />
     <None Remove="js\**" />
   </ItemGroup>
 
@@ -17,8 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Cadastro\Controllers\" />
-    <Folder Include="Areas\Pessoa\Entities\" />
     <Folder Include="Data\" />
   </ItemGroup>
 

@@ -37,8 +37,8 @@ namespace GCAC.Core.Servicos.Participante
         /// <summary>
         /// Seleciona um grau da entidade do participante pelo seu identificador
         /// </summary>
-        /// <param name="id">Identificador único da grau da entidade do participante</param>
-        /// <returns>Registro da grau da entidade do participante solicitada</returns>
+        /// <param name="id">Identificador único do grau da entidade do participante</param>
+        /// <returns>Registro da grau da entidade do participante solicitado</returns>
         public async Task<GrauEntidade> SelecionarPorId(long id)
         {
             return await _grauEntidadeRepositorio.SelecionarPorId(id);
@@ -47,7 +47,7 @@ namespace GCAC.Core.Servicos.Participante
         /// <summary>
         /// Cria um novo grau da entidade do participante
         /// </summary>
-        /// <param name="item">Novo grau da entidade do participante a ser criada</param>
+        /// <param name="item">Novo grau da entidade do participante a ser criado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Inserir(GrauEntidade item)
         {
@@ -57,7 +57,7 @@ namespace GCAC.Core.Servicos.Participante
         /// <summary>
         /// Atualiza um grau da entidade do participante
         /// </summary>
-        /// <param name="item">Grau da entidade do participante a ser atualizada</param>
+        /// <param name="item">Grau da entidade do participante a ser atualizado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Atualizar(GrauEntidade item)
         {
@@ -67,7 +67,7 @@ namespace GCAC.Core.Servicos.Participante
         /// <summary>
         /// Exclui um grau da entidade do participante
         /// </summary>
-        /// <param name="item">Grau da entidade do participante a ser excluída</param>
+        /// <param name="item">Grau da entidade do participante a ser excluído</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Excluir(GrauEntidade item)
         {

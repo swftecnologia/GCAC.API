@@ -19,27 +19,27 @@ namespace GCAC.Core.Interfaces.Servicos.Participante
         /// Seleciona um grupo do participante pelo seu identificador
         /// </summary>
         /// <param name="id">Identificador único do grupo do participante</param>
-        /// <returns>Registro do grupo do participante solicitada</returns>
+        /// <returns>Registro do grupo do participante solicitado</returns>
         Task<Grupo> SelecionarPorId(long id);
 
         /// <summary>
         /// Cria um novo grupo do participante
         /// </summary>
-        /// <param name="item">Novo grupo do participante a ser criada</param>
+        /// <param name="item">Novo grupo do participante a ser criado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         Task<int> Inserir(Grupo item);
 
         /// <summary>
         /// Atualiza um grupo do participante
         /// </summary>
-        /// <param name="item">Grupo do participante a ser atualizada</param>
+        /// <param name="item">Grupo do participante a ser atualizado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         Task<int> Atualizar(Grupo item);
 
         /// <summary>
         /// Exclui um grupo do participante
         /// </summary>
-        /// <param name="item">Grupo do participante a ser excluída</param>
+        /// <param name="item">Grupo do participante a ser excluído</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         Task<int> Excluir(Grupo item);
 

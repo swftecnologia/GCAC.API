@@ -18,7 +18,7 @@ namespace GCAC.Core.Interfaces.Repositorios.Participante
         /// <summary>
         /// Seleciona um grau da entidade do participante pelo seu identificador
         /// </summary>
-        /// <param name="id">Identificador único da grau da entidade do participante</param>
+        /// <param name="id">Identificador único do grau da entidade do participante</param>
         /// <returns>Registro da grau da entidade do participante solicitado</returns>
         Task<GrauEntidade> SelecionarPorId(long id);
 

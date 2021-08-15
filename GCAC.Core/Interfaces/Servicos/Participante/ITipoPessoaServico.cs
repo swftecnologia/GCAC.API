@@ -19,27 +19,27 @@ namespace GCAC.Core.Interfaces.Servicos.Participante
         /// Seleciona um tipo de pessoa do participante pelo seu identificador
         /// </summary>
         /// <param name="id">Identificador único do tipo de pessoa do participante</param>
-        /// <returns>Registro do tipo de pessoa do participante solicitada</returns>
+        /// <returns>Registro do tipo de pessoa do participante solicitado</returns>
         Task<TipoPessoa> SelecionarPorId(long id);
 
         /// <summary>
         /// Cria um novo tipo de pessoa do participante
         /// </summary>
-        /// <param name="item">Novo tipo de pessoa do participante a ser criada</param>
+        /// <param name="item">Novo tipo de pessoa do participante a ser criado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         Task<int> Inserir(TipoPessoa item);
 
         /// <summary>
         /// Atualiza um tipo de pessoa do participante
         /// </summary>
-        /// <param name="item">Tipo de pessoa do participante a ser atualizada</param>
+        /// <param name="item">Tipo de pessoa do participante a ser atualizado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         Task<int> Atualizar(TipoPessoa item);
 
         /// <summary>
         /// Exclui um tipo de pessoa do participante
         /// </summary>
-        /// <param name="item">Tipo de pessoa do participante a ser excluída</param>
+        /// <param name="item">Tipo de pessoa do participante a ser excluído</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         Task<int> Excluir(TipoPessoa item);
 

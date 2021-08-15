@@ -19,7 +19,7 @@ namespace GCAC.Core.Interfaces.Servicos.Participante
         /// Seleciona um contato do participante pelo seu identificador
         /// </summary>
         /// <param name="id">Identificador único do contato do participante</param>
-        /// <returns>Registro do contato do participante solicitada</returns>
+        /// <returns>Registro do contato do participante solicitado</returns>
         Task<Contato> SelecionarPorId(long id);
 
         /// <summary>

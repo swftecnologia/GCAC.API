@@ -38,7 +38,7 @@ namespace GCAC.Core.Servicos.Participante
         /// Seleciona um contato do participante pelo seu identificador
         /// </summary>
         /// <param name="id">Identificador único do contato do participante</param>
-        /// <returns>Registro do contato do participante solicitada</returns>
+        /// <returns>Registro do contato do participante solicitado</returns>
         public async Task<Contato> SelecionarPorId(long id)
         {
             return await _contatoRepositorio.SelecionarPorId(id);

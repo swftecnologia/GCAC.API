@@ -25,7 +25,7 @@ namespace GCAC.Core.Servicos.Participante
         }
 
         /// <summary>
-        /// Seleciona todas os participantes
+        /// Seleciona todos os participantes
         /// </summary>
         /// <returns>Lista de participantes</returns>
         public async Task<IEnumerable<Entidades.Participante.Participante>> SelecionarTodos()
@@ -44,9 +44,9 @@ namespace GCAC.Core.Servicos.Participante
         }
 
         /// <summary>
-        /// Cria um nova participante
+        /// Cria um novo participante
         /// </summary>
-        /// <param name="item">Nova participante a ser criado</param>
+        /// <param name="item">Novo participante a ser criado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Inserir(Entidades.Participante.Participante item)
         {
@@ -54,9 +54,9 @@ namespace GCAC.Core.Servicos.Participante
         }
 
         /// <summary>
-        /// Atualiza uma participante do participante
+        /// Atualiza um participante
         /// </summary>
-        /// <param name="item">Participante do participante a ser atualizada</param>
+        /// <param name="item">Participante a ser atualizado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Atualizar(Entidades.Participante.Participante item)
         {
@@ -64,7 +64,7 @@ namespace GCAC.Core.Servicos.Participante
         }
 
         /// <summary>
-        /// Exclui uma participante
+        /// Exclui um participante
         /// </summary>
         /// <param name="item">Participante a ser excluído</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>

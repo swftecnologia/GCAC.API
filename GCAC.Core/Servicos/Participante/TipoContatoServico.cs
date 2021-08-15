@@ -38,7 +38,7 @@ namespace GCAC.Core.Servicos.Participante
         /// Seleciona um tipo de contato do participante pelo seu identificador
         /// </summary>
         /// <param name="id">Identificador único do tipo de contato do participante</param>
-        /// <returns>Registro do tipo de contato do participante solicitada</returns>
+        /// <returns>Registro do tipo de contato do participante solicitado</returns>
         public async Task<TipoContato> SelecionarPorId(long id)
         {
             return await _tipoContatoRepositorio.SelecionarPorId(id);
@@ -47,7 +47,7 @@ namespace GCAC.Core.Servicos.Participante
         /// <summary>
         /// Cria um novo tipo de contato do participante
         /// </summary>
-        /// <param name="item">Novo tipo de contato do participante a ser criada</param>
+        /// <param name="item">Novo tipo de contato do participante a ser criado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Inserir(TipoContato item)
         {
@@ -57,7 +57,7 @@ namespace GCAC.Core.Servicos.Participante
         /// <summary>
         /// Atualiza um tipo de contato do participante
         /// </summary>
-        /// <param name="item">Tipo de contato do participante a ser atualizada</param>
+        /// <param name="item">Tipo de contato do participante a ser atualizado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Atualizar(TipoContato item)
         {
@@ -67,7 +67,7 @@ namespace GCAC.Core.Servicos.Participante
         /// <summary>
         /// Exclui um tipo de contato do participante
         /// </summary>
-        /// <param name="item">Tipo de contato do participante a ser excluída</param>
+        /// <param name="item">Tipo de contato do participante a ser excluído</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Excluir(TipoContato item)
         {
