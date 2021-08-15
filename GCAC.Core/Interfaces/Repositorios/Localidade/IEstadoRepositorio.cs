@@ -30,6 +30,13 @@ namespace GCAC.Core.Interfaces.Repositorios.Localidade
         Task<IEnumerable<Estado>> SelecionarPorPais(long id);
 
         /// <summary>
+        /// Seleciona um estado pela sua sigla
+        /// </summary>
+        /// <param name="sigla">Sigla do estado</param>
+        /// <returns>Registro do estado solicitado</returns>
+        Task<Estado> SelecionarPorSigla(string sigla);
+
+        /// <summary>
         /// Cria um novo estado
         /// </summary>
         /// <param name="item">Novo estado a ser criado</param>

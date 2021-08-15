@@ -1,31 +1,50 @@
 ﻿using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using CorreiosService;
 using System.Linq;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using CorreiosService;
 using GCAC.Infrastructure.Contextos;
+using GCAC.Core.Interfaces.Servicos.Localidade;
 
 namespace GCAC.API.Services.Controllers
 {
-    [Route("api/services/[controller]")]
+    /// <summary>
+    /// Controlador para acessar a api dos correios
+    /// </summary>
     [ApiController]
+    [Produces("application/json")]
+    [Route("api/services/[controller]")]
     public class CorreiosController : ControllerBase
     {
-        private readonly Context _context;
+        private readonly IEstadoServico _estadoServico;
+        private readonly IMunicipioServico _municipioServico;
 
-        public CorreiosController(Context context)
+        /// <summary>
+        /// Construtor do controlador
+        /// </summary>
+        /// <param name="estadoServico">Serviços da entidade Estado</param>
+        /// <param name="municipioServico">Serviços da entidade Municipio</param>
+        public CorreiosController(IEstadoServico estadoServico, IMunicipioServico municipioServico)
         {
-            _context = context;
+            _estadoServico = estadoServico;
+            _municipioServico = municipioServico;
         }
 
-        [HttpGet("{id}")]
-        public async Task<ActionResult<consultaCEPResponse>> GetEndereco(string id)
+        /// <summary>
+        /// Seleciona um endereço pelo CEP
+        /// </summary>
+        /// <param name="cep">CEP do endereço solicitado</param>
+        /// <returns>Endereço solicitado</returns>
+        [HttpGet]
+        [Route("selecionar-por-cep")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<ActionResult<consultaCEPResponse>> SelecionarPorCEP(string cep)
         {
             var correiosServico = new AtendeClienteClient();
-            var endereco = await correiosServico.consultaCEPAsync(id);
-            var estado = await _context.Estado.Where(e => e.Sigla == endereco.@return.uf).FirstOrDefaultAsync();
-            var municipio = estado != null ? await _context.Municipio.Where(m => m.EstadoId == estado.Id && m.Nome == endereco.@return.cidade).SingleOrDefaultAsync() : null;
-            
+            var endereco = await correiosServico.consultaCEPAsync(cep);
+            var estado = await _estadoServico.SelecionarPorSigla(endereco.@return.uf);
+            var municipio = estado != null ? await _municipioServico.SelecionarPorEstadoEMunicipio(estado.Id, endereco.@return.cidade) : null;
+
             endereco.@return.uf = estado != null ? estado.Id.ToString() : endereco.@return.uf;
             endereco.@return.cidade = municipio != null ? municipio.Id.ToString() : endereco.@return.cidade;
 

@@ -57,6 +57,16 @@ namespace GCAC.Infrastructure.Repositorios.Localidade
         }
 
         /// <summary>
+        /// Seleciona um estado pela sua sigla
+        /// </summary>
+        /// <param name="sigla">Sigla do estado</param>
+        /// <returns>Registro do estado solicitado</returns>
+        public async Task<Estado> SelecionarPorSigla(string sigla)
+        {
+            return await _context.Estado.Where(x => x.Sigla == sigla).FirstOrDefaultAsync();
+        }
+
+        /// <summary>
         /// Cria um novo estado
         /// </summary>
         /// <param name="item">Novo estado a ser criado</param>
