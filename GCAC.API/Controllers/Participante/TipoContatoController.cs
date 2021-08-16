@@ -13,7 +13,7 @@ namespace GCAC.API.Controllers.Participante
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/localidade/[controller]")]
+    [Route("api/participante/tipo-contato")]
     public class TipoContatoController : ControllerBase
     {
         private readonly ITipoContatoServico _tipoContatoServico;

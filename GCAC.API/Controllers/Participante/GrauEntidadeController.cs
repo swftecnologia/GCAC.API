@@ -13,7 +13,7 @@ namespace GCAC.API.Controllers.Participante
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/localidade/[controller]")]
+    [Route("api/participante/grau-entidade")]
     public class GrauEntidadeController : ControllerBase
     {
         private readonly IGrauEntidadeServico _grauEntidadeServico;

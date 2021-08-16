@@ -13,7 +13,7 @@ namespace GCAC.API.Controllers.Participante
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/localidade/[controller]")]
+    [Route("api/participante/representante-legal")]
     public class RepresentanteLegalController : ControllerBase
     {
         private readonly IRepresentanteLegalServico _representanteLegalServico;
