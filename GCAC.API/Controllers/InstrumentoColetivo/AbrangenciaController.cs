@@ -13,7 +13,7 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/instrumento-coletivo/[controller]")]
+    [Route("api/instrumento-coletivo/abrangencia")]
     public class AbrangenciaController : ControllerBase
     {
         private readonly IAbrangenciaServico _abrangenciaServico;

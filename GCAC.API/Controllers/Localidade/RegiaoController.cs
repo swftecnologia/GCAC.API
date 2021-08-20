@@ -13,7 +13,7 @@ namespace GCAC.API.Controllers.Localidade
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/localidade/[controller]")]
+    [Route("api/localidade/regiao")]
     public class RegiaoController : ControllerBase
     {
         private readonly IRegiaoServico _regiaoServico;
@@ -71,7 +71,7 @@ namespace GCAC.API.Controllers.Localidade
         {
             if (await _regiaoServico.ExistePorDescricao(itemDTO.Descricao))
             {
-                return NotFound("Não foi possível realizar a solicitação: Região já cadastrado.");
+                return NotFound("Não foi possível realizar a solicitação: Região já cadastrada.");
             }
 
             var item = itemDTO.AsEntitie();
@@ -93,7 +93,7 @@ namespace GCAC.API.Controllers.Localidade
         {
             if (await _regiaoServico.ExistePorDescricao(itemDTO.Descricao, (long)itemDTO.Id))
             {
-                return BadRequest("Não foi possível realizar a solicitação: Região já cadastrado.");
+                return BadRequest("Não foi possível realizar a solicitação: Região já cadastrada.");
             }
 
             var item = itemDTO.AsEntitie();
