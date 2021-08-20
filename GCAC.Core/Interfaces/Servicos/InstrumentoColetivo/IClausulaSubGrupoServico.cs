@@ -23,6 +23,13 @@ namespace GCAC.Core.Interfaces.Servicos.InstrumentoColetivo
         Task<ClausulaSubGrupo> SelecionarPorId(long id);
 
         /// <summary>
+        /// Seleciona todos os sub-grupos da clásula pertencentes a um grupo da cláusula
+        /// </summary>
+        /// <param name="id">Identificador único do grupo da cláusula</param>
+        /// <returns>Lista de sub-grupos da cláusula pertencentes a um grupo da cláusula</returns>
+        Task<IEnumerable<ClausulaSubGrupo>> SelecionarPorClausulaGrupo(long id);
+
+        /// <summary>
         /// Cria um novo sub-grupo do grupo da claúsula
         /// </summary>
         /// <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>

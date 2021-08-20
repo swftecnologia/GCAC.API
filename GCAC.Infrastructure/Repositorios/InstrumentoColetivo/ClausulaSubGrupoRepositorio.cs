@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using GCAC.Core.Entidades.InstrumentoColetivo;
 using GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo;
@@ -43,6 +44,16 @@ namespace GCAC.Infrastructure.Repositorios.InstrumentoColetivo
         public async Task<ClausulaSubGrupo> SelecionarPorId(long id)
         {
             return await _context.ClausulaSubGrupo.FindAsync(id);
+        }
+
+        /// <summary>
+        /// Seleciona todos os sub-grupos da clásula pertencentes a um grupo da cláusula
+        /// </summary>
+        /// <param name="id">Identificador único do grupo da cláusula</param>
+        /// <returns>Lista de sub-grupos da cláusula pertencentes a um grupo da cláusula</returns>
+        public async Task<IEnumerable<ClausulaSubGrupo>> SelecionarPorClausulaGrupo(long id)
+        {
+            return await _context.ClausulaSubGrupo.Where(x => x.ClausulaGrupoId == id).ToListAsync();
         }
 
         /// <summary>

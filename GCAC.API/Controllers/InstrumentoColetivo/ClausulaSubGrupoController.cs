@@ -13,7 +13,7 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/instrumento-coletivo/[controller]")]
+    [Route("api/instrumento-coletivo/clausula-sub-grupo")]
     public class ClausulaSubGrupoController : ControllerBase
     {
         private readonly IClausulaSubGrupoServico _clausulaSubGrupoServico;
@@ -57,6 +57,19 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
             }
 
             return item;
+        }
+
+        /// <summary>
+        /// Lista todos os sub-grupos da clásula para um determinado grupo da cláusula
+        /// </summary>
+        /// <param name="id">Identificador único do grupo da cláusula</param>
+        /// <returns>Lista de sub-grupos da clásula para um determinado grupo da cláusula</returns>
+        [HttpGet]
+        [Route("selecionar-por-clausula-grupo")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IEnumerable<ClausulaSubGrupo>> SelecionarPorClausulaGrupo(long id)
+        {
+            return await _clausulaSubGrupoServico.SelecionarPorClausulaGrupo(id);
         }
 
         /// <summary>

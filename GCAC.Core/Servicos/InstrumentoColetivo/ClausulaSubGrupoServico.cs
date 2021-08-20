@@ -45,6 +45,16 @@ namespace GCAC.Core.Servicos.InstrumentoColetivo
         }
 
         /// <summary>
+        /// Seleciona todos os sub-grupos da clásula pertencentes a um grupo da cláusula
+        /// </summary>
+        /// <param name="id">Identificador único do grupo da cláusula</param>
+        /// <returns>Lista de sub-grupos da cláusula pertencentes a um grupo da cláusula</returns>
+        public async Task<IEnumerable<ClausulaSubGrupo>> SelecionarPorClausulaGrupo(long id)
+        {
+            return await _clausulaSubGrupoRepositorio.SelecionarPorClausulaGrupo(id);
+        }
+
+        /// <summary>
         /// Cria um novo sub-grupo do grupo da claúsula
         /// </summary>
         /// <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>
