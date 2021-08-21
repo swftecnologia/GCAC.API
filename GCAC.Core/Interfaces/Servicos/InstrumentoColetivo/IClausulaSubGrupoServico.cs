@@ -10,16 +10,16 @@ namespace GCAC.Core.Interfaces.Servicos.InstrumentoColetivo
     public interface IClausulaSubGrupoServico
     {
         /// <summary>
-        /// Seleciona todos os sub-grupos do grupo da claúsula
+        /// Seleciona todos os sub-grupos do grupo da cláusula
         /// </summary>
-        /// <returns>Lista de sub-grupos do grupo da claúsula</returns>
+        /// <returns>Lista de sub-grupos do grupo da cláusula</returns>
         Task<IEnumerable<ClausulaSubGrupo>> SelecionarTodos();
 
         /// <summary>
-        /// Seleciona um sub-grupo do grupo da claúsula pelo seu identificador
+        /// Seleciona um sub-grupo do grupo da cláusula pelo seu identificador
         /// </summary>
-        /// <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-        /// <returns>Registro do sub-grupo do grupo da claúsula solicitada</returns>
+        /// <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+        /// <returns>Registro do sub-grupo do grupo da cláusula solicitada</returns>
         Task<ClausulaSubGrupo> SelecionarPorId(long id);
 
         /// <summary>
@@ -30,39 +30,39 @@ namespace GCAC.Core.Interfaces.Servicos.InstrumentoColetivo
         Task<IEnumerable<ClausulaSubGrupo>> SelecionarPorClausulaGrupo(long id);
 
         /// <summary>
-        /// Cria um novo sub-grupo do grupo da claúsula
+        /// Cria um novo sub-grupo do grupo da cláusula
         /// </summary>
-        /// <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>
+        /// <param name="item">Novo sub-grupo do grupo da cláusula a ser criado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         Task<int> Inserir(ClausulaSubGrupo item);
 
         /// <summary>
-        /// Atualiza um sub-grupo do grupo da claúsula
+        /// Atualiza um sub-grupo do grupo da cláusula
         /// </summary>
-        /// <param name="item">Sub-Grupo do grupo da claúsula a ser atualizado</param>
+        /// <param name="item">Sub-Grupo do grupo da cláusula a ser atualizado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         Task<int> Atualizar(ClausulaSubGrupo item);
 
         /// <summary>
-        /// Exclui um sub-grupo do grupo da claúsula
+        /// Exclui um sub-grupo do grupo da cláusula
         /// </summary>
-        /// <param name="item">Sub-Grupo do grupo da claúsula a ser excluído</param>
+        /// <param name="item">Sub-Grupo do grupo da cláusula a ser excluído</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         Task<int> Excluir(ClausulaSubGrupo item);
 
         /// <summary>
-        /// Verifica se o sub-grupo do grupo da claúsula existe por descrição
+        /// Verifica se o sub-grupo do grupo da cláusula existe por descrição
         /// </summary>
-        /// <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-        /// <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        /// <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+        /// <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         Task<bool> ExistePorDescricao(string descricao);
 
         /// <summary>
-        /// Verifica se o sub-grupo do grupo da claúsula existe por descrição para um identificador diferente do sub-grupo do grupo da claúsula a ser alterado
+        /// Verifica se o sub-grupo do grupo da cláusula existe por descrição para um identificador diferente do sub-grupo do grupo da cláusula a ser alterado
         /// </summary>
-        /// <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-        /// <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-        /// <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        /// <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+        /// <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+        /// <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         Task<bool> ExistePorDescricao(string descricao, long id);
     }
 }
