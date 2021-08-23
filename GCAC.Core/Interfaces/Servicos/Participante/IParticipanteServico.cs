@@ -22,6 +22,13 @@ namespace GCAC.Core.Interfaces.Servicos.Participante
         Task<Entidades.Participante.Participante> SelecionarPorId(long id);
 
         /// <summary>
+        /// Seleciona todos os particpantes pertencentes a um tipo de pessoa
+        /// </summary>
+        /// <param name="id">Identificador único do tipo de pessoa</param>
+        /// <returns>Lista de particpantes pertencentes a um tipo de pessoa</returns>
+        Task<IEnumerable<Entidades.Participante.Participante>> SelecionarPorTipoPessoa(long id);
+
+        /// <summary>
         /// Cria um novo participante
         /// </summary>
         /// <param name="item">Novo participante a ser criado</param>

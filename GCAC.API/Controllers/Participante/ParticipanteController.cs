@@ -59,6 +59,19 @@ namespace GCAC.API.Controllers.Participante
         }
 
         /// <summary>
+        /// Lista todos os particpantes de um determinado tipo de pessoa
+        /// </summary>
+        /// <param name="id">Identificador único do tipo de pessoa</param>
+        /// <returns>Lista de particpantes de um determinado tipo de pessoa</returns>
+        [HttpGet]
+        [Route("selecionar-por-tipo-pessoa")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IEnumerable<Core.Entidades.Participante.Participante>> SelecionarPorTipoPessoa(long id)
+        {
+            return await _participanteServico.SelecionarPorTipoPessoa(id);
+        }
+
+        /// <summary>
         /// Cria um novo participante
         /// </summary>
         /// <param name="itemDTO">Novo participante a ser criado</param>

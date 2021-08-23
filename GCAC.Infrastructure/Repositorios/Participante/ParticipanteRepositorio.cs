@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using GCAC.Core.Entidades.Participante;
 using GCAC.Core.Interfaces.Repositorios.Participante;
@@ -43,6 +44,16 @@ namespace GCAC.Infrastructure.Repositorios.Participante
         public async Task<Core.Entidades.Participante.Participante> SelecionarPorId(long id)
         {
             return await _context.Participante.FindAsync(id);
+        }
+
+        /// <summary>
+        /// Seleciona todos os particpantes pertencentes a um tipo de pessoa
+        /// </summary>
+        /// <param name="id">Identificador único do tipo de pessoa</param>
+        /// <returns>Lista de particpantes pertencentes a um tipo de pessoa</returns>
+        public async Task<IEnumerable<Core.Entidades.Participante.Participante>> SelecionarPorTipoPessoa(long id)
+        {
+            return await _context.Participante.Where(x => x.TipoPessoaId == id).ToListAsync();
         }
 
         /// <summary>
