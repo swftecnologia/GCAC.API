@@ -78,11 +78,6 @@
         public string Numero { get; init; }
 
         /// <summary>
-        /// Estado do participante
-        /// </summary>
-        public long EstadoId { get; init; }
-
-        /// <summary>
         /// Município do participante
         /// </summary>
         public long MunicipioId { get; init; }

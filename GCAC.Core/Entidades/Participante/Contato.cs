@@ -13,14 +13,29 @@
         }
 
         /// <summary>
-        /// Identificador único do participante (PK)
+        /// Identificador único do contato do participante (PK)
+        /// </summary>
+        public long Id { get; init; }
+
+        /// <summary>
+        /// Identificador único do participante
         /// </summary>
         public long ParticipanteId { get; init; }
 
         /// <summary>
-        /// Identificador único do tipo de contato do participante (PK)
+        /// Participante que possui o contato
+        /// </summary>
+        public Participante Participante { get; init; }
+
+        /// <summary>
+        /// Identificador único do tipo de contato do participante
         /// </summary>
         public long TipoContatoId { get; init; }
+
+        /// <summary>
+        /// Tipo de contato do participante
+        /// </summary>
+        public TipoContato TipoContato { get; init; }
 
         /// <summary>
         /// Contato do participante

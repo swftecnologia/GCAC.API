@@ -157,7 +157,9 @@ namespace GCAC.Infrastructure.Contextos
             modelBuilder.Entity<Contato>(entity =>
             {
                 entity.ToTable("Contato", schema: "Participante");
-                entity.HasKey(e => new { e.ParticipanteId, e.TipoContatoId }).HasName("PK_Contato_ParticipanteId_TipoContatoId");
+                entity.HasKey(e => new { e.Id }).HasName("PK_Contato_Id");
+                entity.HasOne(e => e.Participante).WithMany(e => e.Contatos).HasForeignKey(e => e.ParticipanteId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_Contato_Participante");
+                entity.HasOne(e => e.TipoContato).WithMany(e => e.Contatos).HasForeignKey(e => e.TipoContatoId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_Contato_TipoContato");
             });
 
             modelBuilder.Entity<Funcao>(entity =>
@@ -185,6 +187,12 @@ namespace GCAC.Infrastructure.Contextos
             {
                 entity.ToTable("Participante", schema: "Participante");
                 entity.HasKey(e => e.Id).HasName("PK_Participante_Id");
+                entity.HasOne(e => e.Grupo).WithMany(e => e.Participantes).HasForeignKey(e => e.GrupoId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_Participante_Grupo");
+                entity.HasOne(e => e.Funcao).WithMany(e => e.Participantes).HasForeignKey(e => e.FuncaoId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_Participante_Funcao");
+                entity.HasOne(e => e.RepresentanteLegal).WithMany(e => e.Participantes).HasForeignKey(e => e.RepresentanteLegalId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_Participante_RepresentanteLegal");
+                entity.HasOne(e => e.GrauEntidade).WithMany(e => e.Participantes).HasForeignKey(e => e.GrauEntidadeId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_Participante_GrauEntidade");
+                entity.HasOne(e => e.Municipio).WithMany(e => e.Participantes).HasForeignKey(e => e.MunicipioId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_Participante_Municipio");
+                entity.HasOne(e => e.ParticipanteMatriz).WithMany(e => e.Participantes).HasForeignKey(e => e.ParticipanteId).OnDelete(DeleteBehavior.ClientSetNull).HasConstraintName("FK_Participante_Participante");
             });
 
             modelBuilder.Entity<RepresentanteLegal>(entity =>

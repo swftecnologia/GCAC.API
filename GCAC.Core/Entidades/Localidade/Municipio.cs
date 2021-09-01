@@ -1,4 +1,6 @@
-﻿namespace GCAC.Core.Entidades.Localidade
+﻿using System.Collections.Generic;
+
+namespace GCAC.Core.Entidades.Localidade
 {
     /// <summary>
     /// Entidade para representar um município
@@ -26,5 +28,10 @@
         /// Identificador único do estado ao qual o município pertence
         /// </summary>
         public long EstadoId { get; init; }
+
+        // <summary>
+        /// Relacionamento entre município do participante e participante
+        // </summary>
+        public virtual ICollection<Participante.Participante> Participantes { get; set; }
     }
 }

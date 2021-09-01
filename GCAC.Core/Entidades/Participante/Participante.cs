@@ -1,4 +1,7 @@
-﻿namespace GCAC.Core.Entidades.Participante
+﻿using GCAC.Core.Entidades.Localidade;
+using System.Collections.Generic;
+
+namespace GCAC.Core.Entidades.Participante
 {
     /// <summary>
     /// Entidade para representar um participante
@@ -78,19 +81,24 @@
         public string Numero { get; init; }
 
         /// <summary>
-        /// Estado do participante
-        /// </summary>
-        public long EstadoId { get; init; }
-
-        /// <summary>
         /// Município do participante
         /// </summary>
         public long MunicipioId { get; init; }
 
         /// <summary>
+        /// Município do participante
+        /// </summary>
+        public Municipio Municipio { get; init; }
+
+        /// <summary>
         /// Participante matriz do participante
         /// </summary>
         public long? ParticipanteId { get; init; }
+
+        /// <summary>
+        /// Participante matriz do participante
+        /// </summary>
+        public Participante ParticipanteMatriz { get; init; }
 
         /// <summary>
         /// Tipo de pessoa do participante
@@ -103,9 +111,19 @@
         public long? GrupoId { get; init; }
 
         /// <summary>
+        /// Grupo do participante
+        /// </summary>
+        public Grupo Grupo { get; init; }
+
+        /// <summary>
         /// Função do participante
         /// </summary>
         public long? FuncaoId { get; init; }
+
+        /// <summary>
+        /// Função do participante
+        /// </summary>
+        public Funcao Funcao { get; init; }
 
         /// <summary>
         /// Representante legal do participante
@@ -113,8 +131,28 @@
         public long? RepresentanteLegalId { get; init; }
 
         /// <summary>
+        /// Representante legal do participante
+        /// </summary>
+        public RepresentanteLegal RepresentanteLegal { get; init; }
+
+        /// <summary>
         /// Grau da entidade do participante
         /// </summary>
         public long? GrauEntidadeId { get; init; }
+
+        /// <summary>
+        /// Grau da entidade do participante
+        /// </summary>
+        public GrauEntidade GrauEntidade { get; init; }
+
+        // <summary>
+        /// Relacionamento entre participante matriz e participante
+        // </summary>
+        public virtual ICollection<Participante> Participantes { get; set; }
+
+        // <summary>
+        /// Relacionamento entre contato e participante que possui o contato
+        // </summary>
+        public virtual ICollection<Contato> Contatos { get; set; }
     }
 }

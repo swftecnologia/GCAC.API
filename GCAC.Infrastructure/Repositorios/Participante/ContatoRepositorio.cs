@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using GCAC.Core.Entidades.Participante;
 using GCAC.Core.Interfaces.Repositorios.Participante;
 using GCAC.Infrastructure.Contextos;
+using System.Linq;
 
 namespace GCAC.Infrastructure.Repositorios.Participante
 {
@@ -43,6 +44,16 @@ namespace GCAC.Infrastructure.Repositorios.Participante
         public async Task<Contato> SelecionarPorId(long id)
         {
             return await _context.Contato.FindAsync(id);
+        }
+
+        /// <summary>
+        /// Seleciona todos os contatos pertencentes a um participante
+        /// </summary>
+        /// <param name="id">Identificador único do participante</param>
+        /// <returns>Lista de contatos pertencentes a um participante</returns>
+        public async Task<IEnumerable<Contato>> SelecionarPorParticipante(long id)
+        {
+            return await _context.Contato.Include(x => x.Participante).Include(x => x.TipoContato).Where(x => x.ParticipanteId == id).ToListAsync();
         }
 
         /// <summary>

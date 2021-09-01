@@ -64,7 +64,7 @@ namespace GCAC.Infrastructure.Repositorios.Localidade
         /// <returns>Município pertencente a um estado</returns>
         public async Task<Municipio> SelecionarPorEstadoEMunicipio(long id, string municipio)
         {
-            return await _context.Municipio.Where(x => x.EstadoId == id && x.Nome == municipio).FirstOrDefaultAsync();
+            return await _context.Municipio.Where(x => x.Nome == municipio).FirstOrDefaultAsync();
         }
 
         /// <summary>

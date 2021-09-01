@@ -60,6 +60,19 @@ namespace GCAC.API.Controllers.Participante
         }
 
         /// <summary>
+        /// Lista todos os contatos para um determinado participante
+        /// </summary>
+        /// <param name="id">Identificador único do participante</param>
+        /// <returns>Lista de contatos para um determinado participante</returns>
+        [HttpGet]
+        [Route("selecionar-por-participante")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IEnumerable<Contato>> SelecionarPorParticipante(long id)
+        {
+            return await _contatoServico.SelecionarPorParticipante(id);
+        }
+
+        /// <summary>
         /// Cria um novo contato do participante
         /// </summary>
         /// <param name="itemDTO">Novo contato do participante a ser criado</param>

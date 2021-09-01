@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using GCAC.Core.Interfaces.Servicos.Participante;
 using GCAC.Core.Extensions.Participante;
 using GCAC.Core.DTOs.Participante;
+using System;
 
 namespace GCAC.API.Controllers.Participante
 {
@@ -81,7 +82,7 @@ namespace GCAC.API.Controllers.Participante
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
         public async Task<ActionResult<Core.Entidades.Participante.Participante>> Inserir(ParticipanteDTO itemDTO)
         {
-            if (await _participanteServico.ExistePorCNPJ(itemDTO.CNPJ) || await _participanteServico.ExistePorCPF(itemDTO.CPF))
+            if ((!String.IsNullOrEmpty(itemDTO.CNPJ) && await _participanteServico.ExistePorCNPJ(itemDTO.CNPJ)) || (!String.IsNullOrEmpty(itemDTO.CPF) && await _participanteServico.ExistePorCPF(itemDTO.CPF)))
             {
                 return NotFound("Não foi possível realizar a solicitação: Participante já cadastrado.");
             }
@@ -103,7 +104,7 @@ namespace GCAC.API.Controllers.Participante
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Put))]
         public async Task<IActionResult> Atualizar(ParticipanteDTO itemDTO)
         {
-            if (await _participanteServico.ExistePorCNPJ(itemDTO.CNPJ) || await _participanteServico.ExistePorCPF(itemDTO.CPF))
+            if ((!String.IsNullOrEmpty(itemDTO.CNPJ) && await _participanteServico.ExistePorCNPJ(itemDTO.CNPJ, (long)itemDTO.Id)) || (!String.IsNullOrEmpty(itemDTO.CPF) && await _participanteServico.ExistePorCPF(itemDTO.CPF, (long)itemDTO.Id)))
             {
                 return BadRequest("Não foi possível realizar a solicitação: Participante já cadastrado.");
             }

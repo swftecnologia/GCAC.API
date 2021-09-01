@@ -45,6 +45,16 @@ namespace GCAC.Core.Servicos.Participante
         }
 
         /// <summary>
+        /// Seleciona todos os contatos pertencentes a um participante
+        /// </summary>
+        /// <param name="id">Identificador único do participante</param>
+        /// <returns>Lista de contatos pertencentes a um participante</returns>
+        public async Task<IEnumerable<Contato>> SelecionarPorParticipante(long id)
+        {
+            return await _contatoRepositorio.SelecionarPorParticipante(id);
+        }
+
+        /// <summary>
         /// Cria um novo contato do participante
         /// </summary>
         /// <param name="item">Novo contato do participante a ser criado</param>

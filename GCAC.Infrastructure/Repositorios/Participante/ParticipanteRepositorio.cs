@@ -53,7 +53,14 @@ namespace GCAC.Infrastructure.Repositorios.Participante
         /// <returns>Lista de particpantes pertencentes a um tipo de pessoa</returns>
         public async Task<IEnumerable<Core.Entidades.Participante.Participante>> SelecionarPorTipoPessoa(long id)
         {
-            return await _context.Participante.Where(x => x.TipoPessoaId == id).ToListAsync();
+            return await _context.Participante
+                .Include(x => x.Grupo)
+                .Include(x => x.Funcao)
+                .Include(x => x.RepresentanteLegal)
+                .Include(x => x.GrauEntidade)
+                .Include(x => x.Municipio)
+                .Include(x => x.ParticipanteMatriz)
+                .Where(x => x.TipoPessoaId == id).ToListAsync();
         }
 
         /// <summary>

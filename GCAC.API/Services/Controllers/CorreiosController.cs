@@ -42,10 +42,11 @@ namespace GCAC.API.Services.Controllers
         {
             var correiosServico = new AtendeClienteClient();
             var endereco = await correiosServico.consultaCEPAsync(cep);
-            var estado = await _estadoServico.SelecionarPorSigla(endereco.@return.uf);
-            var municipio = estado != null ? await _municipioServico.SelecionarPorEstadoEMunicipio(estado.Id, endereco.@return.cidade) : null;
+            //var estado = await _estadoServico.SelecionarPorSigla(endereco.@return.uf);
+            //var municipio = estado != null ? await _municipioServico.SelecionarPorEstadoEMunicipio(estado.Id, endereco.@return.cidade) : null;
+            var municipio = await _municipioServico.SelecionarPorEstadoEMunicipio(0, endereco.@return.cidade);
 
-            endereco.@return.uf = estado != null ? estado.Id.ToString() : endereco.@return.uf;
+            //endereco.@return.uf = estado != null ? estado.Id.ToString() : endereco.@return.uf;
             endereco.@return.cidade = municipio != null ? municipio.Id.ToString() : endereco.@return.cidade;
 
             return endereco;
