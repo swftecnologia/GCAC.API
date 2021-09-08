@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Threading.Tasks;
 using GCAC.Core.Entidades.Localidade;
 
@@ -35,6 +37,13 @@ namespace GCAC.Core.Interfaces.Repositorios.Localidade
         /// <param name="sigla">Sigla do estado</param>
         /// <returns>Registro do estado solicitado</returns>
         Task<Estado> SelecionarPorSigla(string sigla);
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="predicate"></param>
+        /// <returns></returns>
+        Task<IEnumerable<Estado>> SelecionarPorCriterio(Expression<Func<Estado, bool>> predicate);
 
         /// <summary>
         /// Cria um novo estado

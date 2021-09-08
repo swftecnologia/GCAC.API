@@ -18,18 +18,18 @@
         public long? Id { get; init; }
 
         /// <summary>
+        /// Contato do participante
+        /// </summary>
+        public string ContatoParticipante { get; init; }
+
+        /// <summary>
         /// Identificador único do participante
         /// </summary>
-        public long? ParticipanteId { get; init; }
+        public long ParticipanteId { get; init; }
 
         /// <summary>
         /// Identificador único do tipo de contato do participante
         /// </summary>
-        public long? TipoContatoId { get; init; }
-
-        /// <summary>
-        /// Contato do participante
-        /// </summary>
-        public string ContatoParticipante { get; init; }
+        public long TipoContatoId { get; init; }
     }
 }

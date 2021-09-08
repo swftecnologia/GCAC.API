@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using GCAC.Core.Entidades.Participante;
 using GCAC.Core.Interfaces.Repositorios.Participante;
@@ -10,7 +9,7 @@ namespace GCAC.Infrastructure.Repositorios.Participante
     /// <summary>
     /// Repositório para a entidade GrauEntidade
     /// </summary>
-    public class GrauEntidadeRepositorio : IGrauEntidadeRepositorio
+    public class GrauEntidadeRepositorio : BaseRepositorio<GrauEntidade>, IGrauEntidadeRepositorio
     {
         /// <summary>
         /// Contexto da aplicação
@@ -21,65 +20,9 @@ namespace GCAC.Infrastructure.Repositorios.Participante
         /// Construtor
         /// </summary>
         /// <param name="context">Contexto da aplicação</param>
-        public GrauEntidadeRepositorio(Context context)
+        public GrauEntidadeRepositorio(Context context) : base(context)
         {
             _context = context;
-        }
-
-        /// <summary>
-        /// Seleciona todos os graus da entidade do participante
-        /// </summary>
-        /// <returns>Lista de graus da entidade do participante</returns>
-        public async Task<IEnumerable<GrauEntidade>> SelecionarTodos()
-        {
-            return await _context.GrauEntidade.ToListAsync();
-        }
-
-        /// <summary>
-        /// Seleciona um grau da entidade do participante pelo seu identificador
-        /// </summary>
-        /// <param name="id">Identificador único do grau da entidade do participante</param>
-        /// <returns>Registro do grau da entidade do participante solicitado</returns>
-        public async Task<GrauEntidade> SelecionarPorId(long id)
-        {
-            return await _context.GrauEntidade.FindAsync(id);
-        }
-
-        /// <summary>
-        /// Cria um novo grau da entidade do participante
-        /// </summary>
-        /// <param name="item">Novo grau da entidade do participante a ser criado</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        public async Task<int> Inserir(GrauEntidade item)
-        {
-            _context.ChangeTracker.Clear();
-            _context.GrauEntidade.Add(item);
-            return await _context.SaveChangesAsync();
-        }
-
-        /// <summary>
-        /// Atualiza um grau da entidade do participante
-        /// </summary>
-        /// <param name="item">Grau da entidade do participante a ser atualizado</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        public async Task<int> Atualizar(GrauEntidade item)
-        {
-            _context.ChangeTracker.Clear();
-            _context.GrauEntidade.Attach(item);
-            _context.Entry(item).State = EntityState.Modified;
-            return await _context.SaveChangesAsync();
-        }
-
-        /// <summary>
-        /// Exclui um grau da entidade do participante
-        /// </summary>
-        /// <param name="item">Grau da entidade do participante a ser excluído</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        public async Task<int> Excluir(GrauEntidade item)
-        {
-            _context.ChangeTracker.Clear();
-            _context.GrauEntidade.Remove(item);
-            return await _context.SaveChangesAsync();
         }
 
         /// <summary>

@@ -1,7 +1,7 @@
-﻿using GCAC.Core.Entidades.InstrumentoColetivo;
-using GCAC.Core.DTOs.InstrumentoColetivo;
+﻿using GCAC.Core.Entidades.Participante;
+using GCAC.Core.DTOs.Participante;
 
-namespace GCAC.Core.Extensions.InstrumentoColetivo
+namespace GCAC.Core.Extensions.Participante
 {
     /// <summary>
     /// Métodos extensivos da entidade Abrangencia

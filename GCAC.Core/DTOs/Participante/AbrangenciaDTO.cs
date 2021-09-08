@@ -1,21 +1,21 @@
-﻿namespace GCAC.Core.Entidades.InstrumentoColetivo
+﻿namespace GCAC.Core.DTOs.Participante
 {
     /// <summary>
-    /// Entidade para representar uma abrangência
+    /// DTO para representar uma abrangência
     /// </summary>
-    public record Abrangencia
+    public record AbrangenciaDTO
     {
         /// <summary>
         /// Construtor
         /// </summary>
-        public Abrangencia()
+        public AbrangenciaDTO()
         {
         }
 
         /// <summary>
-        /// Identificador único da abrangência (PK)
+        /// Identificador único da abrangência
         /// </summary>
-        public long Id { get; init; }
+        public long? Id { get; init; }
 
         /// <summary>
         /// Descrição da abrangência

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using GCAC.Core.Entidades.Participante;
 using GCAC.Core.Interfaces.Repositorios.Participante;
@@ -10,7 +9,7 @@ namespace GCAC.Infrastructure.Repositorios.Participante
     /// <summary>
     /// Repositório para a entidade Funcao
     /// </summary>
-    public class FuncaoRepositorio : IFuncaoRepositorio
+    public class FuncaoRepositorio : BaseRepositorio<Funcao>, IFuncaoRepositorio
     {
         /// <summary>
         /// Contexto da aplicação
@@ -21,65 +20,9 @@ namespace GCAC.Infrastructure.Repositorios.Participante
         /// Construtor
         /// </summary>
         /// <param name="context">Contexto da aplicação</param>
-        public FuncaoRepositorio(Context context)
+        public FuncaoRepositorio(Context context) : base(context)
         {
             _context = context;
-        }
-
-        /// <summary>
-        /// Seleciona todos as funções do participante
-        /// </summary>
-        /// <returns>Lista de funções do participante</returns>
-        public async Task<IEnumerable<Funcao>> SelecionarTodos()
-        {
-            return await _context.Funcao.ToListAsync();
-        }
-
-        /// <summary>
-        /// Seleciona uma função do participante pelo seu identificador
-        /// </summary>
-        /// <param name="id">Identificador único da função do participante</param>
-        /// <returns>Registro da função do participante solicitada</returns>
-        public async Task<Funcao> SelecionarPorId(long id)
-        {
-            return await _context.Funcao.FindAsync(id);
-        }
-
-        /// <summary>
-        /// Cria uma nova função do participante
-        /// </summary>
-        /// <param name="item">Nova função do participante a ser criada</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        public async Task<int> Inserir(Funcao item)
-        {
-            _context.ChangeTracker.Clear();
-            _context.Funcao.Add(item);
-            return await _context.SaveChangesAsync();
-        }
-
-        /// <summary>
-        /// Atualiza uma função do participante
-        /// </summary>
-        /// <param name="item">Funcao do participante a ser atualizada</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        public async Task<int> Atualizar(Funcao item)
-        {
-            _context.ChangeTracker.Clear();
-            _context.Funcao.Attach(item);
-            _context.Entry(item).State = EntityState.Modified;
-            return await _context.SaveChangesAsync();
-        }
-
-        /// <summary>
-        /// Exclui uma função do participante
-        /// </summary>
-        /// <param name="item">Funcao do participante a ser excluída</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        public async Task<int> Excluir(Funcao item)
-        {
-            _context.ChangeTracker.Clear();
-            _context.Funcao.Remove(item);
-            return await _context.SaveChangesAsync();
         }
 
         /// <summary>

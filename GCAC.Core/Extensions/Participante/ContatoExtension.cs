@@ -18,8 +18,8 @@ namespace GCAC.Core.Extensions.Participante
             return new Contato
             {
                 Id = item.Id == null ? 0 : (long)item.Id,
-                ParticipanteId = item.ParticipanteId == null ? 0 : (long)item.ParticipanteId,
-                TipoContatoId = item.TipoContatoId == null ? 0 : (long)item.TipoContatoId,
+                ParticipanteId = item.ParticipanteId,
+                TipoContatoId = item.TipoContatoId,
                 ContatoParticipante = item.ContatoParticipante
             };
         }

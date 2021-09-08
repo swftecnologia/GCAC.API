@@ -6,48 +6,14 @@ namespace GCAC.Core.Interfaces.Repositorios.Participante
     /// <summary>
     /// Interface de repositório para a entidade Participante
     /// </summary>
-    public interface IParticipanteRepositorio
+    public interface IParticipanteRepositorio : IBaseRepositorio<Entidades.Participante.Participante>
     {
-        /// <summary>
-        /// Seleciona todas os participantes
-        /// </summary>
-        /// <returns>Lista de participantes</returns>
-        Task<IEnumerable<Entidades.Participante.Participante>> SelecionarTodos();
-
-        /// <summary>
-        /// Seleciona um participante pelo seu identificador
-        /// </summary>
-        /// <param name="id">Identificador único do participante</param>
-        /// <returns>Registro do participante solicitado</returns>
-        Task<Entidades.Participante.Participante> SelecionarPorId(long id);
-
         /// <summary>
         /// Seleciona todos os particpantes pertencentes a um tipo de pessoa
         /// </summary>
         /// <param name="id">Identificador único do tipo de pessoa</param>
         /// <returns>Lista de particpantes pertencentes a um tipo de pessoa</returns>
         Task<IEnumerable<Entidades.Participante.Participante>> SelecionarPorTipoPessoa(long id);
-
-        /// <summary>
-        /// Cria um nova participante
-        /// </summary>
-        /// <param name="item">Nova participante a ser criado</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        Task<int> Inserir(Entidades.Participante.Participante item);
-
-        /// <summary>
-        /// Atualiza uma participante do participante
-        /// </summary>
-        /// <param name="item">Participante do participante a ser atualizado</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        Task<int> Atualizar(Entidades.Participante.Participante item);
-
-        /// <summary>
-        /// Exclui uma participante
-        /// </summary>
-        /// <param name="item">Participante a ser excluído</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitado</returns>
-        Task<int> Excluir(Entidades.Participante.Participante item);
 
         /// <summary>
         /// Verifica se o participante existe por CNPJ

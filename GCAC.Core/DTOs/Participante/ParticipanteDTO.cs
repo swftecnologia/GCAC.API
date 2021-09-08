@@ -53,39 +53,19 @@
         public string CAEPF { get; init; }
 
         /// <summary>
-        /// CEP do participante
-        /// </summary>
-        public string CEP { get; init; }
-
-        /// <summary>
-        /// Logradouro do participante
-        /// </summary>
-        public string Logradouro { get; init; }
-
-        /// <summary>
-        /// Bairro do participante
-        /// </summary>
-        public string Bairro { get; init; }
-
-        /// <summary>
-        /// Complemento do participante
-        /// </summary>
-        public string Complemento { get; init; }
-
-        /// <summary>
-        /// Numero do participante
-        /// </summary>
-        public string Numero { get; init; }
-
-        /// <summary>
-        /// Município do participante
-        /// </summary>
-        public long MunicipioId { get; init; }
-
-        /// <summary>
         /// Participante matriz do participante
         /// </summary>
         public long? ParticipanteId { get; init; }
+
+        /// <summary>
+        /// Abrangência do participante
+        /// </summary>
+        public long? AbrangenciaId { get; init; }
+
+        /// <summary>
+        /// Área geoeconômica do participante
+        /// </summary>
+        public long? AreaGeoeconomicaId { get; init; }
 
         /// <summary>
         /// Tipo de pessoa do participante

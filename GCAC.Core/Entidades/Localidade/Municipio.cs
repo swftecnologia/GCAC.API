@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using GCAC.Core.Entidades.Participante;
+using System.Collections.Generic;
 
 namespace GCAC.Core.Entidades.Localidade
 {
@@ -32,6 +33,6 @@ namespace GCAC.Core.Entidades.Localidade
         // <summary>
         /// Relacionamento entre município do participante e participante
         // </summary>
-        public virtual ICollection<Participante.Participante> Participantes { get; set; }
+        public virtual ICollection<Endereco> Endererecos { get; set; }
     }
 }

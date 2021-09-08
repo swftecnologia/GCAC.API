@@ -5,21 +5,14 @@ namespace GCAC.Core.Entidades.Participante
     /// <summary>
     /// Entidade para representar um grupo do participante
     /// </summary>
-    public record Grupo
+    public record Grupo : BaseEntidade
     {
         /// <summary>
-        /// Construtor
+        /// Construtor da entidade grupo do participante
         /// </summary>
         public Grupo()
         {
-            //Participantes = new HashSet<Participante>();
-            //Participante = new Participante();
         }
-
-        /// <summary>
-        /// Identificador único do grupo do participante (PK)
-        /// </summary>
-        public long Id { get; init; }
 
         /// <summary>
         /// Descrição do grupo do participante
@@ -27,8 +20,8 @@ namespace GCAC.Core.Entidades.Participante
         public string Descricao { get; init; }
 
         /// <summary>
-        /// Relacionamento entre grupo do participante e participantes
+        /// Relacionamento entre grupo do participante e participante
         /// </summary>
-        public virtual ICollection<Participante> Participantes { get; set; }
+        public virtual ICollection<Participante> Participantes { get; init; }
     }
 }

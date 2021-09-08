@@ -24,18 +24,14 @@ namespace GCAC.Core.Extensions.Participante
                 CPF = item.CPF,
                 Nome = item.Nome,
                 CAEPF = item.CAEPF,
-                CEP = item.CEP,
-                Logradouro = item.Logradouro,
-                Bairro = item.Bairro,
-                Complemento = item.Complemento,
-                Numero = item.Numero,
-                MunicipioId = item.MunicipioId,
                 ParticipanteId = item.ParticipanteId,
-                TipoPessoaId = item.TipoPessoaId,
-                GrupoId = item.GrupoId,
+                AbrangenciaId = item.AbrangenciaId,
+                AreaGeoeconomicaId = item.AreaGeoeconomicaId,
                 FuncaoId = item.FuncaoId,
+                GrauEntidadeId = item.GrauEntidadeId,
+                GrupoId = item.GrupoId,
                 RepresentanteLegalId = item.RepresentanteLegalId,
-                GrauEntidadeId = item.GrauEntidadeId
+                TipoPessoaId = item.TipoPessoaId
             };
         }
 
@@ -56,18 +52,14 @@ namespace GCAC.Core.Extensions.Participante
                 CPF = item.CPF,
                 Nome = item.Nome,
                 CAEPF = item.CAEPF,
-                CEP = item.CEP,
-                Logradouro = item.Logradouro,
-                Bairro = item.Bairro,
-                Complemento = item.Complemento,
-                Numero = item.Numero,
-                MunicipioId = item.MunicipioId,
                 ParticipanteId = item.ParticipanteId,
-                TipoPessoaId = item.TipoPessoaId,
-                GrupoId = item.GrupoId,
+                AbrangenciaId = item.AbrangenciaId,
+                AreaGeoeconomicaId = item.AreaGeoeconomicaId,
                 FuncaoId = item.FuncaoId,
-                RepresentanteLegalId = item.RepresentanteLegalId,
-                GrauEntidadeId = item.GrauEntidadeId
+                GrauEntidadeId = item.GrauEntidadeId,
+                GrupoId = item.GrupoId,
+                RepresentanteLegalId = item.RepresentanteLegalId,                
+                TipoPessoaId = item.TipoPessoaId
             };
         }
     }

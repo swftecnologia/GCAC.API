@@ -1,21 +1,21 @@
 ﻿namespace GCAC.Core.Entidades.Participante
 {
     /// <summary>
-    /// Entidade para representar um contato pertencente a um participante
+    /// Entidade para representar um contato do participante
     /// </summary>
-    public record Contato
+    public record Contato : BaseEntidade
     {
         /// <summary>
-        /// Construtor
+        /// Construtor da entidade contato do participante
         /// </summary>
         public Contato()
         {
         }
 
         /// <summary>
-        /// Identificador único do contato do participante (PK)
+        /// Valor do contato do participante
         /// </summary>
-        public long Id { get; init; }
+        public string ContatoParticipante { get; init; }
 
         /// <summary>
         /// Identificador único do participante
@@ -23,7 +23,7 @@
         public long ParticipanteId { get; init; }
 
         /// <summary>
-        /// Participante que possui o contato
+        /// Participante
         /// </summary>
         public Participante Participante { get; init; }
 
@@ -36,10 +36,5 @@
         /// Tipo de contato do participante
         /// </summary>
         public TipoContato TipoContato { get; init; }
-
-        /// <summary>
-        /// Contato do participante
-        /// </summary>
-        public string ContatoParticipante { get; init; }
     }
 }

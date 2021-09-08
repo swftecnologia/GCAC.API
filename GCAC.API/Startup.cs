@@ -28,6 +28,8 @@ using GCAC.Core.Interfaces.Servicos.Participante;
 using GCAC.Core.Servicos.Participante;
 using GCAC.Core.Interfaces.Repositorios.Participante;
 using GCAC.Infrastructure.Repositorios.Participante;
+using GCAC.Infrastructure.Repositorios;
+using GCAC.Core.Interfaces.Repositorios;
 
 namespace GCAC.API
 {
@@ -129,6 +131,7 @@ namespace GCAC.API
             services.AddScoped<IClausulaGrupoServico, ClausulaGrupoServico>();
             services.AddScoped<IClausulaServico, ClausulaServico>();
             services.AddScoped<IClausulaSubGrupoServico, ClausulaSubGrupoServico>();
+            services.AddScoped<IDocumentoServico, DocumentoServico>();
             services.AddScoped<IEntidadeSindicalServico, EntidadeSindicalServico>();
 
             #endregion
@@ -160,12 +163,14 @@ namespace GCAC.API
             //Repositórios
             #region Repositorios
 
+            services.AddScoped(typeof(IBaseRepositorio<>), typeof(BaseRepositorio<>));
             services.AddScoped<IAbrangenciaRepositorio, AbrangenciaRepositorio>();
             services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
             services.AddScoped<IClassificacaoRepositorio, ClassificacaoRepositorio>();
             services.AddScoped<IClausulaGrupoRepositorio, ClausulaGrupoRepositorio>();
             services.AddScoped<IClausulaRepositorio, ClausulaRepositorio>();
             services.AddScoped<IClausulaSubGrupoRepositorio, ClausulaSubGrupoRepositorio>();
+            services.AddScoped<IDocumentoRepositorio, DocumentoRepositorio>();
             services.AddScoped<IEntidadeSindicalRepositorio, EntidadeSindicalRepositorio>();
 
             #region Instrumento Coletivo

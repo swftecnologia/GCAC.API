@@ -87,22 +87,26 @@ namespace GCAC.Core.Servicos.Participante
         /// <summary>
         /// Verifica se o contato do participante existe
         /// </summary>
+        /// <param name="idParticipante">Identificador único do participante</param>
+        /// <param name="idTipoContato">Identificador único do tipo de contato do participante</param>
         /// <param name="contatoParticipante">Contato do participante</param>
         /// <returns>Valor indicando se o contato do participante existe ou não</returns>
-        public async Task<bool> ExistePorContatoParticipante(string contatoParticipante)
+        public async Task<bool> ExistePorContatoParticipante(long idParticipante, long idTipoContato, string contatoParticipante)
         {
-            return await _contatoRepositorio.ExistePorContatoParticipante(contatoParticipante);
+            return await _contatoRepositorio.ExistePorContatoParticipante(idParticipante, idTipoContato, contatoParticipante);
         }
 
         /// <summary>
         /// Verifica se o contato do participante existe para um identificador diferente do contato do participante a ser alterado
         /// </summary>
+        /// <param name="idParticipante">Identificador único do participante</param>
+        /// <param name="idTipoContato">Identificador único do tipo de contato do participante</param>
         /// <param name="id">Identificador único do contato do participante</param>
         /// <param name="contatoParticipante">Contato do participante</param>
         /// <returns>Valor indicando se o contato do participante existe ou não</returns>
-        public async Task<bool> ExistePorContatoParticipante(string contatoParticipante, long id)
+        public async Task<bool> ExistePorContatoParticipante(long idParticipante, long idTipoContato, string contatoParticipante, long id)
         {
-            return await _contatoRepositorio.ExistePorContatoParticipante(contatoParticipante, id);
+            return await _contatoRepositorio.ExistePorContatoParticipante(idParticipante, idTipoContato, contatoParticipante, id);
         }
     }
 }

@@ -1,10 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using GCAC.Core.Interfaces.Servicos.InstrumentoColetivo;
 using GCAC.Core.Extensions.InstrumentoColetivo;
-using GCAC.Core.Entidades.InstrumentoColetivo;
-using GCAC.Core.DTOs.InstrumentoColetivo;
+using GCAC.Core.Interfaces.Servicos.Participante;
+using GCAC.Core.Entidades.Participante;
+using GCAC.Core.DTOs.Participante;
+using GCAC.Core.Extensions.Participante;
 
 namespace GCAC.API.Controllers.InstrumentoColetivo
 {

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using GCAC.Core.Entidades.Participante;
 using GCAC.Core.Interfaces.Repositorios.Participante;
@@ -10,7 +9,7 @@ namespace GCAC.Infrastructure.Repositorios.Participante
     /// <summary>
     /// Repositório para a entidade RepresentanteLegal
     /// </summary>
-    public class RepresentanteLegalRepositorio : IRepresentanteLegalRepositorio
+    public class RepresentanteLegalRepositorio : BaseRepositorio<RepresentanteLegal>, IRepresentanteLegalRepositorio
     {
         /// <summary>
         /// Contexto da aplicação
@@ -21,65 +20,9 @@ namespace GCAC.Infrastructure.Repositorios.Participante
         /// Construtor
         /// </summary>
         /// <param name="context">Contexto da aplicação</param>
-        public RepresentanteLegalRepositorio(Context context)
+        public RepresentanteLegalRepositorio(Context context) : base(context)
         {
             _context = context;
-        }
-
-        /// <summary>
-        /// Seleciona todos os representantes legais do participante
-        /// </summary>
-        /// <returns>Lista de representantes legais do participante</returns>
-        public async Task<IEnumerable<RepresentanteLegal>> SelecionarTodos()
-        {
-            return await _context.RepresentanteLegal.ToListAsync();
-        }
-
-        /// <summary>
-        /// Seleciona um representante legal do participante pelo seu identificador
-        /// </summary>
-        /// <param name="id">Identificador único do representante legal do participante</param>
-        /// <returns>Registro do representante legal do participante solicitado</returns>
-        public async Task<RepresentanteLegal> SelecionarPorId(long id)
-        {
-            return await _context.RepresentanteLegal.FindAsync(id);
-        }
-
-        /// <summary>
-        /// Cria um novo representante legal do participante
-        /// </summary>
-        /// <param name="item">Novo representante legal do participante a ser criado</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        public async Task<int> Inserir(RepresentanteLegal item)
-        {
-            _context.ChangeTracker.Clear();
-            _context.RepresentanteLegal.Add(item);
-            return await _context.SaveChangesAsync();
-        }
-
-        /// <summary>
-        /// Atualiza um representante legal do participante
-        /// </summary>
-        /// <param name="item">Representante legal do participante a ser atualizado</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        public async Task<int> Atualizar(RepresentanteLegal item)
-        {
-            _context.ChangeTracker.Clear();
-            _context.RepresentanteLegal.Attach(item);
-            _context.Entry(item).State = EntityState.Modified;
-            return await _context.SaveChangesAsync();
-        }
-
-        /// <summary>
-        /// Exclui um representante legal do participante
-        /// </summary>
-        /// <param name="item">Representante legal do participante a ser excluído</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        public async Task<int> Excluir(RepresentanteLegal item)
-        {
-            _context.ChangeTracker.Clear();
-            _context.RepresentanteLegal.Remove(item);
-            return await _context.SaveChangesAsync();
         }
 
         /// <summary>

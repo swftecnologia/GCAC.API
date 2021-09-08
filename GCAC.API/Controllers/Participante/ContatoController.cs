@@ -82,9 +82,9 @@ namespace GCAC.API.Controllers.Participante
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
         public async Task<ActionResult<Contato>> Inserir(ContatoDTO itemDTO)
         {
-            if (await _contatoServico.ExistePorContatoParticipante(itemDTO.ContatoParticipante))
+            if (await _contatoServico.ExistePorContatoParticipante(itemDTO.ParticipanteId, itemDTO.TipoContatoId, itemDTO.ContatoParticipante))
             {
-                return NotFound("Não foi possível realizar a solicitação: Grau da entidade do participante já cadastrado.");
+                return NotFound("Não foi possível realizar a solicitação: Contato do participante já cadastrado.");
             }
 
             var item = itemDTO.AsEntitie();
@@ -104,9 +104,9 @@ namespace GCAC.API.Controllers.Participante
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Put))]
         public async Task<IActionResult> Atualizar(ContatoDTO itemDTO)
         {
-            if (await _contatoServico.ExistePorContatoParticipante(itemDTO.ContatoParticipante, (long)itemDTO.TipoContatoId))
+            if (await _contatoServico.ExistePorContatoParticipante(itemDTO.ParticipanteId, itemDTO.TipoContatoId, itemDTO.ContatoParticipante, (long)itemDTO.Id))
             {
-                return BadRequest("Não foi possível realizar a solicitação: Grau da entidade do participante já cadastrado.");
+                return BadRequest("Não foi possível realizar a solicitação: Contato do participante já cadastrado.");
             }
 
             var item = itemDTO.AsEntitie();

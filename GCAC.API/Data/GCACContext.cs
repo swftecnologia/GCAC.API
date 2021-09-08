@@ -9,7 +9,6 @@ namespace GCAC.API.Data
     {
         #region Instrumento Coletivo
 
-        public virtual DbSet<Documento> Documento { get; set; }
         public virtual DbSet<DocumentoMediadorHTML> DocumentoMediadorHTML { get; set; }
         public virtual DbSet<DocumentoEntidadeSindical> DocumentoEntidadeSindical { get; set; }
         public virtual DbSet<DocumentoCategoria> DocumentoCategoria { get; set; }
@@ -43,10 +42,6 @@ namespace GCAC.API.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             #region InstrumentoColetivo
-
-            modelBuilder.Entity<Documento>(entity =>
-            {
-            });
 
             //modelBuilder.Entity<EntidadeSindical>(entity =>
             //{

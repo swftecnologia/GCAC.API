@@ -5,19 +5,14 @@ namespace GCAC.Core.Entidades.Participante
     /// <summary>
     /// Entidade para representar um representante legal do participante
     /// </summary>
-    public record RepresentanteLegal
+    public record RepresentanteLegal : BaseEntidade
     {
         /// <summary>
-        /// Construtor
+        /// Construtor da entidade representante legal do participante
         /// </summary>
         public RepresentanteLegal()
         {
         }
-
-        /// <summary>
-        /// Identificador único do representante legal do participante (PK)
-        /// </summary>
-        public long Id { get; init; }
 
         /// <summary>
         /// Descrição do representante legal do participante
@@ -27,6 +22,6 @@ namespace GCAC.Core.Entidades.Participante
         // <summary>
         /// Relacionamento entre representante legal do participante e participante
         // </summary>
-        public virtual ICollection<Participante> Participantes { get; set; }
+        public virtual ICollection<Participante> Participantes { get; init; }
     }
 }

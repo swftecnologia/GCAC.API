@@ -5,19 +5,14 @@ namespace GCAC.Core.Entidades.Participante
     /// <summary>
     /// Entidade para representar uma função do participante
     /// </summary>
-    public record Funcao
+    public record Funcao : BaseEntidade
     {
         /// <summary>
-        /// Construtor
+        /// Construtor da entidade função do participante
         /// </summary>
         public Funcao()
         {
         }
-
-        /// <summary>
-        /// Identificador único da função do participante (PK)
-        /// </summary>
-        public long Id { get; init; }
 
         /// <summary>
         /// Descrição da função do participante
@@ -27,6 +22,6 @@ namespace GCAC.Core.Entidades.Participante
         // <summary>
         /// Relacionamento entre função do participante e participante
         // </summary>
-        public virtual ICollection<Participante> Participantes { get; set; }
+        public virtual ICollection<Participante> Participantes { get; init; }
     }
 }

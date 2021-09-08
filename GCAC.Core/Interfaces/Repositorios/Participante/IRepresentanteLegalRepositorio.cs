@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using GCAC.Core.Entidades.Participante;
 
 namespace GCAC.Core.Interfaces.Repositorios.Participante
@@ -7,42 +6,8 @@ namespace GCAC.Core.Interfaces.Repositorios.Participante
     /// <summary>
     /// Interface de repositório para a entidade RepresentanteLegal
     /// </summary>
-    public interface IRepresentanteLegalRepositorio
+    public interface IRepresentanteLegalRepositorio : IBaseRepositorio<RepresentanteLegal>
     {
-        /// <summary>
-        /// Seleciona todos os representantes legais do participante
-        /// </summary>
-        /// <returns>Lista de representantes legais do participante</returns>
-        Task<IEnumerable<RepresentanteLegal>> SelecionarTodos();
-
-        /// <summary>
-        /// Seleciona um representante legal do participante pelo seu identificador
-        /// </summary>
-        /// <param name="id">Identificador único do representante legal do participante</param>
-        /// <returns>Registro do representante legal do participante solicitado</returns>
-        Task<RepresentanteLegal> SelecionarPorId(long id);
-
-        /// <summary>
-        /// Cria um novo representante legal do participante
-        /// </summary>
-        /// <param name="item">Novo representante legal do participante a ser criado</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        Task<int> Inserir(RepresentanteLegal item);
-
-        /// <summary>
-        /// Atualiza um representante legal do participante
-        /// </summary>
-        /// <param name="item">Representante legal do participante a ser atualizado</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        Task<int> Atualizar(RepresentanteLegal item);
-
-        /// <summary>
-        /// Exclui um representante legal do participante
-        /// </summary>
-        /// <param name="item">Representante legal do participante a ser excluído</param>
-        /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
-        Task<int> Excluir(RepresentanteLegal item);
-
         /// <summary>
         /// Verifica se o representante legal do participante existe por descrição
         /// </summary>
