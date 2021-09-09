@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 using System.Threading.Tasks;
 using GCAC.Core.Entidades.InstrumentoColetivo;
 using GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo;
-using GCAC.Core.Interfaces.Servicos;
+using GCAC.Core.Contratos.Servicos;
 using GCAC.Core.Interfaces.Servicos.InstrumentoColetivo;
 
 namespace GCAC.Core.Servicos.InstrumentoColetivo

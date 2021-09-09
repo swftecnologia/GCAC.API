@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using GCAC.Core.Interfaces.Repositorios;
+using GCAC.Core.Contratos.Repositorios;
 using GCAC.Infrastructure.Contextos;
 
 namespace GCAC.Infrastructure.Repositorios

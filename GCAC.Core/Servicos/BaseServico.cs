@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using GCAC.Core.Interfaces.Repositorios;
-using GCAC.Core.Interfaces.Servicos;
+using GCAC.Core.Contratos.Repositorios;
+using GCAC.Core.Contratos.Servicos;
 
 namespace GCAC.Core.Servicos.Participante
 {

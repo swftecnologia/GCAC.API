@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using GCAC.Infrastructure.Contextos;
-using GCAC.Core.Interfaces.Repositorios;
+using GCAC.Core.Contratos.Repositorios;
 using GCAC.Core.Entidades.InstrumentoColetivo;
 using GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo;
 

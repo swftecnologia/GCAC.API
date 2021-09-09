@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using GCAC.Core.Entidades.Participante;
-using GCAC.Core.Interfaces.Repositorios.Participante;
-using GCAC.Core.Interfaces.Servicos.Participante;
+using GCAC.Core.Contratos.Repositorios.Participante;
+using GCAC.Core.Contratos.Servicos.Participante;
 
 namespace GCAC.Core.Servicos.Participante
 {

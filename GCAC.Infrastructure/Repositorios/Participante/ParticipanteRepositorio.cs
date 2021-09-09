@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
-using GCAC.Core.Interfaces.Repositorios.Participante;
+using GCAC.Core.Contratos.Repositorios.Participante;
 using GCAC.Infrastructure.Contextos;
 
 namespace GCAC.Infrastructure.Repositorios.Participante

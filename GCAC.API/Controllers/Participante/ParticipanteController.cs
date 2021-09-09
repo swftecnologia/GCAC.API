@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using GCAC.Core.Interfaces.Servicos.Participante;
+using GCAC.Core.Contratos.Servicos.Participante;
 using GCAC.Core.Extensions.Participante;
 using GCAC.Core.DTOs.Participante;
 using System;

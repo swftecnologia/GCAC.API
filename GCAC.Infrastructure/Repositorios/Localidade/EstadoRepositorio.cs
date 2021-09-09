@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 using GCAC.Core.Entidades.Localidade;
 using GCAC.Core.Interfaces.Repositorios.Localidade;
 using GCAC.Infrastructure.Contextos;
-using GCAC.Core.Interfaces.Repositorios;
+using GCAC.Core.Contratos.Repositorios;
 
 namespace GCAC.Infrastructure.Repositorios.Localidade
 {

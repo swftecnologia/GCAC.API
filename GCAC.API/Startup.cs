@@ -24,12 +24,13 @@ using GCAC.Core.Interfaces.Servicos.InstrumentoColetivo;
 using GCAC.Core.Servicos.InstrumentoColetivo;
 using GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo;
 using GCAC.Infrastructure.Repositorios.InstrumentoColetivo;
-using GCAC.Core.Interfaces.Servicos.Participante;
+using GCAC.Core.Contratos.Servicos.Participante;
 using GCAC.Core.Servicos.Participante;
-using GCAC.Core.Interfaces.Repositorios.Participante;
+using GCAC.Core.Contratos.Repositorios.Participante;
 using GCAC.Infrastructure.Repositorios.Participante;
 using GCAC.Infrastructure.Repositorios;
 using GCAC.Core.Interfaces.Repositorios;
+using GCAC.Core.Contratos.Repositorios;
 
 namespace GCAC.API
 {
