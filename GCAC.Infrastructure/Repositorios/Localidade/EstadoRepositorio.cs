@@ -1,17 +1,20 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using GCAC.Core.Entidades.Localidade;
 using GCAC.Core.Interfaces.Repositorios.Localidade;
 using GCAC.Infrastructure.Contextos;
+using GCAC.Core.Contratos.Repositorios;
 
 namespace GCAC.Infrastructure.Repositorios.Localidade
 {
     /// <summary>
     /// Repositório para a entidade Estado
     /// </summary>
-    public class EstadoRepositorio : IEstadoRepositorio
+    public class EstadoRepositorio : IBaseRepositorio<Estado>, IEstadoRepositorio
     {
         /// <summary>
         /// Contexto da aplicação
@@ -33,7 +36,7 @@ namespace GCAC.Infrastructure.Repositorios.Localidade
         /// <returns>Lista de estados</returns>
         public async Task<IEnumerable<Estado>> SelecionarTodos()
         {
-            return await _context.Estado.ToListAsync();
+            return await _context.Estado.Include(x => x.Pais).ToListAsync();
         }
 
         /// <summary>
@@ -54,6 +57,26 @@ namespace GCAC.Infrastructure.Repositorios.Localidade
         public async Task<IEnumerable<Estado>> SelecionarPorPais(long id)
         {
             return await _context.Estado.Where(x => x.PaisId == id).ToListAsync();
+        }
+
+        /// <summary>
+        /// Seleciona um estado pela sua sigla
+        /// </summary>
+        /// <param name="sigla">Sigla do estado</param>
+        /// <returns>Registro do estado solicitado</returns>
+        public async Task<Estado> SelecionarPorSigla(string sigla)
+        {
+            return await _context.Estado.Where(x => x.Sigla == sigla).FirstOrDefaultAsync();
+        }
+
+        /// <summary>
+        /// Seleciona todos os estados pertencentes a um país
+        /// </summary>
+        /// <param name="predicate">Identificador único do país</param>
+        /// <returns>Lista de estados pertencentes a um país</returns>
+        public Task<IEnumerable<Estado>> SelecionarPorCriterio(Expression<Func<Estado, bool>> predicate)
+        {
+            throw new NotImplementedException();
         }
 
         /// <summary>

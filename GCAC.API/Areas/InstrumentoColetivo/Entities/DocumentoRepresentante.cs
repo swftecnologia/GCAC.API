@@ -1,6 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using GCAC.API.Areas.Pessoa.Entities;
 
 namespace GCAC.API.Areas.InstrumentoColetivo.Entities
 {

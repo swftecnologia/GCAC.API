@@ -13,7 +13,7 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/instrumento-coletivo/[controller]")]
+    [Route("api/instrumento-coletivo/classificacao")]
     public class ClassificacaoController : ControllerBase
     {
         private readonly IClassificacaoServico _classificacaoServico;

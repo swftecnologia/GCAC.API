@@ -26,28 +26,38 @@ namespace GCAC.Core.Servicos.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Seleciona todos os sub-grupos do grupo da claúsula
+        /// Seleciona todos os sub-grupos do grupo da cláusula
         /// </summary>
-        /// <returns>Lista de sub-grupos do grupo da claúsula</returns>
+        /// <returns>Lista de sub-grupos do grupo da cláusula</returns>
         public async Task<IEnumerable<ClausulaSubGrupo>> SelecionarTodos()
         {
             return await _clausulaSubGrupoRepositorio.SelecionarTodos();
         }
 
         /// <summary>
-        /// Seleciona um sub-grupo do grupo da claúsula pelo seu identificador
+        /// Seleciona um sub-grupo do grupo da cláusula pelo seu identificador
         /// </summary>
-        /// <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-        /// <returns>Registro do sub-grupo do grupo da claúsula solicitada</returns>
+        /// <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+        /// <returns>Registro do sub-grupo do grupo da cláusula solicitada</returns>
         public async Task<ClausulaSubGrupo> SelecionarPorId(long id)
         {
             return await _clausulaSubGrupoRepositorio.SelecionarPorId(id);
         }
 
         /// <summary>
-        /// Cria um novo sub-grupo do grupo da claúsula
+        /// Seleciona todos os sub-grupos da clásula pertencentes a um grupo da cláusula
         /// </summary>
-        /// <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>
+        /// <param name="id">Identificador único do grupo da cláusula</param>
+        /// <returns>Lista de sub-grupos da cláusula pertencentes a um grupo da cláusula</returns>
+        public async Task<IEnumerable<ClausulaSubGrupo>> SelecionarPorClausulaGrupo(long id)
+        {
+            return await _clausulaSubGrupoRepositorio.SelecionarPorClausulaGrupo(id);
+        }
+
+        /// <summary>
+        /// Cria um novo sub-grupo do grupo da cláusula
+        /// </summary>
+        /// <param name="item">Novo sub-grupo do grupo da cláusula a ser criado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Inserir(ClausulaSubGrupo item)
         {
@@ -55,9 +65,9 @@ namespace GCAC.Core.Servicos.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Atualiza um sub-grupo do grupo da claúsula
+        /// Atualiza um sub-grupo do grupo da cláusula
         /// </summary>
-        /// <param name="item">Sub-Grupo do grupo da claúsula a ser atualizado</param>
+        /// <param name="item">Sub-Grupo do grupo da cláusula a ser atualizado</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Atualizar(ClausulaSubGrupo item)
         {
@@ -65,9 +75,9 @@ namespace GCAC.Core.Servicos.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Exclui um sub-grupo do grupo da claúsula
+        /// Exclui um sub-grupo do grupo da cláusula
         /// </summary>
-        /// <param name="item">Sub-Grupo do grupo da claúsula a ser excluído</param>
+        /// <param name="item">Sub-Grupo do grupo da cláusula a ser excluído</param>
         /// <returns>Quantidade de registros afetados pela operação solicitada</returns>
         public async Task<int> Excluir(ClausulaSubGrupo item)
         {
@@ -75,21 +85,21 @@ namespace GCAC.Core.Servicos.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Verifica se o sub-grupo do grupo da claúsula existe por descrição
+        /// Verifica se o sub-grupo do grupo da cláusula existe por descrição
         /// </summary>
-        /// <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-        /// <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        /// <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+        /// <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         public async Task<bool> ExistePorDescricao(string descricao)
         {
             return await _clausulaSubGrupoRepositorio.ExistePorDescricao(descricao);
         }
 
         /// <summary>
-        /// Verifica se o sub-grupo do grupo da claúsula existe por descrição para um identificador diferente do sub-grupo do grupo da claúsula a ser alterado
+        /// Verifica se o sub-grupo do grupo da cláusula existe por descrição para um identificador diferente do sub-grupo do grupo da cláusula a ser alterado
         /// </summary>
-        /// <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-        /// <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-        /// <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+        /// <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+        /// <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+        /// <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         public async Task<bool> ExistePorDescricao(string descricao, long id)
         {
             return await _clausulaSubGrupoRepositorio.ExistePorDescricao(descricao, id);
