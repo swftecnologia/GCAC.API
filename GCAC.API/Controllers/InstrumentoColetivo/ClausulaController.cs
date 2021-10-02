@@ -9,11 +9,11 @@ using GCAC.Core.DTOs.InstrumentoColetivo;
 namespace GCAC.API.Controllers.InstrumentoColetivo
 {
     /// <summary>
-    /// Controlador para tratar as claúsulas
+    /// Controlador para tratar as cláusulas
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/instrumento-coletivo/[controller]")]
+    [Route("api/instrumento-coletivo/clausula")]
     public class ClausulaController : ControllerBase
     {
         private readonly IClausulaServico _clausulaServico;
@@ -28,9 +28,9 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Seleciona todos os claúsulas
+        /// Seleciona todos os cláusulas
         /// </summary>
-        /// <returns>Lista de claúsulas</returns>
+        /// <returns>Lista de cláusulas</returns>
         [HttpGet]
         [Route("selecionar-todos")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
@@ -40,10 +40,10 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Seleciona um claúsula pelo seu identificador único
+        /// Seleciona um cláusula pelo seu identificador único
         /// </summary>
-        /// <param name="id">Identificador único do claúsula</param>
-        /// <returns>Claúsula</returns>
+        /// <param name="id">Identificador único do cláusula</param>
+        /// <returns>Cláusula</returns>
         [HttpGet]
         [Route("selecionar-por-id")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
@@ -60,10 +60,23 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Cria um novo claúsula
+        /// Lista todos as cláusulas para um determinado sub-grupo da cláusula
         /// </summary>
-        /// <param name="itemDTO">Novo claúsula a ser criado</param>
-        /// <returns>Claúsula criado</returns>
+        /// <param name="id">Identificador único do sub-grupo da cláusula</param>
+        /// <returns>Lista de cláusulas para um determinado sub-grupo da cláusula</returns>
+        [HttpGet]
+        [Route("selecionar-por-clausula-sub-grupo")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IEnumerable<Clausula>> SelecionarPorClausulaSubGrupo(long id)
+        {
+            return await _clausulaServico.SelecionarPorClausulaSubGrupo(id);
+        }
+
+        /// <summary>
+        /// Cria um novo cláusula
+        /// </summary>
+        /// <param name="itemDTO">Novo cláusula a ser criado</param>
+        /// <returns>Cláusula criado</returns>
         [HttpPost]
         [Route("inserir")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
@@ -71,7 +84,7 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         {
             if (await _clausulaServico.ExistePorTitulo(itemDTO.Titulo))
             {
-                return NotFound("Não foi possível realizar a solicitação: Claúsula já cadastrado.");
+                return NotFound("Não foi possível realizar a solicitação: Cláusula já cadastrado.");
             }
 
             var item = itemDTO.AsEntitie();
@@ -82,9 +95,9 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Atualiza um claúsula
+        /// Atualiza um cláusula
         /// </summary>
-        /// <param name="itemDTO">Claúsula a ser atualizado</param>
+        /// <param name="itemDTO">Cláusula a ser atualizado</param>
         /// <returns>Mensagem de resposta OK</returns>
         [HttpPut]
         [Route("atualizar")]
@@ -93,7 +106,7 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         {
             if (await _clausulaServico.ExistePorTitulo(itemDTO.Titulo, (long)itemDTO.Id))
             {
-                return BadRequest("Não foi possível realizar a solicitação: Claúsula já cadastrado.");
+                return BadRequest("Não foi possível realizar a solicitação: Cláusula já cadastrado.");
             }
 
             var item = itemDTO.AsEntitie();
@@ -102,9 +115,9 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Exclui um claúsula
+        /// Exclui um cláusula
         /// </summary>
-        /// <param name="id">Identificador único do claúsula a ser excluído</param>
+        /// <param name="id">Identificador único do cláusula a ser excluído</param>
         /// <returns>Mensagem de resposta OK</returns>
         [HttpDelete]
         [Route("excluir")]

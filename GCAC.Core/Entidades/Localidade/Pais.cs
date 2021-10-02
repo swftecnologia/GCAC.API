@@ -1,4 +1,6 @@
-﻿namespace GCAC.Core.Entidades.Localidade
+﻿using System.Collections.Generic;
+
+namespace GCAC.Core.Entidades.Localidade
 {
     /// <summary>
     /// Entidade para representar um país
@@ -26,5 +28,10 @@
         /// Nome do país
         /// </summary>
         public string Nome { get; init; }
+
+        // <summary>
+        /// Relacionamento entre país e estado
+        // </summary>
+        public virtual ICollection<Estado> Estados { get; set; }
     }
 }

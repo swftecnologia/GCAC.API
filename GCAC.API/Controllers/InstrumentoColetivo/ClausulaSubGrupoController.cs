@@ -9,11 +9,11 @@ using GCAC.Core.DTOs.InstrumentoColetivo;
 namespace GCAC.API.Controllers.InstrumentoColetivo
 {
     /// <summary>
-    /// Controlador para tratar as sub-grupos do grupo da claúsula
+    /// Controlador para tratar as sub-grupos do grupo da cláusula
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/instrumento-coletivo/[controller]")]
+    [Route("api/instrumento-coletivo/clausula-sub-grupo")]
     public class ClausulaSubGrupoController : ControllerBase
     {
         private readonly IClausulaSubGrupoServico _clausulaSubGrupoServico;
@@ -28,9 +28,9 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Seleciona todos os sub-grupos do grupo da claúsula
+        /// Seleciona todos os sub-grupos do grupo da cláusula
         /// </summary>
-        /// <returns>Lista de sub-grupos do grupo da claúsula</returns>
+        /// <returns>Lista de sub-grupos do grupo da cláusula</returns>
         [HttpGet]
         [Route("selecionar-todos")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
@@ -40,10 +40,10 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Seleciona um sub-grupo do grupo da claúsula pelo seu identificador único
+        /// Seleciona um sub-grupo do grupo da cláusula pelo seu identificador único
         /// </summary>
-        /// <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-        /// <returns>Sub-grupo do grupo da claúsula</returns>
+        /// <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+        /// <returns>Sub-grupo do grupo da cláusula</returns>
         [HttpGet]
         [Route("selecionar-por-id")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
@@ -60,10 +60,23 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Cria um novo sub-grupo do grupo da claúsula
+        /// Lista todos os sub-grupos da clásula para um determinado grupo da cláusula
         /// </summary>
-        /// <param name="itemDTO">Novo sub-grupo do grupo da claúsula a ser criado</param>
-        /// <returns>Sub-grupo do grupo da claúsula criado</returns>
+        /// <param name="id">Identificador único do grupo da cláusula</param>
+        /// <returns>Lista de sub-grupos da clásula para um determinado grupo da cláusula</returns>
+        [HttpGet]
+        [Route("selecionar-por-clausula-grupo")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IEnumerable<ClausulaSubGrupo>> SelecionarPorClausulaGrupo(long id)
+        {
+            return await _clausulaSubGrupoServico.SelecionarPorClausulaGrupo(id);
+        }
+
+        /// <summary>
+        /// Cria um novo sub-grupo do grupo da cláusula
+        /// </summary>
+        /// <param name="itemDTO">Novo sub-grupo do grupo da cláusula a ser criado</param>
+        /// <returns>Sub-grupo do grupo da cláusula criado</returns>
         [HttpPost]
         [Route("inserir")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Post))]
@@ -71,7 +84,7 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         {
             if (await _clausulaSubGrupoServico.ExistePorDescricao(itemDTO.Descricao))
             {
-                return NotFound("Não foi possível realizar a solicitação: Sub-grupo do grupo da claúsula já cadastrado.");
+                return NotFound("Não foi possível realizar a solicitação: Sub-grupo do grupo da cláusula já cadastrado.");
             }
 
             var item = itemDTO.AsEntitie();
@@ -82,9 +95,9 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Atualiza um sub-grupo do grupo da claúsula
+        /// Atualiza um sub-grupo do grupo da cláusula
         /// </summary>
-        /// <param name="itemDTO">Sub-grupo do grupo da claúsula a ser atualizado</param>
+        /// <param name="itemDTO">Sub-grupo do grupo da cláusula a ser atualizado</param>
         /// <returns>Mensagem de resposta OK</returns>
         [HttpPut]
         [Route("atualizar")]
@@ -93,7 +106,7 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         {
             if (await _clausulaSubGrupoServico.ExistePorDescricao(itemDTO.Descricao, (long)itemDTO.Id))
             {
-                return BadRequest("Não foi possível realizar a solicitação: Sub-grupo do grupo da claúsula já cadastrado.");
+                return BadRequest("Não foi possível realizar a solicitação: Sub-grupo do grupo da cláusula já cadastrado.");
             }
 
             var item = itemDTO.AsEntitie();
@@ -102,9 +115,9 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
         }
 
         /// <summary>
-        /// Exclui um sub-grupo do grupo da claúsula
+        /// Exclui um sub-grupo do grupo da cláusula
         /// </summary>
-        /// <param name="id">Identificador único do sub-grupo do grupo da claúsula a ser excluído</param>
+        /// <param name="id">Identificador único do sub-grupo do grupo da cláusula a ser excluído</param>
         /// <returns>Mensagem de resposta OK</returns>
         [HttpDelete]
         [Route("excluir")]
