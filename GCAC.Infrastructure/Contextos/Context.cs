@@ -4,6 +4,7 @@ using GCAC.Core.Entidades.Localidade;
 using GCAC.Core.Entidades.Log;
 using GCAC.Core.Entidades.InstrumentoColetivo;
 using GCAC.Core.Entidades.Participante;
+using GCAC.Core.Entidades.Integracao;
 
 namespace GCAC.Infrastructure.Contextos
 {
@@ -45,6 +46,25 @@ namespace GCAC.Infrastructure.Contextos
         /// <param name="modelBuilder"></param>
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            #region Integracao
+
+            modelBuilder.Entity<EntidadeSindicalListaBaseTerritorialCNES>(entity =>
+            {
+                entity.ToTable("EntidadeSindicalListaBaseTerritorialCNES", schema: "Integracao");
+            });
+
+            modelBuilder.Entity<EntidadeSindicalListaCategoriaCNES>(entity =>
+            {
+                entity.ToTable("EntidadeSindicalListaCategoriaCNES", schema: "Integracao");
+            });
+
+            modelBuilder.Entity<EntidadeSindicalListaGeralCNES>(entity =>
+            {
+                entity.ToTable("EntidadeSindicalListaGeralCNES", schema: "Integracao");
+            });
+
+            #endregion
+
             #region InstrumentoColetivo
 
             modelBuilder.Entity<Categoria>(entity =>
@@ -253,6 +273,25 @@ namespace GCAC.Infrastructure.Contextos
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+        #region Integracao
+
+        /// <summary>
+        /// Entidade para persistência de entidades sindicais do CNES
+        /// </summary>
+        public virtual DbSet<EntidadeSindicalListaGeralCNES> EntidadeSindicalListaGeralCNES { get; set; }
+
+        /// <summary>
+        /// Entidade para persistência de entidades sindicais do CNES
+        /// </summary>
+        public virtual DbSet<EntidadeSindicalListaCategoriaCNES> EntidadeSindicalListaCategoriaCNES { get; set; }
+
+        /// <summary>
+        /// Entidade para persistência de entidades sindicais do CNES
+        /// </summary>
+        public virtual DbSet<EntidadeSindicalListaBaseTerritorialCNES> EntidadeSindicalListaBaseTerritorialCNES { get; set; }
+
+        #endregion
 
         #region InstrumentoColetivo
 
