@@ -1192,52 +1192,52 @@
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.SelecionarTodos">
             <summary>
-            Seleciona todos os grupos da claúsula
+            Seleciona todos os grupos da cláusula
             </summary>
-            <returns>Lista de grupos da claúsula</returns>
+            <returns>Lista de grupos da cláusula</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.SelecionarPorId(System.Int64)">
             <summary>
-            Seleciona um grupo da claúsula pelo seu identificador
+            Seleciona um grupo da cláusula pelo seu identificador
             </summary>
-            <param name="id">Identificador único do grupo da claúsula</param>
-            <returns>Registro do grupo da claúsula solicitada</returns>
+            <param name="id">Identificador único do grupo da cláusula</param>
+            <returns>Registro do grupo da cláusula solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
             <summary>
-            Cria um novo grupo da claúsula
+            Cria um novo grupo da cláusula
             </summary>
-            <param name="item">Novo grupo da claúsula a ser criado</param>
+            <param name="item">Novo grupo da cláusula a ser criado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
             <summary>
-            Atualiza um grupo da claúsula
+            Atualiza um grupo da cláusula
             </summary>
-            <param name="item">Grupo da claúsula a ser atualizado</param>
+            <param name="item">Grupo da cláusula a ser atualizado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
             <summary>
-            Exclui um grupo da claúsula
+            Exclui um grupo da cláusula
             </summary>
-            <param name="item">Grupo da claúsula a ser excluído</param>
+            <param name="item">Grupo da cláusula a ser excluído</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.ExistePorDescricao(System.String)">
             <summary>
-            Verifica se o grupo da claúsula existe por descrição
+            Verifica se o grupo da cláusula existe por descrição
             </summary>
-            <param name="descricao">Descrição do grupo da claúsula</param>
-            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+            <param name="descricao">Descrição do grupo da cláusula</param>
+            <returns>Valor indicando se o grupo da cláusula existe ou não</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaGrupoRepositorio.ExistePorDescricao(System.String,System.Int64)">
             <summary>
-            Verifica se o grupo da claúsula existe por descrição para um identificador diferente do grupo da claúsula a ser alterado
+            Verifica se o grupo da cláusula existe por descrição para um identificador diferente do grupo da cláusula a ser alterado
             </summary>
-            <param name="id">Identificador único do grupo da claúsula</param>
-            <param name="descricao">Descrição do grupo da claúsula</param>
-            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+            <param name="id">Identificador único do grupo da cláusula</param>
+            <param name="descricao">Descrição do grupo da cláusula</param>
+            <returns>Valor indicando se o grupo da cláusula existe ou não</returns>
         </member>
         <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio">
             <summary>
@@ -1246,52 +1246,52 @@
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.SelecionarTodos">
             <summary>
-            Seleciona todas as claúsulas
+            Seleciona todas as cláusulas
             </summary>
-            <returns>Lista de claúsulas</returns>
+            <returns>Lista de cláusulas</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.SelecionarPorId(System.Int64)">
             <summary>
-            Seleciona uma claúsula pelo seu identificador
+            Seleciona uma cláusula pelo seu identificador
             </summary>
-            <param name="id">Identificador único da claúsula</param>
-            <returns>Registro da claúsula solicitada</returns>
+            <param name="id">Identificador único da cláusula</param>
+            <returns>Registro da cláusula solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
             <summary>
-            Cria uma nova claúsula
+            Cria uma nova cláusula
             </summary>
-            <param name="item">Nova claúsula a ser criada</param>
+            <param name="item">Nova cláusula a ser criada</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
             <summary>
-            Atualiza uma claúsula
+            Atualiza uma cláusula
             </summary>
-            <param name="item">Claúsula a ser atualizada</param>
+            <param name="item">Cláusula a ser atualizada</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
             <summary>
-            Exclui uma claúsula
+            Exclui uma cláusula
             </summary>
-            <param name="item">Claúsula a ser excluída</param>
+            <param name="item">Cláusula a ser excluída</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.ExistePorTitulo(System.String)">
             <summary>
-            Verifica se a claúsula existe por título
+            Verifica se a cláusula existe por título
             </summary>
-            <param name="titulo">Título da claúsula</param>
-            <returns>Valor indicando se a claúsula existe ou não</returns>
+            <param name="titulo">Título da cláusula</param>
+            <returns>Valor indicando se a cláusula existe ou não</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaRepositorio.ExistePorTitulo(System.String,System.Int64)">
             <summary>
-            Verifica se a claúsula existe por título para um identificador diferente da claúsula a ser alterada
+            Verifica se a cláusula existe por título para um identificador diferente da cláusula a ser alterada
             </summary>
-            <param name="id">Identificador único da claúsula</param>
-            <param name="titulo">Título da claúsula</param>
-            <returns>Valor indicando se a claúsula existe ou não</returns>
+            <param name="id">Identificador único da cláusula</param>
+            <param name="titulo">Título da cláusula</param>
+            <returns>Valor indicando se a cláusula existe ou não</returns>
         </member>
         <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio">
             <summary>
@@ -1300,52 +1300,52 @@
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.SelecionarTodos">
             <summary>
-            Seleciona todos os sub-grupos do grupo da claúsula
+            Seleciona todos os sub-grupos do grupo da cláusula
             </summary>
-            <returns>Lista de sub-grupos do grupo da claúsula</returns>
+            <returns>Lista de sub-grupos do grupo da cláusula</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.SelecionarPorId(System.Int64)">
             <summary>
-            Seleciona um sub-grupo do grupo da claúsula pelo seu identificador
+            Seleciona um sub-grupo do grupo da cláusula pelo seu identificador
             </summary>
-            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-            <returns>Registro do sub-grupo do grupo da claúsula solicitada</returns>
+            <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+            <returns>Registro do sub-grupo do grupo da cláusula solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
             <summary>
-            Cria um novo sub-grupo do grupo da claúsula
+            Cria um novo sub-grupo do grupo da cláusula
             </summary>
-            <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>
+            <param name="item">Novo sub-grupo do grupo da cláusula a ser criado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
             <summary>
-            Atualiza um sub-grupo do grupo da claúsula
+            Atualiza um sub-grupo do grupo da cláusula
             </summary>
-            <param name="item">Sub-Grupo do grupo da claúsula a ser atualizado</param>
+            <param name="item">Sub-Grupo do grupo da cláusula a ser atualizado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
             <summary>
-            Exclui um sub-grupo do grupo da claúsula
+            Exclui um sub-grupo do grupo da cláusula
             </summary>
-            <param name="item">Sub-Grupo do grupo da claúsula a ser excluído</param>
+            <param name="item">Sub-Grupo do grupo da cláusula a ser excluído</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.ExistePorDescricao(System.String)">
             <summary>
-            Verifica se o sub-grupo do grupo da claúsula existe por descrição
+            Verifica se o sub-grupo do grupo da cláusula existe por descrição
             </summary>
-            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+            <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IClausulaSubGrupoRepositorio.ExistePorDescricao(System.String,System.Int64)">
             <summary>
-            Verifica se o sub-grupo do grupo da claúsula existe por descrição para um identificador diferente do sub-grupo do grupo da claúsula a ser alterado
+            Verifica se o sub-grupo do grupo da cláusula existe por descrição para um identificador diferente do sub-grupo do grupo da cláusula a ser alterado
             </summary>
-            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+            <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+            <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         </member>
         <member name="T:GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo.IEntidadeSindicalRepositorio">
             <summary>
@@ -1800,52 +1800,52 @@
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.SelecionarTodos">
             <summary>
-            Seleciona todos os grupos da claúsula
+            Seleciona todos os grupos da cláusula
             </summary>
-            <returns>Lista de grupos da claúsula</returns>
+            <returns>Lista de grupos da cláusula</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.SelecionarPorId(System.Int64)">
             <summary>
-            Seleciona um grupo da claúsula pelo seu identificador
+            Seleciona um grupo da cláusula pelo seu identificador
             </summary>
-            <param name="id">Identificador único do grupo da claúsula</param>
-            <returns>Registro do grupo da claúsula solicitada</returns>
+            <param name="id">Identificador único do grupo da cláusula</param>
+            <returns>Registro do grupo da cláusula solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
             <summary>
-            Cria um novo grupo da claúsula
+            Cria um novo grupo da cláusula
             </summary>
-            <param name="item">Novo grupo da claúsula a ser criado</param>
+            <param name="item">Novo grupo da cláusula a ser criado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
             <summary>
-            Atualiza um grupo da claúsula
+            Atualiza um grupo da cláusula
             </summary>
-            <param name="item">Grupo da claúsula a ser atualizado</param>
+            <param name="item">Grupo da cláusula a ser atualizado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
             <summary>
-            Exclui um grupo da claúsula
+            Exclui um grupo da cláusula
             </summary>
-            <param name="item">Grupo da claúsula a ser excluído</param>
+            <param name="item">Grupo da cláusula a ser excluído</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.ExistePorDescricao(System.String)">
             <summary>
-            Verifica se o grupo da claúsula existe por descrição
+            Verifica se o grupo da cláusula existe por descrição
             </summary>
-            <param name="descricao">Descrição do grupo da claúsula</param>
-            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+            <param name="descricao">Descrição do grupo da cláusula</param>
+            <returns>Valor indicando se o grupo da cláusula existe ou não</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaGrupoServico.ExistePorDescricao(System.String,System.Int64)">
             <summary>
-            Verifica se o grupo da claúsula existe por descrição para um identificador diferente do grupo da claúsula a ser alterado
+            Verifica se o grupo da cláusula existe por descrição para um identificador diferente do grupo da cláusula a ser alterado
             </summary>
-            <param name="id">Identificador único do grupo da claúsula</param>
-            <param name="descricao">Descrição do grupo da claúsula</param>
-            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+            <param name="id">Identificador único do grupo da cláusula</param>
+            <param name="descricao">Descrição do grupo da cláusula</param>
+            <returns>Valor indicando se o grupo da cláusula existe ou não</returns>
         </member>
         <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico">
             <summary>
@@ -1854,52 +1854,52 @@
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.SelecionarTodos">
             <summary>
-            Seleciona todas as claúsulas
+            Seleciona todas as cláusulas
             </summary>
-            <returns>Lista de claúsulas</returns>
+            <returns>Lista de cláusulas</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.SelecionarPorId(System.Int64)">
             <summary>
-            Seleciona uma claúsula pelo seu identificador
+            Seleciona uma cláusula pelo seu identificador
             </summary>
-            <param name="id">Identificador único da claúsula</param>
-            <returns>Registro da claúsula solicitada</returns>
+            <param name="id">Identificador único da cláusula</param>
+            <returns>Registro da cláusula solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
             <summary>
-            Cria uma nova claúsula
+            Cria uma nova cláusula
             </summary>
-            <param name="item">Nova claúsula a ser criada</param>
+            <param name="item">Nova cláusula a ser criada</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
             <summary>
-            Atualiza uma claúsula
+            Atualiza uma cláusula
             </summary>
-            <param name="item">Claúsula a ser atualizada</param>
+            <param name="item">Cláusula a ser atualizada</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
             <summary>
-            Exclui uma claúsula
+            Exclui uma cláusula
             </summary>
-            <param name="item">Claúsula a ser excluída</param>
+            <param name="item">Cláusula a ser excluída</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.ExistePorTitulo(System.String)">
             <summary>
-            Verifica se a claúsula existe por título
+            Verifica se a cláusula existe por título
             </summary>
-            <param name="titulo">Título da claúsula</param>
-            <returns>Valor indicando se a claúsula existe ou não</returns>
+            <param name="titulo">Título da cláusula</param>
+            <returns>Valor indicando se a cláusula existe ou não</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaServico.ExistePorTitulo(System.String,System.Int64)">
             <summary>
-            Verifica se a claúsula existe por título para um identificador diferente da claúsula a ser alterada
+            Verifica se a cláusula existe por título para um identificador diferente da cláusula a ser alterada
             </summary>
-            <param name="id">Identificador único da claúsula</param>
-            <param name="titulo">Título da claúsula</param>
-            <returns>Valor indicando se a claúsula existe ou não</returns>
+            <param name="id">Identificador único da cláusula</param>
+            <param name="titulo">Título da cláusula</param>
+            <returns>Valor indicando se a cláusula existe ou não</returns>
         </member>
         <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico">
             <summary>
@@ -1908,52 +1908,52 @@
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.SelecionarTodos">
             <summary>
-            Seleciona todos os sub-grupos do grupo da claúsula
+            Seleciona todos os sub-grupos do grupo da cláusula
             </summary>
-            <returns>Lista de sub-grupos do grupo da claúsula</returns>
+            <returns>Lista de sub-grupos do grupo da cláusula</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.SelecionarPorId(System.Int64)">
             <summary>
-            Seleciona um sub-grupo do grupo da claúsula pelo seu identificador
+            Seleciona um sub-grupo do grupo da cláusula pelo seu identificador
             </summary>
-            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-            <returns>Registro do sub-grupo do grupo da claúsula solicitada</returns>
+            <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+            <returns>Registro do sub-grupo do grupo da cláusula solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
             <summary>
-            Cria um novo sub-grupo do grupo da claúsula
+            Cria um novo sub-grupo do grupo da cláusula
             </summary>
-            <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>
+            <param name="item">Novo sub-grupo do grupo da cláusula a ser criado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
             <summary>
-            Atualiza um sub-grupo do grupo da claúsula
+            Atualiza um sub-grupo do grupo da cláusula
             </summary>
-            <param name="item">Sub-Grupo do grupo da claúsula a ser atualizado</param>
+            <param name="item">Sub-Grupo do grupo da cláusula a ser atualizado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
             <summary>
-            Exclui um sub-grupo do grupo da claúsula
+            Exclui um sub-grupo do grupo da cláusula
             </summary>
-            <param name="item">Sub-Grupo do grupo da claúsula a ser excluído</param>
+            <param name="item">Sub-Grupo do grupo da cláusula a ser excluído</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.ExistePorDescricao(System.String)">
             <summary>
-            Verifica se o sub-grupo do grupo da claúsula existe por descrição
+            Verifica se o sub-grupo do grupo da cláusula existe por descrição
             </summary>
-            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+            <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         </member>
         <member name="M:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IClausulaSubGrupoServico.ExistePorDescricao(System.String,System.Int64)">
             <summary>
-            Verifica se o sub-grupo do grupo da claúsula existe por descrição para um identificador diferente do sub-grupo do grupo da claúsula a ser alterado
+            Verifica se o sub-grupo do grupo da cláusula existe por descrição para um identificador diferente do sub-grupo do grupo da cláusula a ser alterado
             </summary>
-            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+            <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+            <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         </member>
         <member name="T:GCAC.Core.Interfaces.Servicos.InstrumentoColetivo.IEntidadeSindicalServico">
             <summary>
@@ -2452,52 +2452,52 @@
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.SelecionarTodos">
             <summary>
-            Seleciona todos os grupos da claúsula
+            Seleciona todos os grupos da cláusula
             </summary>
-            <returns>Lista de grupos da claúsula</returns>
+            <returns>Lista de grupos da cláusula</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.SelecionarPorId(System.Int64)">
             <summary>
-            Seleciona um grupo da claúsula pelo seu identificador
+            Seleciona um grupo da cláusula pelo seu identificador
             </summary>
-            <param name="id">Identificador único do grupo da claúsula</param>
-            <returns>Registro do grupo da claúsula solicitada</returns>
+            <param name="id">Identificador único do grupo da cláusula</param>
+            <returns>Registro do grupo da cláusula solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
             <summary>
-            Cria um novo grupo da claúsula
+            Cria um novo grupo da cláusula
             </summary>
-            <param name="item">Novo grupo da claúsula a ser criado</param>
+            <param name="item">Novo grupo da cláusula a ser criado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
             <summary>
-            Atualiza um grupo da claúsula
+            Atualiza um grupo da cláusula
             </summary>
-            <param name="item">Grupo da claúsula a ser atualizado</param>
+            <param name="item">Grupo da cláusula a ser atualizado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaGrupo)">
             <summary>
-            Exclui um grupo da claúsula
+            Exclui um grupo da cláusula
             </summary>
-            <param name="item">Grupo da claúsula a ser excluído</param>
+            <param name="item">Grupo da cláusula a ser excluído</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.ExistePorDescricao(System.String)">
             <summary>
-            Verifica se o grupo da claúsula existe por descrição
+            Verifica se o grupo da cláusula existe por descrição
             </summary>
-            <param name="descricao">Descrição do grupo da claúsula</param>
-            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+            <param name="descricao">Descrição do grupo da cláusula</param>
+            <returns>Valor indicando se o grupo da cláusula existe ou não</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaGrupoServico.ExistePorDescricao(System.String,System.Int64)">
             <summary>
-            Verifica se o grupo da claúsula existe por descrição para um identificador diferente do grupo da claúsula a ser alterado
+            Verifica se o grupo da cláusula existe por descrição para um identificador diferente do grupo da cláusula a ser alterado
             </summary>
-            <param name="id">Identificador único do grupo da claúsula</param>
-            <param name="descricao">Descrição do grupo da claúsula</param>
-            <returns>Valor indicando se o grupo da claúsula existe ou não</returns>
+            <param name="id">Identificador único do grupo da cláusula</param>
+            <param name="descricao">Descrição do grupo da cláusula</param>
+            <returns>Valor indicando se o grupo da cláusula existe ou não</returns>
         </member>
         <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico">
             <summary>
@@ -2517,52 +2517,52 @@
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.SelecionarTodos">
             <summary>
-            Seleciona todas as claúsulas
+            Seleciona todas as cláusulas
             </summary>
-            <returns>Lista de claúsulas</returns>
+            <returns>Lista de cláusulas</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.SelecionarPorId(System.Int64)">
             <summary>
-            Seleciona uma claúsula pelo seu identificador
+            Seleciona uma cláusula pelo seu identificador
             </summary>
-            <param name="id">Identificador único da claúsula</param>
-            <returns>Registro da claúsula solicitada</returns>
+            <param name="id">Identificador único da cláusula</param>
+            <returns>Registro da cláusula solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
             <summary>
-            Cria uma nova claúsula
+            Cria uma nova cláusula
             </summary>
-            <param name="item">Nova claúsula a ser criada</param>
+            <param name="item">Nova cláusula a ser criada</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
             <summary>
-            Atualiza uma claúsula
+            Atualiza uma cláusula
             </summary>
-            <param name="item">Claúsula a ser atualizada</param>
+            <param name="item">Cláusula a ser atualizada</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.Clausula)">
             <summary>
-            Exclui uma claúsula
+            Exclui uma cláusula
             </summary>
-            <param name="item">Claúsula a ser excluída</param>
+            <param name="item">Cláusula a ser excluída</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.ExistePorTitulo(System.String)">
             <summary>
-            Verifica se a claúsula existe por título
+            Verifica se a cláusula existe por título
             </summary>
-            <param name="titulo">Título da claúsula</param>
-            <returns>Valor indicando se a claúsula existe ou não</returns>
+            <param name="titulo">Título da cláusula</param>
+            <returns>Valor indicando se a cláusula existe ou não</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaServico.ExistePorTitulo(System.String,System.Int64)">
             <summary>
-            Verifica se a claúsula existe por título para um identificador diferente da claúsula a ser alterada
+            Verifica se a cláusula existe por título para um identificador diferente da cláusula a ser alterada
             </summary>
-            <param name="id">Identificador único da claúsula</param>
-            <param name="titulo">Título da claúsula</param>
-            <returns>Valor indicando se a claúsula existe ou não</returns>
+            <param name="id">Identificador único da cláusula</param>
+            <param name="titulo">Título da cláusula</param>
+            <returns>Valor indicando se a cláusula existe ou não</returns>
         </member>
         <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico">
             <summary>
@@ -2582,52 +2582,52 @@
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.SelecionarTodos">
             <summary>
-            Seleciona todos os sub-grupos do grupo da claúsula
+            Seleciona todos os sub-grupos do grupo da cláusula
             </summary>
-            <returns>Lista de sub-grupos do grupo da claúsula</returns>
+            <returns>Lista de sub-grupos do grupo da cláusula</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.SelecionarPorId(System.Int64)">
             <summary>
-            Seleciona um sub-grupo do grupo da claúsula pelo seu identificador
+            Seleciona um sub-grupo do grupo da cláusula pelo seu identificador
             </summary>
-            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-            <returns>Registro do sub-grupo do grupo da claúsula solicitada</returns>
+            <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+            <returns>Registro do sub-grupo do grupo da cláusula solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.Inserir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
             <summary>
-            Cria um novo sub-grupo do grupo da claúsula
+            Cria um novo sub-grupo do grupo da cláusula
             </summary>
-            <param name="item">Novo sub-grupo do grupo da claúsula a ser criado</param>
+            <param name="item">Novo sub-grupo do grupo da cláusula a ser criado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.Atualizar(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
             <summary>
-            Atualiza um sub-grupo do grupo da claúsula
+            Atualiza um sub-grupo do grupo da cláusula
             </summary>
-            <param name="item">Sub-Grupo do grupo da claúsula a ser atualizado</param>
+            <param name="item">Sub-Grupo do grupo da cláusula a ser atualizado</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.Excluir(GCAC.Core.Entidades.InstrumentoColetivo.ClausulaSubGrupo)">
             <summary>
-            Exclui um sub-grupo do grupo da claúsula
+            Exclui um sub-grupo do grupo da cláusula
             </summary>
-            <param name="item">Sub-Grupo do grupo da claúsula a ser excluído</param>
+            <param name="item">Sub-Grupo do grupo da cláusula a ser excluído</param>
             <returns>Quantidade de registros afetados pela operação solicitada</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.ExistePorDescricao(System.String)">
             <summary>
-            Verifica se o sub-grupo do grupo da claúsula existe por descrição
+            Verifica se o sub-grupo do grupo da cláusula existe por descrição
             </summary>
-            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+            <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         </member>
         <member name="M:GCAC.Core.Servicos.InstrumentoColetivo.ClausulaSubGrupoServico.ExistePorDescricao(System.String,System.Int64)">
             <summary>
-            Verifica se o sub-grupo do grupo da claúsula existe por descrição para um identificador diferente do sub-grupo do grupo da claúsula a ser alterado
+            Verifica se o sub-grupo do grupo da cláusula existe por descrição para um identificador diferente do sub-grupo do grupo da cláusula a ser alterado
             </summary>
-            <param name="id">Identificador único do sub-grupo do grupo da claúsula</param>
-            <param name="descricao">Descrição do sub-grupo do grupo da claúsula</param>
-            <returns>Valor indicando se o sub-grupo do grupo da claúsula existe ou não</returns>
+            <param name="id">Identificador único do sub-grupo do grupo da cláusula</param>
+            <param name="descricao">Descrição do sub-grupo do grupo da cláusula</param>
+            <returns>Valor indicando se o sub-grupo do grupo da cláusula existe ou não</returns>
         </member>
         <member name="T:GCAC.Core.Servicos.InstrumentoColetivo.EntidadeSindicalServico">
             <summary>

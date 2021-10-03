@@ -13,7 +13,7 @@ namespace GCAC.API.Controllers.InstrumentoColetivo
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/instrumento-coletivo/[controller]")]
+    [Route("api/instrumento-coletivo/clausula-grupo")]
     public class ClausulaGrupoController : ControllerBase
     {
         private readonly IClausulaGrupoServico _clausulaGrupoServico;

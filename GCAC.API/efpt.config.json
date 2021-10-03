@@ -14,14 +14,6 @@
    "Tables": [
       {
          "HasPrimaryKey": true,
-         "Name": "[dbo].[AuditLogDetails]"
-      },
-      {
-         "HasPrimaryKey": true,
-         "Name": "[dbo].[AuditLogs]"
-      },
-      {
-         "HasPrimaryKey": true,
          "Name": "[InstrumentoColetivo].[Abrangencia]"
       },
       {
