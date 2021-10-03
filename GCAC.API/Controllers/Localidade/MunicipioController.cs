@@ -13,7 +13,7 @@ namespace GCAC.API.Controllers.Localidade
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/localidade/[controller]")]
+    [Route("api/localidade/municipio")]
     public class MunicipioController : ControllerBase
     {
         private readonly IMunicipioServico _municipioServico;

@@ -3,7 +3,7 @@
     /// <summary>
     /// Entidade para representar um estado
     /// </summary>
-    public record Estado
+    public record Estado : BaseEntidade
     {
         /// <summary>
         /// Construtor
@@ -12,11 +12,6 @@
         {
         }
 
-        /// <summary>
-        /// Identificador único do estado (PK)
-        /// </summary>
-        public long Id { get; init; }
-        
         /// <summary>
         /// Sigla do estado
         /// </summary>
@@ -31,5 +26,10 @@
         /// Identificador único do país ao qual o estado pertence
         /// </summary>
         public long PaisId { get; init; }
+        
+        /// <summary>
+        /// País ao qual o estado pertence
+        /// </summary>
+        public Pais Pais { get; init; }
     }
 }

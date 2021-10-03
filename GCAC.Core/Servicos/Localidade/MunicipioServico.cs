@@ -55,6 +55,17 @@ namespace GCAC.Core.Servicos.Localidade
         }
 
         /// <summary>
+        /// Seleciona um município pertencente a um estado
+        /// </summary>
+        /// <param name="id">Identificador único do estado</param>
+        /// <param name="municipio">Nome do município</param>
+        /// <returns>Município pertencente a um estado</returns>
+        public async Task<Municipio> SelecionarPorEstadoEMunicipio(long id, string municipio)
+        {
+            return await _municipioRepositorio.SelecionarPorEstadoEMunicipio(id, municipio);
+        }
+
+        /// <summary>
         /// Cria um novo município
         /// </summary>
         /// <param name="item">Novo município a ser criado</param>

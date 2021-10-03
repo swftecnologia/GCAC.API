@@ -13,7 +13,7 @@ namespace GCAC.API.Areas.Localidades.Estados.Controllers
     /// </summary>
     [ApiController]
     [Produces("application/json")]
-    [Route("api/localidade/[controller]")]
+    [Route("api/localidade/estado")]
     public class EstadoController : ControllerBase
     {
         private readonly IEstadoServico _estadoServico;
@@ -106,7 +106,7 @@ namespace GCAC.API.Areas.Localidades.Estados.Controllers
         {
             if (await _estadoServico.ExistePorNome(itemDTO.Nome, (long)itemDTO.Id))
             {
-                return BadRequest("Não foi possível realizar a solicitação: País já cadastrado.");
+                return BadRequest("Não foi possível realizar a solicitação: Estado já cadastrado para o país.");
             }
 
             var item = itemDTO.AsEntitie();
