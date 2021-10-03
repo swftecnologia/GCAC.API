@@ -31,6 +31,10 @@ using GCAC.Infrastructure.Repositorios.Participante;
 using GCAC.Infrastructure.Repositorios;
 using GCAC.Core.Interfaces.Repositorios;
 using GCAC.Core.Contratos.Repositorios;
+using GCAC.Core.Interfaces.Repositorios.Integracao;
+using GCAC.Infrastructure.Repositorios.Integracao;
+using GCAC.Core.Interfaces.Servicos.Integracao;
+using GCAC.Core.Contratos.Servicos;
 
 namespace GCAC.API
 {
@@ -124,6 +128,14 @@ namespace GCAC.API
             //Serviços
             #region Serviços
 
+            services.AddScoped(typeof(IBaseServico<>), typeof(BaseServico<>));
+
+            #region Integracao
+
+            services.AddScoped<IEntidadeSindicalCNESServico, EntidadeSindicalCNESServico>();
+
+            #endregion
+
             #region Instrumento Coletivo
 
             services.AddScoped<IAbrangenciaServico, AbrangenciaServico>();
@@ -165,7 +177,18 @@ namespace GCAC.API
             #region Repositorios
 
             services.AddScoped(typeof(IBaseRepositorio<>), typeof(BaseRepositorio<>));
-            services.AddScoped<IAbrangenciaRepositorio, AbrangenciaRepositorio>();
+            services.AddScoped(typeof(IEntityRepository<>), typeof(EntityRepository<>));
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+            services.AddScoped<IContaRepository, ContaRepository>();
+
+            #region Integracao
+
+            services.AddScoped<IEntidadeSindicalCNESRepositorio, EntidadeSindicalCNESRepositorio>();
+
+            #endregion
+
+            #region Instrumento Coletivo
+
             services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
             services.AddScoped<IClassificacaoRepositorio, ClassificacaoRepositorio>();
             services.AddScoped<IClausulaGrupoRepositorio, ClausulaGrupoRepositorio>();
@@ -173,8 +196,6 @@ namespace GCAC.API
             services.AddScoped<IClausulaSubGrupoRepositorio, ClausulaSubGrupoRepositorio>();
             services.AddScoped<IDocumentoRepositorio, DocumentoRepositorio>();
             services.AddScoped<IEntidadeSindicalRepositorio, EntidadeSindicalRepositorio>();
-
-            #region Instrumento Coletivo
 
             #endregion
 
@@ -189,6 +210,7 @@ namespace GCAC.API
 
             #region Participante
 
+            services.AddScoped<IAbrangenciaRepositorio, AbrangenciaRepositorio>();
             services.AddScoped<IContatoRepositorio, ContatoRepositorio>();
             services.AddScoped<IFuncaoRepositorio, FuncaoRepositorio>();
             services.AddScoped<IGrauEntidadeRepositorio, GrauEntidadeRepositorio>();
@@ -201,11 +223,6 @@ namespace GCAC.API
             #endregion
 
             #endregion
-
-            //Repositórios
-            services.AddScoped(typeof(IEntityRepository<>), typeof(EntityRepository<>));
-            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-            services.AddScoped<IContaRepository, ContaRepository>();
         }
 
         /// <summary>
