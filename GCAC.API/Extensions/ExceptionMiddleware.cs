@@ -2,7 +2,7 @@
 using System.Net;
 using System.Text.Json;
 using System.Threading.Tasks;
-using GCAC.API.Repositories;
+using GCAC.Core.Contratos.Repositorios;
 using GCAC.Core.Entidades.Log;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Data.SqlClient;
@@ -29,9 +29,9 @@ namespace GCAC.API.Extensions
         /// 
         /// </summary>
         /// <param name="httpContext"></param>
-        /// <param name="baseRepository"></param>
+        /// <param name="_erroRepositorio"></param>
         /// <returns></returns>
-        public async Task InvokeAsync(HttpContext httpContext, IBaseRepository<Erro> baseRepository)
+        public async Task InvokeAsync(HttpContext httpContext, IBaseRepositorio<Erro> _erroRepositorio)
         {
             try
             {
@@ -39,7 +39,7 @@ namespace GCAC.API.Extensions
             }
             catch (Exception ex)
             {
-                await HandleExceptionAsync(httpContext, ex, baseRepository);
+                await HandleExceptionAsync(httpContext, ex, _erroRepositorio);
             }
         }
 
@@ -48,9 +48,9 @@ namespace GCAC.API.Extensions
         /// </summary>
         /// <param name="context"></param>
         /// <param name="exception"></param>
-        /// <param name="baseRepository"></param>
+        /// <param name="_erroRepositorio"></param>
         /// <returns></returns>
-        private async Task<Task> HandleExceptionAsync(HttpContext context, Exception exception, IBaseRepository<Erro> baseRepository)
+        private async Task<Task> HandleExceptionAsync(HttpContext context, Exception exception, IBaseRepositorio<Erro> _erroRepositorio)
         {
             string message = "";
             string innerException = "";
@@ -105,7 +105,7 @@ namespace GCAC.API.Extensions
 
             try
             {
-                await baseRepository.Inserir(new Erro()
+                await _erroRepositorio.Inserir(new Erro()
                 {
                     Dados = dadosErro,
                     Usuario = Environment.UserName,
