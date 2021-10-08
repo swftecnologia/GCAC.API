@@ -13,8 +13,6 @@ using Swashbuckle.AspNetCore.SwaggerUI;
 using Audit.Core;
 using GCAC.API.Data;
 using GCAC.API.Extensions;
-using GCAC.API.Repositories;
-using GCAC.API.Areas.Usuarios.Contas.Repositories;
 using GCAC.Infrastructure.Contextos;
 using GCAC.Core.Interfaces.Servicos.Localidade;
 using GCAC.Core.Servicos.Localidade;
@@ -35,6 +33,10 @@ using GCAC.Core.Interfaces.Repositorios.Integracao;
 using GCAC.Infrastructure.Repositorios.Integracao;
 using GCAC.Core.Interfaces.Servicos.Integracao;
 using GCAC.Core.Contratos.Servicos;
+using GCAC.Core.Contratos.Servicos.Usuario;
+using GCAC.Core.Servicos.Usuario;
+using GCAC.Core.Contratos.Repositorios.Usuario;
+using GCAC.Infrastructure.Repositorios.Usuario;
 
 namespace GCAC.API
 {
@@ -80,7 +82,7 @@ namespace GCAC.API
                 options.AddDefaultPolicy(
                     builder =>
                     {
-                        builder.WithOrigins("https://sistemagcac.azurewebsites.net/")
+                        builder.WithOrigins("https://www.gcac.com.br/")
                         .AllowAnyOrigin()
                         .AllowAnyHeader()
                         .AllowAnyMethod();
@@ -138,7 +140,6 @@ namespace GCAC.API
 
             #region Instrumento Coletivo
 
-            services.AddScoped<IAbrangenciaServico, AbrangenciaServico>();
             services.AddScoped<ICategoriaServico, CategoriaServico>();
             services.AddScoped<IClassificacaoServico, ClassificacaoServico>();
             services.AddScoped<IClausulaGrupoServico, ClausulaGrupoServico>();
@@ -160,6 +161,7 @@ namespace GCAC.API
 
             #region Participante
 
+            services.AddScoped<IAbrangenciaServico, AbrangenciaServico>();
             services.AddScoped<IContatoServico, ContatoServico>();
             services.AddScoped<IFuncaoServico, FuncaoServico>();
             services.AddScoped<IGrauEntidadeServico, GrauEntidadeServico>();
@@ -171,15 +173,18 @@ namespace GCAC.API
 
             #endregion
 
+            #region Usuário
+
+            #endregion
+
+            services.AddScoped<IContaServico, ContaServico>();
+
             #endregion
 
             //Repositórios
             #region Repositorios
 
             services.AddScoped(typeof(IBaseRepositorio<>), typeof(BaseRepositorio<>));
-            services.AddScoped(typeof(IEntityRepository<>), typeof(EntityRepository<>));
-            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
-            services.AddScoped<IContaRepository, ContaRepository>();
 
             #region Integracao
 
@@ -219,6 +224,12 @@ namespace GCAC.API
             services.AddScoped<IRepresentanteLegalRepositorio, RepresentanteLegalRepositorio>();
             services.AddScoped<ITipoContatoRepositorio, TipoContatoRepositorio>();
             services.AddScoped<ITipoPessoaRepositorio, TipoPessoaRepositorio>();
+
+            #endregion
+
+            #region Usuário
+
+            services.AddScoped<IContaRepositorio, ContaRepositorio>();
 
             #endregion
 

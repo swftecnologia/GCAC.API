@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using GCAC.API.Areas.Usuarios.Contas.Entities;
 using GCAC.API.Areas.InstrumentoColetivo.Entities;
 using Audit.EntityFramework;
 
@@ -14,12 +13,6 @@ namespace GCAC.API.Data
         public virtual DbSet<DocumentoCategoria> DocumentoCategoria { get; set; }
         public virtual DbSet<DocumentoRepresentante> DocumentoRepresentante { get; set; }
         public virtual DbSet<DocumentoRepresentanteLegal> DocumentoRepresentanteLegal { get; set; }
-
-        #endregion
-
-        #region Usuario
-
-        public virtual DbSet<Conta> Conta { get; set; }
 
         #endregion
 
@@ -127,22 +120,6 @@ namespace GCAC.API.Data
             //    //    .OnDelete(DeleteBehavior.ClientSetNull)
             //    //    .HasConstraintName("FK_Cadastro_Municipio");
             //});
-
-            #endregion
-
-            #region Usuario
-
-            modelBuilder.Entity<Conta>(entity =>
-            {
-                entity
-                    .HasKey(e => e.Id)
-                    .HasName("PK_Usuario.Conta_Id");
-                
-                entity
-                    .HasIndex(e => e.Email)
-                    .IsUnique()
-                    .HasDatabaseName("IX_Usuario.Conta_Email");
-            });
 
             #endregion
 
