@@ -5,6 +5,7 @@ using GCAC.Core.Entidades.Log;
 using GCAC.Core.Entidades.InstrumentoColetivo;
 using GCAC.Core.Entidades.Participante;
 using GCAC.Core.Entidades.Integracao;
+using GCAC.Core.Entidades.Usuario;
 
 namespace GCAC.Infrastructure.Contextos
 {
@@ -269,6 +270,17 @@ namespace GCAC.Infrastructure.Contextos
 
             #endregion
 
+            #region Usuario
+
+            modelBuilder.Entity<Conta>(entity =>
+            {
+                entity.ToTable("Conta", schema: "Usuario");
+                entity.HasKey(e => e.Id).HasName("PK_Conta_Id");
+                entity.HasIndex(e => e.Email).IsUnique().HasDatabaseName("IX_Conta_Email");
+            });
+
+            #endregion
+
             OnModelCreatingPartial(modelBuilder);
         }
 
@@ -432,6 +444,15 @@ namespace GCAC.Infrastructure.Contextos
         /// Entidade para persistência de tipos de pessoa do participante
         /// </summary>
         public virtual DbSet<TipoPessoa> TipoPessoa { get; set; }
+
+        #endregion
+
+        #region Usuario
+
+        /// <summary>
+        /// Entidade para persistência de contas de usuário
+        /// </summary>
+        public virtual DbSet<Conta> Conta { get; set; }
 
         #endregion
     }

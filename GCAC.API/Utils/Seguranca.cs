@@ -3,8 +3,16 @@ using System.Text;
 
 namespace GCAC.API.Utils
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class Seguranca
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="senha"></param>
+        /// <returns></returns>
         public static string CriptografarSenha(string senha)
         {
             SHA256Managed crypt = new SHA256Managed();
