@@ -30,6 +30,13 @@ namespace GCAC.Core.Interfaces.Repositorios.Localidade
         Task<IEnumerable<Municipio>> SelecionarPorEstado(long id);
 
         /// <summary>
+        /// Seleciona todos os municípios pertencentes aos estados informados
+        /// </summary>
+        /// <param name="ids">Identificador único dos estados</param>
+        /// <returns>Lista de municípios pertencentes aos estados informados</returns>
+        Task<IEnumerable<Municipio>> SelecionarPorEstados(long[] ids);
+
+        /// <summary>
         /// Seleciona um município pertencente a um estado
         /// </summary>
         /// <param name="id">Identificador único do estado</param>

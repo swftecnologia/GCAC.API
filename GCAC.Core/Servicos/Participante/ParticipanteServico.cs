@@ -54,6 +54,26 @@ namespace GCAC.Core.Servicos.Participante
         }
 
         /// <summary>
+        /// Lista todos os particpantes que são ou que não são entidades sindicais
+        /// </summary>
+        /// <param name="entidadeSindical">Indica se deve considerar apenas entidades sindicais</param>
+        /// <returns>Lista de participantes que são ou que não são entidades sindicais</returns>
+        public async Task<IEnumerable<Entidades.Participante.Participante>> SelecionarPorEntidadeSindical(bool entidadeSindical)
+        {
+            return await _participanteRepositorio.SelecionarPorEntidadeSindical(entidadeSindical);
+        }
+
+        /// <summary>
+        /// Lista todos os particpantes para o(s) grupo(s) informado(s)
+        /// </summary>
+        /// <param name="ids">Identificador(es) único(s) do(s) grupo(s)</param>
+        /// <returns>Lista de particpantes para o(s) grupo(s) informado(s)</returns>
+        public async Task<IEnumerable<Entidades.Participante.Participante>> SelecionarPorGrupo(long?[] ids)
+        {
+            return await _participanteRepositorio.SelecionarPorGrupo(ids);
+        }
+
+        /// <summary>
         /// Cria um novo participante
         /// </summary>
         /// <param name="item">Novo participante a ser criado</param>
