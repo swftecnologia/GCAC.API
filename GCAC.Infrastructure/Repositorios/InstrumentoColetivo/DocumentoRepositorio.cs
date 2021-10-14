@@ -7,6 +7,7 @@ using GCAC.Infrastructure.Contextos;
 using GCAC.Core.Contratos.Repositorios;
 using GCAC.Core.Entidades.InstrumentoColetivo;
 using GCAC.Core.Interfaces.Repositorios.InstrumentoColetivo;
+using GCAC.Core.DTOs.Pesquisa;
 
 namespace GCAC.Infrastructure.Repositorios.InstrumentoColetivo
 {

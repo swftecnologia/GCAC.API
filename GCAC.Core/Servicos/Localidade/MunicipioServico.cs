@@ -55,6 +55,16 @@ namespace GCAC.Core.Servicos.Localidade
         }
 
         /// <summary>
+        /// Seleciona todos os municípios pertencentes aos estados informados
+        /// </summary>
+        /// <param name="ids">Identificador único dos estados</param>
+        /// <returns>Lista de municípios pertencentes aos estados informados</returns>
+        public async Task<IEnumerable<Municipio>> SelecionarPorEstados(long[] ids)
+        {
+            return await _municipioRepositorio.SelecionarPorEstados(ids);
+        }
+
+        /// <summary>
         /// Seleciona um município pertencente a um estado
         /// </summary>
         /// <param name="id">Identificador único do estado</param>

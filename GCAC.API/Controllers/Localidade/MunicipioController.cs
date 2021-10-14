@@ -73,6 +73,19 @@ namespace GCAC.API.Controllers.Localidade
         }
 
         /// <summary>
+        /// Lista todos os municípios para determinados estados
+        /// </summary>
+        /// <param name="ids">Identificadores únicos dos estados</param>
+        /// <returns>Lista de municípios para determinados estados</returns>
+        [HttpGet]
+        [Route("selecionar-por-estados")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IEnumerable<Municipio>> SelecionarPorEstados([FromQuery] long[] ids)
+        {
+            return await _municipioServico.SelecionarPorEstados(ids);
+        }
+
+        /// <summary>
         /// Cria um novo município
         /// </summary>
         /// <param name="itemDTO">Novo município a ser criado</param>

@@ -28,11 +28,6 @@
         public string RazaoSocial { get; init; }
 
         /// <summary>
-        /// Matriz do participante
-        /// </summary>
-        public bool Matriz { get; init; }
-
-        /// <summary>
         /// CNO do participante
         /// </summary>
         public string CNO { get; init; }
@@ -51,6 +46,11 @@
         /// CAEPF do participante
         /// </summary>
         public string CAEPF { get; init; }
+
+        /// <summary>
+        /// Indica se o participante é uma entidade sindical
+        /// </summary>
+        public bool EntidadeSindical { get; init; }
 
         /// <summary>
         /// Participante matriz do participante

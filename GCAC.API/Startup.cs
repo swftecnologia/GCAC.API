@@ -37,6 +37,10 @@ using GCAC.Core.Contratos.Servicos.Usuario;
 using GCAC.Core.Servicos.Usuario;
 using GCAC.Core.Contratos.Repositorios.Usuario;
 using GCAC.Infrastructure.Repositorios.Usuario;
+using GCAC.Core.Contratos.Servicos.Pesquisa;
+using GCAC.Core.Servicos.Pesquisa;
+using GCAC.Core.Contratos.Repositorios.Pesquisa;
+using GCAC.Infrastructure.Repositorios.Pesquisa;
 
 namespace GCAC.API
 {
@@ -173,6 +177,12 @@ namespace GCAC.API
 
             #endregion
 
+            #region Pesquisa
+
+            services.AddScoped<IPesquisaServico, PesquisaServico>();
+
+            #endregion
+
             #region Usuário
 
             #endregion
@@ -224,6 +234,12 @@ namespace GCAC.API
             services.AddScoped<IRepresentanteLegalRepositorio, RepresentanteLegalRepositorio>();
             services.AddScoped<ITipoContatoRepositorio, TipoContatoRepositorio>();
             services.AddScoped<ITipoPessoaRepositorio, TipoPessoaRepositorio>();
+
+            #endregion
+
+            #region Pesquisa
+
+            services.AddScoped<IPesquisaRepositorio, PesquisaRepositorio>();
 
             #endregion
 

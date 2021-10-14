@@ -73,6 +73,32 @@ namespace GCAC.API.Controllers.Participante
         }
 
         /// <summary>
+        /// Lista todos os particpantes que são ou que não são entidades sindicais
+        /// </summary>
+        /// <param name="entidadeSindical">Indica se deve considerar apenas entidades sindicais</param>
+        /// <returns>Lista de participantes que são ou que não são entidades sindicais</returns>
+        [HttpGet]
+        [Route("selecionar-por-entidade-sindical")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IEnumerable<Core.Entidades.Participante.Participante>> SelecionarPorEntidadeSindical(bool entidadeSindical)
+        {
+            return await _participanteServico.SelecionarPorEntidadeSindical(entidadeSindical);
+        }
+
+        /// <summary>
+        /// Lista todos os particpantes para o(s) grupo(s) informado(s)
+        /// </summary>
+        /// <param name="ids">Identificador(es) único(s) do(s) grupo(s)</param>
+        /// <returns>Lista de particpantes para o(s) grupo(s) informado(s)</returns>
+        [HttpGet]
+        [Route("selecionar-por-grupo")]
+        [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Get))]
+        public async Task<IEnumerable<Core.Entidades.Participante.Participante>> SelecionarPorGrupo([FromQuery] long?[] ids)
+        {
+            return await _participanteServico.SelecionarPorGrupo(ids);
+        }
+
+        /// <summary>
         /// Cria um novo participante
         /// </summary>
         /// <param name="itemDTO">Novo participante a ser criado</param>

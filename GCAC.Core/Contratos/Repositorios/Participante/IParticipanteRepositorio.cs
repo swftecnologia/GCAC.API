@@ -16,6 +16,20 @@ namespace GCAC.Core.Contratos.Repositorios.Participante
         Task<IEnumerable<Entidades.Participante.Participante>> SelecionarPorTipoPessoa(long id);
 
         /// <summary>
+        /// Lista todos os particpantes que são ou que não são entidades sindicais
+        /// </summary>
+        /// <param name="entidadeSindical">Indica se deve considerar apenas entidades sindicais</param>
+        /// <returns>Lista de participantes que são ou que não são entidades sindicais</returns>
+        Task<IEnumerable<Entidades.Participante.Participante>> SelecionarPorEntidadeSindical(bool entidadeSindical);
+
+        /// <summary>
+        /// Lista todos os particpantes para o(s) grupo(s) informado(s)
+        /// </summary>
+        /// <param name="ids">Identificador(es) único(s) do(s) grupo(s)</param>
+        /// <returns>Lista de particpantes para o(s) grupo(s) informado(s)</returns>
+        Task<IEnumerable<Entidades.Participante.Participante>> SelecionarPorGrupo(long?[] ids);
+
+        /// <summary>
         /// Verifica se o participante existe por CNPJ
         /// </summary>
         /// <param name="cnpj">CNPJ do participante</param>
