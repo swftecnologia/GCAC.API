@@ -4,6 +4,16 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using GCAC.Core.Contratos.Repositorios.Participante;
 using GCAC.Infrastructure.Contextos;
+using GCAC.Core.Contratos.Repositorios.Pesquisa;
+using GCAC.Core.DTOs.Pesquisa;
+using GCAC.Core.Entidades.InstrumentoColetivo;
+using GCAC.Infrastructure.Contextos;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace GCAC.Infrastructure.Repositorios.Participante
 {
@@ -27,6 +37,18 @@ namespace GCAC.Infrastructure.Repositorios.Participante
         }
 
         /// <summary>
+        /// Seleciona um participante pelo seu identificador
+        /// </summary>
+        /// <param name="id">Identificador único do participante</param>
+        /// <returns>Registro do participante solicitado</returns>
+        public new async Task<Core.Entidades.Participante.Participante> SelecionarPorId(long id)
+        {
+            return await _context.Participante
+                .Include(x => x.Enderecos)
+                .Where(x => x.Id == id).FirstOrDefaultAsync();
+        }
+
+        /// <summary>
         /// Seleciona todos os particpantes pertencentes a um tipo de pessoa
         /// </summary>
         /// <param name="id">Identificador único do tipo de pessoa</param>
@@ -40,6 +62,39 @@ namespace GCAC.Infrastructure.Repositorios.Participante
                 .Include(x => x.GrauEntidade)
                 .Include(x => x.ParticipanteMatriz)
                 .Where(x => x.TipoPessoaId == id).ToListAsync();
+        }
+
+        /// <summary>
+        /// Lista todos os particpantes que são ou que não são entidades sindicais
+        /// </summary>
+        /// <param name="entidadeSindical">Indica se deve considerar apenas entidades sindicais</param>
+        /// <returns>Lista de participantes que são ou que não são entidades sindicais</returns>
+        public async Task<IEnumerable<Core.Entidades.Participante.Participante>> SelecionarPorEntidadeSindical(bool entidadeSindical)
+        {
+            return await _context.Participante
+                .Include(x => x.Grupo)
+                .Include(x => x.Funcao)
+                .Include(x => x.RepresentanteLegal)
+                .Include(x => x.GrauEntidade)
+                .Include(x => x.ParticipanteMatriz)
+                .Where(x => x.EntidadeSindical == entidadeSindical).ToListAsync();
+        }
+
+        /// <summary>
+        /// Lista todos os particpantes para o(s) grupo(s) informado(s)
+        /// </summary>
+        /// <param name="ids">Identificador(es) único(s) do(s) grupo(s)</param>
+        /// <returns>Lista de particpantes para o(s) grupo(s) informado(s)</returns>
+        public async Task<IEnumerable<Core.Entidades.Participante.Participante>> SelecionarPorGrupo(long?[] ids)
+        {
+            return await _context.Participante
+                .Include(x => x.Abrangencia)
+                .Include(x => x.Grupo)
+                .Include(x => x.Funcao)
+                .Include(x => x.RepresentanteLegal)
+                .Include(x => x.GrauEntidade)
+                .Include(x => x.ParticipanteMatriz)
+                .Where(x => ids.Contains(x.GrupoId)).ToListAsync();
         }
 
         /// <summary>

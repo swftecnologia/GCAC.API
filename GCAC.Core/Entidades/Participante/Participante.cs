@@ -25,11 +25,6 @@ namespace GCAC.Core.Entidades.Participante
         public string RazaoSocial { get; init; }
 
         /// <summary>
-        /// Matriz do participante
-        /// </summary>
-        public bool Matriz { get; init; }
-
-        /// <summary>
         /// CNO do participante
         /// </summary>
         public string CNO { get; init; }
@@ -48,6 +43,11 @@ namespace GCAC.Core.Entidades.Participante
         /// CAEPF do participante
         /// </summary>
         public string CAEPF { get; init; }
+
+        /// <summary>
+        /// Indica se o participante é uma entidade sindical
+        /// </summary>
+        public bool EntidadeSindical { get; init; }
 
         /// <summary>
         /// Participante matriz do participante
@@ -147,6 +147,6 @@ namespace GCAC.Core.Entidades.Participante
         // <summary>
         /// Relacionamento entre endereço e participante que possui o endereço
         // </summary>
-        public virtual ICollection<Endereco> Endererecos { get; init; }
+        public virtual ICollection<Endereco> Enderecos { get; init; }
     }
 }
