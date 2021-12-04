@@ -121,7 +121,7 @@ namespace GCAC.API.Extensions
                 {
                     ok = false,
                     status = (int)HttpStatusCode.InternalServerError,
-                    statusText = notificacao + " Não foi possível gravar o log de erro" + ex.Message != null ? ": " + ex.Message : "" + ex.InnerException != null ? ex.Message != null ? " " + ex.InnerException : ": " + ex.InnerException : "",
+                    statusText = (notificacao + " Não foi possível gravar o log de erro" + (String.IsNullOrEmpty(message) ? String.IsNullOrEmpty(innerException) ? "." : ": " + innerException : String.IsNullOrEmpty(innerException) ? ": " + message : ": " + message + " - " + innerException)).Trim(),
                     type = "cors",
                     url = context.Request.Scheme + "://" + context.Request.Host.Value + context.Request.Path.Value
                 });
