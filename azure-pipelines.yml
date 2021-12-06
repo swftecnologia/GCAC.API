@@ -12,7 +12,7 @@ variables:
   dotNetVersion: '6.0.x'
   targetRuntime: 'linux-x64'
   azureSPNName: 'gcac' #get it from your AzureDevOps portal
-  azureAppServiceName: 'gcacweb' #get it from your Azure portal
+  azureAppServiceName: 'gcacapi' #get it from your Azure portal
 
 # Build the app for .NET 6 framework
 steps:
@@ -42,5 +42,5 @@ steps:
   inputs:
     appType: webAppLinux
     azureSubscription: gcac #this is the name of the SPN
-    appName: gcacweb #App Service's unique name
+    appName: gcacapi #App Service's unique name
     package: $(Build.ArtifactStagingDirectory)/**/*.zip
