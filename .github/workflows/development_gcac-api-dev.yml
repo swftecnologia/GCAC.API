@@ -51,8 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          appType: webAppLinux
           app-name: 'gcac-api-dev'
-          slot-name: 'Development'
+          slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F66D0868ACC44A87B569AD9EC5097DB4 }}
           package: $(Build.ArtifactStagingDirectory)/**/*.zip
