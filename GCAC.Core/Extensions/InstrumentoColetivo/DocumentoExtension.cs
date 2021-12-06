@@ -18,12 +18,13 @@ namespace GCAC.Core.Extensions.InstrumentoColetivo
             return new Documento
             {
                 Id = item.Id == null ? 0 : (long)item.Id,
+                Titulo = item.Titulo,
+                NumeroSolicitacaoRegistroMTE = item.NumeroSolicitacaoRegistroMTE,
                 VigenciaInicial = item.VigenciaInicial,
                 VigenciaFinal = item.VigenciaFinal,
                 DataBaseCategoria = item.DataBaseCategoria,
                 ClassificacaoId = item.ClassificacaoId,
-                ParticipanteId = item.ParticipanteId,
-                AbrangenciaId = item.AbrangenciaId
+                ParticipanteId = item.ParticipanteId
             };
         }
 
@@ -37,12 +38,13 @@ namespace GCAC.Core.Extensions.InstrumentoColetivo
             return new DocumentoDTO
             {
                 Id = item.Id,
+                Titulo = item.Titulo,
+                NumeroSolicitacaoRegistroMTE = item.NumeroSolicitacaoRegistroMTE,
                 VigenciaInicial = item.VigenciaInicial,
                 VigenciaFinal = item.VigenciaFinal,
                 DataBaseCategoria = item.DataBaseCategoria,
                 ClassificacaoId = item.ClassificacaoId,
-                ParticipanteId = item.ParticipanteId,
-                AbrangenciaId = item.AbrangenciaId
+                ParticipanteId = item.ParticipanteId
             };
         }
     }

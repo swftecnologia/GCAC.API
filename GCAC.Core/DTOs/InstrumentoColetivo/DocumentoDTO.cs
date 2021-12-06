@@ -22,17 +22,27 @@ namespace GCAC.Core.DTOs.InstrumentoColetivo
         /// <summary>
         /// 
         /// </summary>
-        public DateTime VigenciaInicial { get; set; }
+        public string Titulo { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public DateTime VigenciaFinal { get; set; }
+        public string NumeroSolicitacaoRegistroMTE { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        public DateTime DataBaseCategoria { get; set; }
+        public DateTime? VigenciaInicial { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime? VigenciaFinal { get; set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        public DateTime? DataBaseCategoria { get; set; }
 
         /// <summary>
         /// 
@@ -42,11 +52,6 @@ namespace GCAC.Core.DTOs.InstrumentoColetivo
         /// <summary>
         /// 
         /// </summary>
-        public long ParticipanteId { get; set; }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        public long AbrangenciaId { get; set; }
+        public long? ParticipanteId { get; set; }
     }
 }
