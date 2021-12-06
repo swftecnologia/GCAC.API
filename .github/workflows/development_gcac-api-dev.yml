@@ -54,4 +54,4 @@ jobs:
           app-name: 'gcac-api-dev'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_F66D0868ACC44A87B569AD9EC5097DB4 }}
-          package: $(Build.ArtifactStagingDirectory)/**/*.zip
+          package: .
